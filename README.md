@@ -5,18 +5,18 @@ GigabluePax
 ##**Screenshots**
 
 ###InfoBar
-![alt tag](https://github.com/openmips/skin-pax/blob/master/Pax-INFO/InfoBar.jpg)
+![alt tag](https://raw.github.com/openmips/skin-pax/master/Pax-INFO/InfoBar.jpg)
 
 ###ChannelSelection
-![alt tag](https://github.com/openmips/skin-pax/blob/master/Pax-INFO/ChannelSelection.jpg)
+![alt tag](https://raw.github.com/openmips/skin-pax/master/Pax-INFO/ChannelSelection.jpg)
 
 ###SatFinder
-![alt tag](https://github.com/openmips/skin-pax/blob/master/Pax-INFO/SatFinder.jpg)
+![alt tag](https://raw.github.com/openmips/skin-pax/master/Pax-INFO/SatFinder.jpg)
 
 ###Mainmenu
-![alt tag](https://github.com/openmips/skin-pax/blob/master/Pax-INFO/MainMenu.png)
+![alt tag](https://raw.github.com/openmips/skin-pax/master/Pax-INFO/MainMenu.png)
 
 ###MediaPlayer
-![alt tag](https://github.com/openmips/skin-pax/blob/master/Pax-INFO/MediaPlayer.png)
+![alt tag](https://raw.github.com/openmips/skin-pax/master/Pax-INFO/MediaPlayer.png)
 
 =========
