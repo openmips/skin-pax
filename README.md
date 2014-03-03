@@ -14,9 +14,9 @@ GigabluePax
 ![alt tag](https://raw.github.com/openmips/skin-pax/master/Pax-INFO/SatFinder.jpg)
 
 ###Mainmenu
-![alt tag](https://raw.github.com/openmips/skin-pax/master/Pax-INFO/MainMenu.png)
+![alt tag](https://raw.github.com/openmips/skin-pax/master/Pax-INFO/MainMenu.jpg)
 
 ###MediaPlayer
-![alt tag](https://raw.github.com/openmips/skin-pax/master/Pax-INFO/MediaPlayer.png)
+![alt tag](https://raw.github.com/openmips/skin-pax/master/Pax-INFO/MediaPlayer.jpg)
 
 =========
