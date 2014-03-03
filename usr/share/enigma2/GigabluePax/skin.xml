@@ -282,6 +282,7 @@
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
+		<widget source="ServiceEvent" valign="bottom" render="NextEvent" position="30,555" size="378,98" font="Regular;19" backgroundColor="layer-b-background" foregroundColor="layer-a-foreground" transparent="1" />
 		<widget source="ServiceEvent" render="Progress" position="87,268" size="256,5" borderWidth="0" backgroundColor="selection-background" pixmap="GigabluePax/colors/00ffffff.png" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
