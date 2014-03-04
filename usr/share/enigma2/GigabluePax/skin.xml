@@ -276,8 +276,7 @@
 		</widget>
 		<widget source="ServiceEvent" render="Label" position="13,256" size="64,24" font="SetrixHD; 21" backgroundColor="layer-b-background" transparent="1" halign="right">
 			<convert type="EventTime">StartTime</convert>
-			<convert type="ClockToText">
-      </convert>
+			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<widget source="ServiceEvent" valign="bottom" render="NextEvent" position="30,555" size="378,98" font="Regular;19" backgroundColor="layer-b-background" foregroundColor="layer-a-foreground" transparent="1">
     </widget>
