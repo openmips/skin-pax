@@ -1632,10 +1632,10 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="autostart_on" pixmap="GigabluePax/colors/00007eff.png" position="659,108" size="24,24" zPosition="20" alphatest="blend"/>
 		<eLabel position="655,104" backgroundColor="layer-a-accent1" size=" 32,32" zPosition="1"/>
-		<widget name="lab1" position="696,105" size="355,30" font="Regular;20" foregroundColor="layer-a-foreground" valign="center" transparent="1"/>
-		<widget name="lab2" foregroundColor="layer-a-foreground" position="656,169" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="lab3" foregroundColor="layer-a-foreground" position="657,223" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="lab4" position="657,280" size="150,30" foregroundColor="layer-a-foreground" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="lab1" position="696,105" size="355,30" font="Regular;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" valign="center" transparent="1"/>
+		<widget name="lab2" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" position="656,169" size="150,30" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="lab3" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" position="657,223" size="150,30" font="Regular;20" valign="center" transparent="1"/>
+		<widget name="lab4" position="657,280" size="150,30" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="labplace" position="816,170" size="220,30" font="Regular;20" valign="center" backgroundColor="layer-b-accent2"/>
 		<widget name="labsize" position="816,223" size="220,30" font="Regular;20" valign="center" backgroundColor="layer-b-accent2"/>
 		<widget name="inactive" position="816,280" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" foregroundColor="layer-a-foreground"/>
