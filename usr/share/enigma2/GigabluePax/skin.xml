@@ -1031,7 +1031,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
-	<screen name="HdmiCECSetupScreen" position="0,0" size="1280,720" title="VTI HDMI-CEC Configuration" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="HdmiCECSetupScreen" position="0,0" size="1280,720" title="HDMI-CEC Configuration" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
 		<ePixmap pixmap="GigabluePax/construct/plugins/hdmicec.png" position="137,289" size="200,200" alphatest="blend"/>
