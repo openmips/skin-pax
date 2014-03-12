@@ -1795,6 +1795,27 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="EditSettingsButton" position="485,530" size="300,35" pixmaps="GigabluePax/construct/general/lan-seloff.png,GigabluePax/construct/general/lan-sel300.png" zPosition="2" alphatest="blend"/>
 		<widget name="InfoText" position="482,118" size="700,387" zPosition="25" font="Regular;22" valign="center" halign="center" transparent="0"/>
 	</screen>
+	<screen name="NetworkAdapterSelection" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<panel name="PANEL_WINDOW_LARGE"/>
+		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
+		<eLabel text="Select a network adapter" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
+		<widget source="list" render="Listbox" position="483,85" size="725,500" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (10, 10), size = (54, 54), png = 3), # index 3 is the interface pixmap
+					MultiContentEntryPixmapAlphaTest(pos = (71, 46), size = (15, 16), png = 4), # index 4 is the default pixmap
+					MultiContentEntryText(pos = (100, 2), size = (520, 35), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1), # index 1 is the interfacename
+					MultiContentEntryText(pos = (100, 42), size = (520, 25), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_BOTTOM, text = 2), # index 2 is the description
+				],
+				"fonts": [gFont("SetrixHD", 28),gFont("SetrixHD", 20)],
+				"itemHeight": 75
+				}
+			</convert>
+		</widget>
+		<widget source="introduction" render="Label" position="483,600" size="725,30" font="SetrixHD;22" halign="center" backgroundColor="layer-b-background" transparent="1" zPosition="5"/>
+	</screen>
 	<screen name="AutoMountManager" position="0, 0" flags="wfNoBorders" title="AutoMountManager" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
