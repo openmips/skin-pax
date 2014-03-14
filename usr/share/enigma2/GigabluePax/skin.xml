@@ -2066,7 +2066,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<ePixmap pixmap="GigabluePax/construct/plugins/eventview.png" position="132,194" size="200,200" alphatest="blend"/>
 		<eLabel position="460,65" zPosition="-2" size="791,455" backgroundColor="layer-a-background"/>
 		<ePixmap name="menu-band" position="-100,175" size="1380,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-3"/>
-		<widget render="Label" source="session.Event_Now" position="473,117" size="765,200" font="Regular; 20" backgroundColor="layer-a-background" transparent="1" zPosition="5" valign="top">
+		<widget render="Label" source="session.Event_Now" position="473,117" size="765,210" font="Regular; 20" backgroundColor="layer-a-background" transparent="1" zPosition="5" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget noWrap="1" render="Label" source="session.Event_Now" position="473,71" size="765,40" font="SetrixHD; 30" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" zPosition="10" transparent="1">
