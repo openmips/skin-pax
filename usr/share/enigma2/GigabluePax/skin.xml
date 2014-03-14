@@ -2137,4 +2137,37 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="statusbar" render="Label" position="486,90" zPosition="10" size="750,60" halign="center" valign="center" font="Regular; 24" transparent="1" shadowColor="layer-a-background" shadowOffset="-1,-1"/>
 		<widget source="tunerstatusbar" render="Label" position="486,182" zPosition="10" size="750,50" halign="center" valign="center" font="Regular; 24" transparent="1" shadowColor="layer-a-background" shadowOffset="-1,-1"/>
 	</screen>
+	<!-- VLC Player -->
+	<screen name="VlcMediaListScreen" position="center,center" size="1280,720" title="VLC Media List" flags="wfNoBorder" backgroundColor="layer-b-background">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X" />
+		<ePixmap pixmap="GigabluePax/construct/plugins/vlc.png" position="127,281" size="200,200" alphatest="blend" />
+		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<eLabel position="477,66" zPosition="-1" size="769,600" backgroundColor="layer-a-background" />
+		<widget name="filelist" position="494,121" size="735,293" zPosition="3" scrollbarMode="showOnDemand" />
+		<widget name="filelist_text" position="494,82" zPosition="4" size="250,32" font="Regular; 16" halign="left" backgroundColor="transpBlack" transparent="1" valign="top" />
+		<widget name="playlist_text" position="494,419" zPosition="4" size="250,32" font="Regular; 16" halign="left" backgroundColor="transpBlack" transparent="1" foregroundColor="white" valign="top" />
+		<widget name="playlist" position="493,458" size="739,196" zPosition="3" scrollbarMode="showOnDemand" />
+	</screen>
+	<screen name="VlcServerListScreen" position="0,0" size="1280,720" title="VLC Server List" flags="wfNoBorder" backgroundColor="layer-b-background">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X" />
+		<ePixmap pixmap="GigabluePax/construct/plugins/vlc.png" position="127,283" size="200,200" alphatest="blend" />
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+		<eLabel position="477,66" zPosition="-1" size="769,600" backgroundColor="layer-a-background" />
+		<widget name="serverlabel" position="503,80" size="720,45" font="Regular;22" transparent="1" />
+		<widget name="serverlist" position="501,140" size="727,507" scrollbarMode="showOnDemand" borderWidth="1" borderColor="white" />
+	</screen>
+	<screen name="VlcServerConfigScreen" position="center,center" size="1280,720" title="Edit VLC Server" flags="wfNoBorder" backgroundColor="layer-b-background">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X" />
+		<ePixmap pixmap="GigabluePax/construct/plugins/vlc.png" position="127,283" size="200,200" alphatest="blend" />
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+		<eLabel position="477,66" zPosition="-1" size="769,600" backgroundColor="layer-a-background" />
+		<widget name="config" position="490,81" size="739,565" scrollbarMode="showOnDemand" transparent="1" />
+	</screen>
+	<!-- VLC Player -->
 </skin>
