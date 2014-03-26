@@ -1020,7 +1020,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="477,66" zPosition="-1" size="769,602" backgroundColor="layer-a-background"/>
 		<widget name="list" position="495,135" size="725,387" font="SetrixHD; 29" zPosition="3" itemHeight="35" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Title" render="Picon" position="495,80" size="70,42" zPosition="5" transparent="1" alphatest="blend">
+		<widget source="Service" render="Picon" position="495,80" size="70,42" zPosition="5" transparent="1" alphatest="blend">
 			<convert type="PaxRefString">CurrentRef</convert>
 		</widget>
 		<widget source="Service" render="Label" position="573,76" size="648,50" font="SetrixHD; 35" halign="left" backgroundColor="layer-a-background" transparent="1">
