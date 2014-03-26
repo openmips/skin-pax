@@ -599,7 +599,7 @@
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<widget name="Volume" position="425,22" size="390,5" zPosition="3" foregroundColor="layer-a-progress" transparent="1"/>
 		<ePixmap position="365,0" size="48,48" zPosition="1" pixmap="GigabluePax/construct/general/sound.png" transparent="0" alphatest="blend"/>
-		<widget position="835,0" size="80,43" font="SetrixHD; 35" transparent="1" valign="center" zPosition="1" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" render="VVolumeText" source="global.CurrentTime"/>
+		<widget position="835,0" size="80,43" font="SetrixHD; 35" transparent="1" valign="center" zPosition="1" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" render="Volume2Text" source="global.CurrentTime"/>
 		<eLabel position="425,24" size="390,1" backgroundColor="layer-a-accent1" foregroundColor="layer-a-accent1"/>
 	</screen>
 	<screen name="Mute" position="0,0" size="940,53" title="Volume" zPosition="10" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
