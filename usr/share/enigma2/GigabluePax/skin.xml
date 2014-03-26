@@ -610,7 +610,7 @@
 	</screen>
 	<screen name="UnhandledKey" position="0,0" size="940,53" title="Volume" zPosition="10" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
-		<ePixmap position="365,0" size="48,48" zPosition="1" pixmap="GigabluePax/construct/general/forbidden.png" transparent="0" alphatest="blend"/>
+		<widget name="UnhandledKeyPixmap" pixmap="GigabluePax/construct/general/forbidden.png" position="365,0" size="48,48" zPosition="1" transparent="0" alphatest="blend" />
 		<eLabel position="450,-1" size="400,43" font="SetrixHD; 35" transparent="1" valign="center" zPosition="1" text="Unsupported"/>
 	</screen>
 	<screen name="PluginBrowser" position="0,0" size="1281,721" title="Plugin browser" flags="wfNoBorder" backgroundColor="transparent">
