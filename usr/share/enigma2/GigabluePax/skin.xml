@@ -2069,7 +2069,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget noWrap="1" render="Label" source="session.Event_Now" position="473,71" size="765,40" font="SetrixHD; 30" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" zPosition="10" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" font="Regular; 18" halign="right" position="473,362" render="Label" size="765,144" source="session.Event_Next" transparent="0" zPosition="1" valign="top">
+		<widget backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" font="Regular; 18" halign="right" position="473,362" render="Label" size="765,143" source="session.Event_Next" transparent="0" zPosition="1" valign="top">
 			<convert type="EventName">FullDescription</convert>
 		</widget>
 		<widget backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" font="Regular; 23" halign="right" position="473,325" render="Label" size="765,33" source="session.Event_Next" transparent="0" valign="bottom" zPosition="2">
