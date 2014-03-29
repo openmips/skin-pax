@@ -1299,7 +1299,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_WINDOW_MEDIUM"/>
 		<eLabel text="CIselectMainMenu" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 	</screen>
-	<screen name="PluginManager" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="PluginManager" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
@@ -1323,7 +1323,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		</widget>
 		<eLabel text="Plugin Manager" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 	</screen>
-	<screen name="VFD_GigaSetup" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="VFD_GigaSetup" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_MEDIUM"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
@@ -1339,7 +1339,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<eLabel text="Recording paths" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="config" position="483,85" size="725,560" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="InputDeviceSelection" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="InputDeviceSelection" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
@@ -1358,7 +1358,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		</widget>
 		<widget source="introduction" render="Label" position="484,594" size="725,64" font="Regular;22" halign="center" transparent="1"/>
 	</screen>
-	<screen name="AdapterSetup" position="0,0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="AdapterSetup" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RB_X"/>
@@ -1390,7 +1390,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="menulist" position="483,134" size="725,370" itemHeight="35" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="description" render="Label" position="483,515" size="725,135" font="Regular; 24" halign="right" valign="bottom" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="VideoEnhancementSetup" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="VideoEnhancementSetup" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
@@ -1399,7 +1399,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="config" position="483,90" size="725,490" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1"/>
 		<widget name="introduction" position="483,600" size="725,40" font="SetrixHD; 28" halign="right" backgroundColor="layer-a-background" transparent="1" valign="bottom"/>
 	</screen>
-	<screen name="HddMount" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="HddMount" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
@@ -1407,7 +1407,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<eLabel text="Mounts" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="menu" scrollbarMode="showOnDemand" position="483,90" size="725,560" transparent="1"/>
 	</screen>
-	<screen name="HddPartitions" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="HddPartitions" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
@@ -1427,7 +1427,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 			</convert>
 		</widget>
 	</screen>
-	<screen name="HddSetup" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="HddSetup" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
@@ -1446,7 +1446,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 			</convert>
 		</widget>
 	</screen>
-	<screen name="VideoEnhancementPreview" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="VideoEnhancementPreview" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<ePixmap name="menu-band" position="0,420" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-3"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
@@ -1455,7 +1455,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="config" position="621,445" size="580,142" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="introduction" render="Label" position="622,604" size="580,40" font="Regular;28" halign="left" valign="center" transparent="1"/>
 	</screen>
-	<screen name="FlashOnline" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="FlashOnline" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_MEDIUM"/>
 		<panel name="PANEL_BUTTONBAR_RGY_X"/>
@@ -1464,7 +1464,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="info-online" position="615,87" zPosition="1" size="534,233" font="Regular; 22" halign="left" valign="top" backgroundColor="layer-a-background" transparent="1"/>
 		<widget name="info-local" position="615,348" zPosition="1" size="534,300" font="Regular; 22" halign="left" valign="top" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="doFlashImage" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="doFlashImage" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_MEDIUM"/>
 		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
@@ -1472,7 +1472,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<eLabel text="Flash On the fly (select a image)" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="imageList" position="623,85" zPosition="1" size="520,545" font="Regular;20" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
-	<screen name="ImageBackup" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="ImageBackup" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_MEDIUM"/>
 		<panel name="PANEL_BUTTONBAR_RG_X"/>
@@ -1481,14 +1481,14 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="info-hdd" position="615,87" zPosition="1" size="534,233" font="SetrixHD; 22" halign="left" valign="top" transparent="1" backgroundColor="layer-a-background"/>
 		<widget name="info-usb" position="615,348" zPosition="1" size="534,300" font="SetrixHD; 22" halign="left" valign="top" transparent="1" backgroundColor="layer-a-background"/>
 	</screen>
-	<screen name="Console" position="0, 0" flags="wfNoBorders" transparent="0" title="Command execution..." backgroundColor="transparent" size="1280, 720">
+	<screen name="Console" position="0, 0" flags="wfNoBorder" transparent="0" title="Command execution..." backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<ePixmap pixmap="GigabluePax/construct/plugins/console.png" position="137,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="text" position="483,90" size="725,550" font="Console;16" scrollbarMode="showOnDemand" transparent="1" backgroundColor="layer-a-background"/>
 	</screen>
-	<screen name="PacketManager" position="0, 0" flags="wfNoBorders" transparent="0" title="PacketManager" backgroundColor="transparent" size="1280, 720">
+	<screen name="PacketManager" position="0, 0" flags="wfNoBorder" transparent="0" title="PacketManager" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
@@ -1508,7 +1508,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 			</convert>
 		</widget>
 	</screen>
-	<screen name="IPKGMenu" position="0, 0" flags="wfNoBorders" transparent="0" title="IPKGMenu" backgroundColor="transparent" size="1280, 720">
+	<screen name="IPKGMenu" position="0, 0" flags="wfNoBorder" transparent="0" title="IPKGMenu" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
@@ -1516,7 +1516,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="filelist" position="482,99" size="728,540" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
-	<screen name="IPKGSource" position="0, 0" flags="wfNoBorders" transparent="0" title="IPKGSource" backgroundColor="transparent" size="1280, 720">
+	<screen name="IPKGSource" position="0, 0" flags="wfNoBorder" transparent="0" title="IPKGSource" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
@@ -1524,7 +1524,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="text" position="482,99" size="728,35" zPosition="3" font="SetrixHD;22" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background"/>
 	</screen>
-	<screen name="BackupSelection" position="0, 0" flags="wfNoBorders" transparent="0" title="Select files/folders to backup..." backgroundColor="transparent" size="1280, 720">
+	<screen name="BackupSelection" position="0, 0" flags="wfNoBorder" transparent="0" title="Select files/folders to backup..." backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGY_X"/>
@@ -1532,7 +1532,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="checkList" position="482,99" size="728,540" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
-	<screen name="RestoreMenu" position="0, 0" flags="wfNoBorders" transparent="0" title="Restore Backups" backgroundColor="transparent" size="1280, 720">
+	<screen name="RestoreMenu" position="0, 0" flags="wfNoBorder" transparent="0" title="Restore Backups" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGY_X"/>
@@ -1541,7 +1541,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="filelist" position="482,99" size="728,540" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
 	<!-- B2 -->
-	<screen name="GraphMultiEPG" position="0, 0" flags="wfNoBorders" transparent="0" title="Electronic Program Guide" backgroundColor="transparent" size="1280, 720">
+	<screen name="GraphMultiEPG" position="0, 0" flags="wfNoBorder" transparent="0" title="Electronic Program Guide" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
 		<panel name="PANEL_BUTTONBAR_MENU"/>
@@ -1576,14 +1576,14 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="timeline5" position="0,115" zPosition="1" size="1,367" pixmap="GigabluePax/colors/00ffffff.png"/>
 		<widget name="timeline_now" position="0,115" zPosition="2" size="5,367" pixmap="GigabluePax/colors/00ffffff.png" alphatest="blend"/>
 	</screen>
-	<screen name="ChannelContextMenu" position="0, 0" flags="wfNoBorders" transparent="0" title="Channellist menu" backgroundColor="transparent" size="1280, 720">
+	<screen name="ChannelContextMenu" position="0, 0" flags="wfNoBorder" transparent="0" title="Channellist menu" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_SMALL"/>
 		<ePixmap pixmap="GigabluePax/construct/plugins/eventview.png" position="237,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="menu" position="656,101" size="390,550" zPosition="3" itemHeight="35" scrollbarMode="showNever" enableWrapAround="1" transparent="1"/>
 	</screen>
-	<screen name="GraphMultiEpgSetup" position="0, 0" flags="wfNoBorders" transparent="0" title="Electronic Program Guide Setup" backgroundColor="transparent" size="1280, 720">
+	<screen name="GraphMultiEpgSetup" position="0, 0" flags="wfNoBorder" transparent="0" title="Electronic Program Guide Setup" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
@@ -1598,7 +1598,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
 		<widget name="config" position="482,99" size="728,540" transparent="1"/>
 	</screen>
-	<screen name="ServiceInfo" position="0, 0" flags="wfNoBorders" title="Serviceinfo" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="ServiceInfo" position="0, 0" flags="wfNoBorder" title="Serviceinfo" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
@@ -1606,7 +1606,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="infolist" position="482,99" size="728,540" itemHeight="40" selectionDisabled="1" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="OSD3DSetupScreen" position="0, 0" flags="wfNoBorders" title="OSD 3D setup" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="OSD3DSetupScreen" position="0, 0" flags="wfNoBorder" title="OSD 3D setup" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_RG_X"/>
@@ -1621,7 +1621,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
 		<widget name="config" position="482,99" size="728,540"/>
 	</screen>
-	<screen name="SwapManager" position="0, 0" flags="wfNoBorders" title="Swap File Manager" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="SwapManager" position="0, 0" flags="wfNoBorder" title="Swap File Manager" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_SMALL"/>
 		<panel name="PANEL_BUTTONBAR_RGY_X"/>
@@ -1638,7 +1638,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="inactive" position="816,280" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" foregroundColor="layer-a-foreground"/>
 		<widget name="active" position="816,280" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="green" foregroundColor="layer-a-foreground"/>
 	</screen>
-	<screen name="AutoTimerOverview" position="0, 0" flags="wfNoBorders" title="AutoTimer Overview" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="AutoTimerOverview" position="0, 0" flags="wfNoBorder" title="AutoTimer Overview" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_MENU"/>
@@ -1655,7 +1655,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<ePixmap name="" position="565,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
 	</screen>
-	<screen name="AutoTimerImporter" position="0, 0" flags="wfNoBorders" title="Import AutoTimer" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="AutoTimerImporter" position="0, 0" flags="wfNoBorder" title="Import AutoTimer" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
@@ -1663,7 +1663,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="list" position="482,84" size="728,561" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="AutoTimerEditor" position="0, 0" flags="wfNoBorders" title="Edit AutoTimer" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="AutoTimerEditor" position="0, 0" flags="wfNoBorder" title="Edit AutoTimer" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
@@ -1673,7 +1673,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="HelpWindow" position="31,79" size="1,1" zPosition="1" transparent="1" alphatest="blend"/>
 		<widget source="help" render="Label" position="482,597" size="728,50" font="Regular;20" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="AutoTimerFilterEditor" position="0, 0" flags="wfNoBorders" title="Edit AutoTimer Filters" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="AutoTimerFilterEditor" position="0, 0" flags="wfNoBorder" title="Edit AutoTimer Filters" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
@@ -1681,7 +1681,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="config" position="482,84" size="728,561" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="AutoTimerServiceEditor" position="0, 0" flags="wfNoBorders" title="Edit AutoTimer Services" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="AutoTimerServiceEditor" position="0, 0" flags="wfNoBorder" title="Edit AutoTimer Services" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
@@ -1689,7 +1689,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="config" position="482,84" size="728,561" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="AutoTimerSettings" position="0, 0" flags="wfNoBorders" title="AutoTimer Settings" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="AutoTimerSettings" position="0, 0" flags="wfNoBorder" title="AutoTimer Settings" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
@@ -1698,7 +1698,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="config" position="482,84" size="728,501" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="help" render="Label" position="482,597" size="728,50" font="SetrixHD;20" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="MPHelp" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="MPHelp" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
@@ -1706,7 +1706,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<eLabel text="Help" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="detailtext" position="482,84" size="728,561" zPosition="10" font="Regular;22" foregroundColor="layer-a-foreground" transparent="1" halign="left" valign="top"/>
 	</screen>
-	<screen name="TimerEntry" position="0, 0" flags="wfNoBorders" title="Timer entry" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="TimerEntry" position="0, 0" flags="wfNoBorder" title="Timer entry" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/main/timer.png" position="137,289" size="200,200" alphatest="blend"/>
@@ -1721,7 +1721,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
 	</screen>
-	<screen name="TimerEditList" position="0, 0" flags="wfNoBorders" title="Timer Editor" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="TimerEditList" position="0, 0" flags="wfNoBorder" title="Timer Editor" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
@@ -1744,7 +1744,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="key0" position="202,94" size="200,30" font="Console;17" halign="center" valign="center"/>
 		<widget name="help2" position="403,94" size="200,30" font="Console;22" halign="center" valign="center"/>
 	</screen>
-	<screen name="NameserverSetup" position="0, 0" flags="wfNoBorders" transparent="0" title="Nameserver Setup" backgroundColor="transparent" size="1280, 720">
+	<screen name="NameserverSetup" position="0, 0" flags="wfNoBorder" transparent="0" title="Nameserver Setup" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGY_X"/>
@@ -1753,7 +1753,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="config" position="482,84" size="728,501" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="introduction" render="Label" position="482,597" size="728,50" font="Regular;19" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="NetworkAdapterTest" position="0, 0" flags="wfNoBorders" transparent="0" title="Network test..." backgroundColor="transparent" size="1280, 720">
+	<screen name="NetworkAdapterTest" position="0, 0" flags="wfNoBorder" transparent="0" title="Network test..." backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGY_X"/>
@@ -1792,7 +1792,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="EditSettingsButton" position="485,530" size="300,35" pixmaps="GigabluePax/construct/general/lan-seloff.png,GigabluePax/construct/general/lan-sel300.png" zPosition="2" alphatest="blend"/>
 		<widget name="InfoText" position="482,118" size="700,387" zPosition="25" font="Regular;22" valign="center" halign="center" transparent="0"/>
 	</screen>
-	<screen name="NetworkAdapterSelection" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="NetworkAdapterSelection" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
@@ -1813,7 +1813,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		</widget>
 		<widget source="introduction" render="Label" position="483,600" size="725,30" font="SetrixHD;22" halign="center" backgroundColor="layer-b-background" transparent="1" zPosition="5"/>
 	</screen>
-	<screen name="ScanIP" position="0, 0" flags="wfNoBorders" title="Network Neighbourhood" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="ScanIP" position="0, 0" flags="wfNoBorder" title="Network Neighbourhood" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGY_X"/>
@@ -1821,7 +1821,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="config" position="480,90" size="730,500" zPosition="3" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="AutoMountManager" position="0, 0" flags="wfNoBorders" title="AutoMountManager" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="AutoMountManager" position="0, 0" flags="wfNoBorder" title="AutoMountManager" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_R_X"/>
@@ -1841,7 +1841,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		</widget>
 		<widget source="introduction" render="Label" position="480,610" size="730,40" font="Regular; 22" halign="right" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="AutoMountEdit" position="0, 0" flags="wfNoBorders" title="MountEdit" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="AutoMountEdit" position="0, 0" flags="wfNoBorder" title="MountEdit" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_R_X"/>
@@ -1851,7 +1851,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="HelpWindow" position="560,505" zPosition="1" size="1,1" transparent="1" alphatest="blend"/>
 		<widget source="introduction" render="Label" position="480,450" size="730,25" font="Regular; 18" halign="right" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="AutoMountView" position="0, 0" flags="wfNoBorders" title="MountView" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="AutoMountView" position="0, 0" flags="wfNoBorder" title="MountView" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_RY_X"/>
@@ -1878,7 +1878,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="introduction" render="Label" position="480,605" size="730,40" font="Regular;22" halign="right" backgroundColor="layer-a-background" transparent="1"/>
 		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend" zPosition="1"/>
 	</screen>
-	<screen name="UserManager" position="0, 0" flags="wfNoBorders" title="UserManager" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="UserManager" position="0, 0" flags="wfNoBorder" title="UserManager" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RY_X"/>
@@ -1897,7 +1897,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		</widget>
 		<widget source="introduction" render="Label" position="480,605" size="730,40" font="Regular;22" halign="right" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="NetworkBrowser" position="0, 0" flags="wfNoBorders" title="Network Neighbourhood" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="NetworkBrowser" position="0, 0" flags="wfNoBorder" title="Network Neighbourhood" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
@@ -1920,7 +1920,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		</widget>
 		<widget source="infotext" render="Label" position="480,605" size="730,40" zPosition="3" font="Regular; 22" halign="center" transparent="1"/>
 	</screen>
-	<screen name="NetworkMacSetup" position="0, 0" title="MAC-adress settings" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="NetworkMacSetup" position="0, 0" title="MAC-adress settings" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
@@ -1929,7 +1929,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="config" position="480,80" size="730,363" itemHeight="30" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="introduction" render="Label" position="480,630" size="730,25" font="Regular; 18" halign="right" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="LanguageSelection" position="0, 0" flags="wfNoBorders" transparent="0" title="Setup Language" backgroundColor="transparent" size="1280, 720">
+	<screen name="LanguageSelection" position="0, 0" flags="wfNoBorder" transparent="0" title="Setup Language" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<ePixmap pixmap="GigabluePax/construct/plugins/language.png" position="137,289" size="200,200" alphatest="blend"/>
@@ -1949,14 +1949,14 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 	<screen name="VideoFinetune" position="0,0" size="1280,720" backgroundColor="layer-a-background" flags="wfNoBorder">
 		<widget source="Canvas" render="Canvas" position="140,70" size="1000,576"/>
 	</screen>
-	<screen name="PluginDownloadBrowser" position="0, 0" flags="wfNoBorders" title="Downloadable plugins" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="PluginDownloadBrowser" position="0, 0" flags="wfNoBorder" title="Downloadable plugins" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/setup/software_management.png" position="137,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="list" position="480,90" size="730,560" zPosition="4" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" transparent="1"/>
 	</screen>
-	<screen name="VirtualKeyBoard" position="0, 0" flags="wfNoBorders" transparent="0" title="Virtual KeyBoard" backgroundColor="transparent" size="1280, 720">
+	<screen name="VirtualKeyBoard" position="0, 0" flags="wfNoBorder" transparent="0" title="Virtual KeyBoard" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<ePixmap pixmap="GigabluePax/construct/plugins/keyboard.png" position="137,289" size="200,200" alphatest="blend"/>
@@ -1967,7 +1967,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="text" position="505,283" size="680,50" zPosition="3" font="SetrixHD;40" noWrap="1" halign="right"/>
 		<widget name="list" position="500,365" size="696,250" selectionDisabled="1" transparent="1"/>
 	</screen>
-	<screen name="JobView" position="0, 0" flags="wfNoBorders" transparent="0" title="JobView" backgroundColor="transparent" size="1280, 720">
+	<screen name="JobView" position="0, 0" flags="wfNoBorder" transparent="0" title="JobView" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/setup/software_management.png" position="137,289" size="200,200" alphatest="blend"/>
@@ -2003,7 +2003,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
 		<eLabel name="" position="485,295" size="730,1" backgroundColor="layer-a-accent1" zPosition="1"/>
 	</screen>
-	<screen name="PluginDetails" position="0, 0" flags="wfNoBorders" transparent="0" title="Plugin details" backgroundColor="transparent" size="1280, 720">
+	<screen name="PluginDetails" position="0, 0" flags="wfNoBorder" transparent="0" title="Plugin details" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
@@ -2015,7 +2015,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="detailtext" position="479,135" size="734,265" font="Regular;22" backgroundColor="layer-a-background" transparent="1"/>
 		<widget name="divpic" position="0,0" size="0,0"/>
 	</screen>
-	<screen name="PluginManagerInfo" position="0, 0" flags="wfNoBorders" title="Plugin manager activity" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="PluginManagerInfo" position="0, 0" flags="wfNoBorder" title="Plugin manager activity" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
@@ -2036,7 +2036,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		</widget>
 		<widget source="status" render="Label" position="480,610" size="730,40" halign="center" font="SetrixHD;22" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
-	<screen name="Ipkg" position="0, 0" flags="wfNoBorders" title="Installing Software..." transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="Ipkg" position="0, 0" flags="wfNoBorder" title="Installing Software..." transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/setup/software_management.png" position="137,289" size="200,200" alphatest="blend"/>
@@ -2050,7 +2050,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend" zPosition="1"/>
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
 	</screen>
-	<screen name="IpkgInstaller" position="0, 0" flags="wfNoBorders" title="IpkgInstaller" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="IpkgInstaller" position="0, 0" flags="wfNoBorder" title="IpkgInstaller" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
@@ -2058,7 +2058,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="list" position="483,90" size="730,550" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
-	<screen name="SecondInfoBar" title="InfoBar" position="0, 0" flags="wfNoBorders" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="SecondInfoBar" title="InfoBar" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="InfoBar"/>
 		<ePixmap pixmap="GigabluePax/construct/plugins/eventview.png" position="132,194" size="200,200" alphatest="blend"/>
 		<eLabel position="460,65" zPosition="-2" size="791,455" backgroundColor="layer-a-background"/>
@@ -2079,7 +2079,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 			<convert type="PaxCaidDisplay">Default</convert>
 		</widget>
 	</screen>
-	<screen name="LanguageWizard" position="0, 0" flags="wfNoBorders" title="Welcome..." transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="LanguageWizard" position="0, 0" flags="wfNoBorder" title="Welcome..." transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend" zPosition="1"/>
 		<ePixmap name="" position="1103,680" size="94,40" pixmap="GigabluePax/buttons/ok.png" alphatest="blend" zPosition="0"/>
@@ -2126,7 +2126,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		</widget>
 		<widget name="config" position="486,382" size="752,272" itemHeight="36" zPosition="14" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
-	<screen name="AutoDiseqc" position="0, 0" flags="wfNoBorders" title="AutoDiseqc" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="AutoDiseqc" position="0, 0" flags="wfNoBorder" title="AutoDiseqc" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
 		<eLabel text="AutoDiseqc" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
