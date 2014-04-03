@@ -729,9 +729,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="session.CurrentService" render="Label" position="947,538" size="314,40" font="SetrixHD; 30" noWrap="1" backgroundColor="layer-c-background" transparent="1" zPosition="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="844,538" size="73,40" font="SetrixHD; 30" halign="center" valign="center" noWrap="1" backgroundColor="layer-a-background" transparent="1" zPosition="1">
-			<convert type="ExtendedServiceInfo">ServiceNumber</convert>
-		</widget>
+		<widget source="session.CurrentService" render="ChannelNumber" position="844,538" size="73,40" font="SetrixHD; 30" halign="center" valign="center" noWrap="1" backgroundColor="layer-a-background" transparent="1" zPosition="1"/>
 		<!-- InfoBar -->
 		<eLabel name="infobar-back" position="0,584" size="1281,136" zPosition="-2"/>
 		<widget source="session.CurrentService" render="Picon" position="19,595" size="190,114" transparent="1" alphatest="blend" zPosition="1">
