@@ -764,7 +764,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="229,661" size="903,50" font="Regular; 30" halign="left" backgroundColor="layer-a-background" transparent="1" foregroundColor="layer-a-accent1" valign="top" zPosition="-1">
+		<widget source="session.Event_Next" render="Label" position="229,661" size="903,50" font="Regular; 30" halign="left" backgroundColor="layer-a-background" transparent="1" foregroundColor="layer-a-accent1" valign="top" zPosition="-1" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="session.Event_Next" render="Label" position="1144,684" size="113,28" font="Regular; 19" halign="right" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1">
