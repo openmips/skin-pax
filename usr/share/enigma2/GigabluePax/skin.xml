@@ -1035,7 +1035,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="477,66" zPosition="-1" size="769,600" backgroundColor="layer-a-background"/>
-		<widget name="config" zPosition="2" position="491,82" size="741,567" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="config" zPosition="2" position="491,76" size="741,491" scrollbarMode="showOnDemand" transparent="1" />
+		<widget source="current_address" render="Label" position="493,581" size="500,30" zPosition="10" font="Regular;21" halign="left" valign="center" />
+		<widget source="fixed_address" render="Label" position="493,621" size="500,30" zPosition="10" font="Regular;21" halign="left" valign="center" />
 	</screen>
 	<screen name="OpenWebifConfig" position="0,0" size="1281,721" title="OpenWebif Configuration" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
