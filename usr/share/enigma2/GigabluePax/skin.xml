@@ -270,7 +270,7 @@
 		<eLabel text="Channel Selection" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="Title" render="Label" position="425,65" size="810,45" font="SetrixHD; 29" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
 		<eLabel position="87,270" size="256,1" backgroundColor="layer-a-accent1" foregroundColor="layer-a-accent1"/>
-		<widget name="list" position="425,115" size="810,540" scrollbarMode="showNever" colorServiceDescription="layer-a-accent2" colorServiceDescriptionSelected="layer-a-foreground" colorEventProgressbarBorder="selection-background" colorEventProgressbarBorderSelected="layer-a-foreground" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceNumberFont="SetrixHD;26" serviceNameFont="SetrixHD;26" serviceInfoFont="Regular;22" transparent="1" backgroundColor="layer-a-background" itemHeight="50"/>
+		<widget name="list" position="425,115" size="810,540" scrollbarMode="showNever" colorServiceDescription="layer-a-accent2" colorServiceDescriptionSelected="layer-a-foreground" colorEventProgressbarBorder="selection-background" colorEventProgressbarBorderSelected="layer-a-foreground" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceNumberFont="SetrixHD;24" serviceNameFont="SetrixHD;24" serviceInfoFont="Regular;22" transparent="1" backgroundColor="layer-a-background" itemHeight="30"/>
 		<widget source="ServiceEvent" render="Label" position="30,205" size="376,50" font="SetrixHD; 30" backgroundColor="layer-b-background" transparent="1" valign="bottom" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
