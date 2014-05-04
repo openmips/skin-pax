@@ -2241,5 +2241,65 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
 		<widget name="infotext" position="483,115" size="700,550" font="SetrixHD; 18" zPosition="3" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="0" />
-	</screen>	
+	</screen>
+	<screen name="FTPBrowser" title="FTP-Browser Fensterwechsel mit CH+/- , Menu=Config" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X" />
+		<widget source="Title" render="Label" position="224,3" size="711,46" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<eLabel position="11,65" zPosition="-2" size="1252,603" backgroundColor="un444444" transparent="0" />
+		<widget source="localText" render="Label" position="20,73" size="613,40" font="Regular; 30" text="locales Verzeichniss" />
+		<widget name="local" position="18,118" size="615,479" scrollbarMode="showOnDemand" />
+		<widget source="remoteText" render="Label" position="639,73" size="614,40" font="Regular; 30" foregroundColor="green" backgroundColor="black" text="FTP-Server" />
+		<widget name="remote" position="639,118" size="615,479" scrollbarMode="showOnDemand" />
+		<widget source="eta" render="Label" position="17,621" size="615,40" font="Regular;23" foregroundColor="white" backgroundColor="black" text="Time:" />
+		<widget source="speed" render="Label" position="641,621" size="615,40" halign="left" font="Regular; 23" foregroundColor="green" backgroundColor="black" text="Speed:" />
+		<widget source="progress" render="Progress" position="18,600" size="1237,15" />
+		<ePixmap name="" position="274,680" size="94,40" pixmap="GigabluePax/buttons/key_menu.png" alphatest="blend" zPosition="10" />
+	</screen>
+	<screen name="FTPQueueManager" title="FTP Warteschlange" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_WINDOW_LARGE" />
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_BUTTONBAR_OK_X" />
+		<widget source="Title" render="Label" position="224,3" size="711,46" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<eLabel name="" position="471,72" size="749,40" text="offene Downloads:" font="SetrixHD; 30" />
+		<widget source="list" render="Listbox" position="478,132" size="740,512" scrollbarMode="showAlways">
+			<convert type="TemplatedMultiContent">
+		{"template": [
+		MultiContentEntryText(pos=(35,1), size=(510,19), text = 0, font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+		MultiContentEntryText(pos=(35,20), size=(510,18), text = 1, font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+		<!--MultiContentEntryPixmapAlphaTest(pos=(2,2), size=(32,32), png = 2),-->
+		],
+		"fonts": [gFont("Regular", 18)],
+		"itemHeight": 50
+		}
+			</convert>
+		</widget>
+	</screen>
+	<screen name="FTPServerManager" title="FTPServerManager" position="0,0" size="1280,715" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_WINDOW_LARGE" />
+		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X" />
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend" />
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<widget source="list" render="Listbox" position="471,122" size="747,531" scrollbarMode="showAlways">
+			<convert type="TemplatedMultiContent">
+		{"template": [
+		MultiContentEntryText(pos=(1,1), size=(540,22), text = 0, font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER),
+		],
+		"fonts": [gFont("Regular", 20)],
+		"itemHeight": 24
+		}
+			</convert>
+		</widget>
+		<eLabel name="" position="471,72" size="749,40" text="meine FTP Server:" font="SetrixHD; 30" />
+	</screen>
+	<screen name="FTPServerEditor" title="FTPServerEditor" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_WINDOW_LARGE" />
+		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X" />
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend" />
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<widget name="config" position="483,93" size="729,548" font="Regular; 24" valign="center" transparent="0" halign="left" zPosition="3" />
+	</screen>
 </skin>
