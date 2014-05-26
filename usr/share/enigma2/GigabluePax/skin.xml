@@ -858,6 +858,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="ValueRange">3,3</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<eLabel text="SNR:" position="700,699" size="50,20" font="Regular; 16" halign="left" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" />
+		<widget source="session.FrontendStatus" render="Label" position="740,699" size="70,20" font="Regular; 16" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" halign="left">
+			<convert type="FrontendInfo">SNR</convert>
+		</widget>
+		<eLabel text="AGC:" position="800,699" size="35,20" font="Regular; 16" halign="left" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" />
+		<widget source="session.FrontendStatus" render="Label" position="840,699" size="40,20" font="Regular; 16" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" halign="left">
+			<convert type="FrontendInfo">AGC</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="880,699" size="60,20" font="Regular; 16" halign="right" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1">
+			<convert type="ServiceInfo">VideoWidth</convert>
+		</widget>
+		<eLabel text="x" position="940,699" size="16,20" font="Regular; 16" halign="center" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="955,699" size="60,20" font="Regular; 16" halign="left" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1">
+			<convert type="ServiceInfo">VideoHeight</convert>
+		</widget>
 	</screen>
 	<screen position="0,0" size="1281,721" name="ZapHistoryBrowser" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
@@ -2075,7 +2090,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" font="Regular; 23" halign="right" position="473,325" render="Label" size="765,33" source="session.Event_Next" transparent="0" valign="bottom" zPosition="2">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" position="229,699" size="800,20" render="Label" font="Regular;16" halign="left" valign="top" backgroundColor="layer-a-background" transparent="0" noWrap="1" foregroundColor="layer-a-accent1">
+		<widget source="session.CurrentService" position="229,699" size="400,20" render="Label" font="Regular;16" halign="left" valign="top" backgroundColor="layer-a-background" transparent="0" noWrap="1" foregroundColor="layer-a-accent1">
 			<convert type="PaxCaidDisplay">Default</convert>
 		</widget>
 	</screen>
