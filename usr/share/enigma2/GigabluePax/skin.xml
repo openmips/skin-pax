@@ -622,13 +622,26 @@
 		<widget name="list" position="607,73" size="550,580" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" enableWrapAround="1" transparent="1"/>
 		<!-- /*Buttons-->
 		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="580,680" size="30,40" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_green.png" position="882,680" size="30,40" alphatest="blend"/>
-		<widget name="key_red" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget name="key_green" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="540,680" size="30,40" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/buttons/key_green.png" position="757,680" size="30,40" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/buttons/key_blue.png" position="1011,680" size="30,40" alphatest="blend"/>
+		<widget name="key_red" position="563,685" size="170,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key_green" position="780,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key_blue" position="1035,685" size="170,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<panel name="PANEL_BUTTONBAR_MENU"/>
+		<widget source="menu" render="Listbox" position="673,81" size="471,571" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [
+								MultiContentEntryText(pos = (15, 5), size = (383, 30), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+						],
+				"fonts": [gFont("SetrixHD", 22)],
+				"itemHeight": 40
+				}
+			</convert>
+		</widget>
+		<widget name="status" position="610,400" size="590,250" zPosition="1" font="Regular; 20" halign="left" valign="top" backgroundColor="#20000000" transparent="1" />
+		<ePixmap name="" position="543,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
-		<!--Button */-->
 	</screen>
 	<screen name="MediaPlayer" position="center,center" size="1280,720" title="MediaPlayer" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
