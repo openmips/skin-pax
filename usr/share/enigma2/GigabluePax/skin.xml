@@ -2378,7 +2378,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="ButtonGreenText" render="Label" position="650,685" size="170,26" zPosition="1" font="SetrixHD; 23" halign="left" backgroundColor="layer-a-background" transparent="1" />
 		<widget source="Manage Cover" render="Label" position="855,685" size="170,26" zPosition="1" font="SetrixHD; 23" halign="left" backgroundColor="layer-a-background" transparent="1" />
 		<ePixmap name="" position="433,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend" />
-		<ePixmap name="" position="1023,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend" />
+		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend" />
 		<ePixmap name="" position="1023,680" size="94,40" pixmap="GigabluePax/buttons/key_menu.png" alphatest="blend" zPosition="10" />
 		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend" zPosition="1" />
 		<ePixmap name="" position="1103,680" size="94,40" pixmap="GigabluePax/buttons/ok.png" alphatest="blend" zPosition="0" />
