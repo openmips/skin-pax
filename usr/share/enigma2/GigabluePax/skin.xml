@@ -2352,4 +2352,35 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<ePixmap position="137,289" size="200,200" zPosition="2" pixmap="GigabluePax/construct/menu/main/setup.png" transparent="1" alphatest="blend" />
 		<widget source="help" render="Label" position="482,555" size="729,106" font="SetrixHD;20" />
 	</screen>
+	<screen name="EMCImdbScan" position="0,0" size="1280,720" title="EMC Cover search" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_WINDOW_LARGE" />
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<!-- Info: Amount of searched Covers -->
+		<widget name="info" position="7,513" size="450,36" zPosition="0" font="SetrixHD;30" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="layer-a-background" transparent="1" />
+		<!-- aktual movie name -->
+		<widget name="m_info" position="471,69" size="750,36" zPosition="0" font="SetrixHD;30" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="layer-a-background" transparent="1" />
+		<!-- Movie Listbox -->
+		<widget name="menulist" position="471,110" size="750,510" scrollbarMode="showOnDemand" transparent="1" enableWrapAround="on" />
+		<!-- Cover picture -->
+		<widget name="poster" position="138,271" size="185,230" zPosition="4" alphatest="on" transparent="1" />
+		<!-- Amount of "downloaded", "exist", and "not found" covers -->
+		<widget name="download" position="7,621" size="450,36" zPosition="0" font="SetrixHD;30" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="exist" position="7,549" size="450,36" zPosition="0" font="SetrixHD;30" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="no_poster" position="7,585" size="450,36" zPosition="0" font="SetrixHD;30" halign="center" valign="center" foregroundColor="#ffffff" backgroundColor="layer-a-background" transparent="1" />
+		<!-- Infoline of coversearch -->
+		<widget name="done_msg" position="466,625" size="760,40" zPosition="0" font="SetrixHD;23" halign="center" valign="center" />
+		<!-- Buttons -->
+		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="430,680" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="GigabluePax/buttons/key_green.png" position="627,680" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="GigabluePax/buttons/key_yellow.png" position="831,680" size="30,40" alphatest="blend" />
+		<widget source="ButtonRedText" render="Label" position="453,685" size="170,26" zPosition="1" font="SetrixHD; 23" halign="left" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="ButtonGreenText" render="Label" position="650,685" size="170,26" zPosition="1" font="SetrixHD; 23" halign="left" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="Manage Cover" render="Label" position="855,685" size="170,26" zPosition="1" font="SetrixHD; 23" halign="left" backgroundColor="layer-a-background" transparent="1" />
+		<ePixmap name="" position="433,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend" />
+		<ePixmap name="" position="1023,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend" />
+		<ePixmap name="" position="1023,680" size="94,40" pixmap="GigabluePax/buttons/key_menu.png" alphatest="blend" zPosition="10" />
+		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend" zPosition="1" />
+		<ePixmap name="" position="1103,680" size="94,40" pixmap="GigabluePax/buttons/ok.png" alphatest="blend" zPosition="0" />
+	</screen>
 </skin>
