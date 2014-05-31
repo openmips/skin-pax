@@ -2352,7 +2352,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<ePixmap position="137,289" size="200,200" zPosition="2" pixmap="GigabluePax/construct/menu/main/setup.png" transparent="1" alphatest="blend" />
 		<widget source="help" render="Label" position="482,555" size="729,106" font="SetrixHD;20" />
 	</screen>
-	<screen name="EMCImdbScan" position="0,0" size="1280,720" title="EMC Cover search" backgroundColor="transparent">
+	<screen name="EMCImdbScan" position="center,center" size="1280,720" title="EMC Cover search" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP" />
 		<panel name="PANEL_WINDOW_LARGE" />
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
