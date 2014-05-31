@@ -2347,7 +2347,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X" />
 		<panel name="PANEL_WINDOW_LARGE" />
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
-		<widget name="config" position="482,72" size="729,455" font="SetrixHD;23" valign="center" transparent="0" halign="left" zPosition="3" />
+		<widget name="config" position="482,72" size="729,455" font="SetrixHD;24" valign="center" transparent="0" halign="left" zPosition="3" itemHeight="30" />
 		<eLabel position="482,540" size="729,2" backgroundColor="grey" zPosition="1" />
 		<ePixmap position="137,289" size="200,200" zPosition="2" pixmap="GigabluePax/construct/menu/main/setup.png" transparent="1" alphatest="blend" />
 		<widget source="help" render="Label" position="482,555" size="729,106" font="SetrixHD;20" />
