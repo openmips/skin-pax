@@ -282,6 +282,20 @@
 		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend" zPosition="10" />
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend" />
 	</screen>
+	<screen name="PANEL_BUTTONBAR_SOURCE_RGYB_MENU_X">
+		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="273,680" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="GigabluePax/buttons/key_green.png" position="482,680" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="GigabluePax/buttons/key_yellow.png" position="691,680" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="GigabluePax/buttons/key_blue.png" position="896,680" size="30,40" alphatest="blend" />
+		<widget source="key_red" render="Label" position="298,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="key_green" render="Label" position="505,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="key_yellow" render="Label" position="715,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="key_blue" render="Label" position="918,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1" />
+		<ePixmap name="" position="1103,680" size="94,40" pixmap="GigabluePax/buttons/key_menu.png" alphatest="blend" zPosition="1" />
+		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend" zPosition="1" />
+		<ePixmap name="" position="278,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend" />
+		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend" />
+	</screen>
 	<!-- SCREENS -->
 	<screen name="ChannelSelection" position="0,0" size="1281,721" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
