@@ -2483,4 +2483,62 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 			<convert type="StringList" />
 		</widget>
 	</screen>
+	<screen name="EMCMediaCenter" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<eLabel position="0,569" zPosition="-11" size="1281,150" backgroundColor="layer-a-background" />
+		<widget source="session.CurrentService" render="Label" font="Regular;22" position="1100,657" size="55,30" halign="right" foregroundColor="#00e5b243" backgroundColor="#00000000" transparent="1">
+			<convert type="ServiceInfo">VideoWidth</convert>
+		</widget>
+		<eLabel text="x" font="Regular;20" position="1161,657" size="15,30" halign="center" foregroundColor="#00e5b243" backgroundColor="#00000000" transparent="1" />
+		<widget source="session.CurrentService" render="Label" font="Regular;22" position="1181,657" size="55,30" halign="left" foregroundColor="#00e5b243" backgroundColor="#00000000" transparent="1">
+			<convert type="ServiceInfo">VideoHeight</convert>
+		</widget>
+		<widget source="session.CurrentService" render="Label" position="369,3" size="550,45" font="Regular;26" valign="center" halign="center" noWrap="1" backgroundColor="#00000000" transparent="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/rec-off.png" position="716,580" size="59,30" zPosition="1" />
+		<widget position="716,580" render="Pixmap" pixmap="GigabluePax/construct/iconbar/rec.png" size="59,30" source="session.RecordState" zPosition="2" alphatest="blend">
+			<convert type="ConditionalShowHide">Blink</convert>
+		</widget>
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/subtitle-off.png" position="509,580" size="59,30" />
+		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/subtitle.png" position="509,580" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="1">
+			<convert type="ServiceInfo">SubservicesAvailable</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/dolby-off.png" position="560,580" size="59,30" zPosition="1" />
+		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/dolby.png" position="560,580" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsMultichannel</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/hd-off.png" position="664,580" size="59,30" zPosition="1" />
+		<widget pixmap="GigabluePax/construct/iconbar/hd.png" position="664,580" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2" alphatest="blend">
+			<convert type="ServiceInfo">VideoWidth</convert>
+			<convert type="ValueRange">721,1980</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/wide-off.png" position="612,580" size="59,30" zPosition="1" />
+		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/wide.png" position="612,580" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2">
+			<convert type="ServiceInfo">IsWidescreen</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="Service" render="Label" position="230,637" size="100,30" font="Regular;22" halign="left" backgroundColor="#00000000" transparent="1">
+			<convert type="EMCServicePosition">Position,ShowHours</convert>
+		</widget>
+		<widget source="Service" render="Label" position="590,637" size="100,30" font="Regular;22" halign="center" backgroundColor="#00000000" transparent="1">
+			<convert type="EMCServicePosition">Length,ShowHours</convert>
+		</widget>
+		<widget source="Service" render="Label" position="930,637" size="100,30" font="Regular;22" halign="right" backgroundColor="#00000000" transparent="1">
+			<convert type="EMCServicePosition">Remaining,Negate,ShowHours</convert>
+		</widget>
+		<widget name="Cover" position="25,569" size="120,150" zPosition="1" alphatest="on" />
+		<widget name="audioLabel" position="230,677" size="100,22" font="Regular;18" backgroundColor="#00000000" zPosition="3" transparent="1" />
+		<widget name="chapterLabel" position="340,677" size="580,30" font="Regular;22" halign="center" foregroundColor="#00e5b243" backgroundColor="#00000000" transparent="1" />
+		<widget name="subtitleLabel" position="930,677" size="100,22" zPosition="3" halign="right" font="Regular;18" backgroundColor="#00000000" transparent="1" />
+		<widget source="session.CurrentService" render="PositionGauge" position="151,622" size="980,7" transparent="1">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget source="session.CurrentService" pixmap="GigabluePax/colors/00007eff.png" render="Progress" position="151,624" size="980,5" backgroundColor="layer-a-progress" borderWidth="0" transparent="1">
+			<convert type="ServicePosition">Position</convert>
+		</widget>	
+	</screen>
 </skin>
