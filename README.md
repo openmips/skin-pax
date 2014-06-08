@@ -20,3 +20,5 @@ GigabluePax
 ![alt tag](https://raw.github.com/openmips/skin-pax/master/Pax-INFO/MediaPlayer.jpg)
 
 =========
+
+.
