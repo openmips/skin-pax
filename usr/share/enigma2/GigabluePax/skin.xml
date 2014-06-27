@@ -2547,7 +2547,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 	</screen>
 	<screen name="PinInputTemplate">
 		<widget name="service" position="center,150" size="1280,80" font="Regular;70" halign="center" />
-		<widget name="text" position="center,300" size="480,25" font="Regular;20" halign="center" />
+		<widget name="text" position="center,300" size="1280,25" font="Regular;20" halign="center" />
 		<widget name="tries" position="center,400" size="480,25" font="Regular;20" halign="center" />
 		<widget name="input" position="center,500" size="480,40" font="Regular;50" halign="center" background="title-background" />
 	</screen>
