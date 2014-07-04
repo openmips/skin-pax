@@ -975,16 +975,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<eLabel text="About" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<eLabel position="524,66" zPosition="-1" size="722,615" backgroundColor="layer-a-background"/>
-		<widget source="EnigmaVersion" render="Label" position="535,76" size="700,40" font="SetrixHD; 26" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="ImageVersion" render="Label" position="535,126" size="700,40" font="SetrixHD; 26" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="FPVersion" render="Label" position="535,176" size="700,40" font="SetrixHD; 26" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="TunerHeader" render="Label" position="535,226" size="700,40" font="SetrixHD; 26" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner0" render="Label" position="535,276" size="700,40" font="SetrixHD; 24" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner1" render="Label" position="535,326" size="700,40" font="SetrixHD; 24" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner2" render="Label" position="535,376" size="700,40" font="SetrixHD; 24" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner3" render="Label" position="535,426" size="700,40" font="SetrixHD; 24" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="HDDHeader" render="Label" position="535,477" size="700,58" font="SetrixHD; 26" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="hddA" render="Label" position="535,540" size="700,126" font="SetrixHD; 24" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="AboutHeader" render="Label" position="535,76" size="700,40" font="SetrixHD; 30" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="KernelVersion" render="Label" position="535,130" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="EnigmaVersion" render="Label" position="535,170" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="ImageVersion" render="Label" position="535,210" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="FPVersion" render="Label" position="535,250" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="TunerHeader" render="Label" position="535,290" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="Tuner0" render="Label" position="535,315" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="Tuner1" render="Label" position="535,340" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="Tuner2" render="Label" position="535,365" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="Tuner3" render="Label" position="535,390" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="HDDHeader" render="Label" position="535,430" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="hddA" render="Label" position="535,455" size="700,200" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
 		<ePixmap position="59,12" size="350,44" pixmap="GigabluePax/menu/db.png" transparent="1" alphatest="blend" zPosition="-7"/>
 	</screen>
 	<screen name="ExtensionsList" position="0,0" size="1280,720" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
