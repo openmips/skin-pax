@@ -1611,9 +1611,8 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
 		<panel name="PANEL_BUTTONBAR_MENU"/>
-		<eLabel position="-100,265" size="1381,242" backgroundColor="layer-b-background" alphatest="blend" zPosition="-3"/>
-		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
-		<eLabel position="61,65" zPosition="-1" size="1170,605" backgroundColor="layer-a-background"/>
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<eLabel position="61,65" zPosition="-1" size="1170,605" backgroundColor="layer-a-background" />
 		<widget source="Event" render="Label" position="76,491" size="1140,39" font="SetrixHD; 28" backgroundColor="layer-a-background" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
@@ -1631,16 +1630,32 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="Event" render="Label" position="76,572" size="1141,79" font="Regular; 19" backgroundColor="layer-a-background" transparent="1" valign="top">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<eLabel position="141,552" size="1004,1" backgroundColor="layer-a-accent1"/>
-		<widget name="timeline_text" position="76,80" size="1142,25" selectionDisabled="1" foregroundColor="layer-a-foreground" transparent="1"/>
-		<widget name="list" position="75,115" size="1139,367" EventBorderWidth="2" font="Regular;18" backgroundColor="layer-b-background" itemHeight="60" EntryFont="Regular;18" EntryBorderColor="layer-a-foreground" EntryBackgroundColor="layer-b-background" EntryForegroundColor="layer-a-foreground" EntryBackgroundColorSelected="layer-a-accent2" EntryForegroundColorSelected="layer-a-background" scrollbarMode="showOnDemand" ServiceNameForegroundColor="layer-b-foreground" ServiceNameBackgroundColor="layer-b-background" ServiceForegroundColorSelected="layer-a-accent2" ServiceBackgroundColorSelected="layer-a-background" ServiceBackgroundColorRecording="layer-b-background" ServiceForegroundColorRecording="red" ServiceFont="Regular;15" EntryForegroundColorNow="layer-a-accent2" EntryBackgroundColorNow="layer-a-background" ServiceNamePadding="2" EventNamePadding="6" transparent="0"/>
-		<widget name="timeline0" position="0,115" zPosition="1" size="1,367" pixmap="GigabluePax/colors/00ffffff.png"/>
-		<widget name="timeline1" position="0,115" zPosition="1" size="1,367" pixmap="GigabluePax/colors/00ffffff.png"/>
-		<widget name="timeline2" position="0,115" zPosition="1" size="1,367" pixmap="GigabluePax/colors/00ffffff.png"/>
-		<widget name="timeline3" position="0,115" zPosition="1" size="1,367" pixmap="GigabluePax/colors/00ffffff.png"/>
-		<widget name="timeline4" position="0,115" zPosition="1" size="1,367" pixmap="GigabluePax/colors/00ffffff.png"/>
-		<widget name="timeline5" position="0,115" zPosition="1" size="1,367" pixmap="GigabluePax/colors/00ffffff.png"/>
-		<widget name="timeline_now" position="0,115" zPosition="2" size="5,367" pixmap="GigabluePax/colors/00ffffff.png" alphatest="blend"/>
+		<eLabel position="141,552" size="1004,1" backgroundColor="layer-a-accent1" />
+		<widget name="timeline_text" position="76,80" size="1142,25" selectionDisabled="1" foregroundColor="layer-a-foreground" transparent="1" />
+		<widget name="list" position="75,115" size="1139,367" EventBorderWidth="2" font="Regular;18" itemHeight="60" EntryFont="Regular;18" ServiceFont="Regular;15" ServiceNamePadding="2" EventNamePadding="6" transparent="0" scrollbarMode="showOnDemand" />
+		<widget name="timeline0" position="0,115" zPosition="1" size="1,367" pixmap="GigabluePax/epg/timeline.png" />
+		<widget name="timeline1" position="0,115" zPosition="1" size="1,367" pixmap="GigabluePax/epg/timeline.png" />
+		<widget name="timeline2" position="0,115" zPosition="1" size="1,367" pixmap="GigabluePax/epg/timeline.png" />
+		<widget name="timeline3" position="0,115" zPosition="1" size="1,367" pixmap="GigabluePax/epg/timeline.png" />
+		<widget name="timeline4" position="0,115" zPosition="1" size="1,367" pixmap="GigabluePax/epg/timeline.png" />
+		<widget name="timeline5" position="0,115" zPosition="1" size="1,367" pixmap="GigabluePax/epg/timeline.png" />
+		<widget name="timeline_now" position="0,115" zPosition="2" size="30,367" pixmap="GigabluePax/epg/timeline-now.png" alphatest="blend" transparent="1" />
+	</screen>
+	<screen name="GraphMultiEPGList" position="0,0" transparent="0" size="1280,720" title="GraphMultiEPG Listmodus" flags="wfNoBorder" backgroundColor="layer-b-background">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
+		<panel name="PANEL_BUTTONBAR_MENU"/>
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<eLabel position="27,109" zPosition="-1" size="1226,561" backgroundColor="black" foregroundColor="black" />
+		<widget name="timeline_text" position="35,109" size="1216,40" font="SetrixHD; 20" />
+		<widget name="list" position="35,156" size="1208,504" EntryBorderColor="#071930" EntryBackgroundColor="#2f4964" EntryBackgroundColorSelected="#25688caf" scrollbarMode="showOnDemand" />
+		<widget name="timeline0" position="0,115" zPosition="1" size="1,548" pixmap="GigabluePax/epg/timeline.png" />
+		<widget name="timeline1" position="0,115" zPosition="1" size="1,548" pixmap="GigabluePax/epg/timeline.png" />
+		<widget name="timeline2" position="0,115" zPosition="1" size="1,548" pixmap="GigabluePax/epg/timeline.png" />
+		<widget name="timeline3" position="0,115" zPosition="1" size="1,548" pixmap="GigabluePax/epg/timeline.png" />
+		<widget name="timeline4" position="0,115" zPosition="1" size="1,548" pixmap="GigabluePax/epg/timeline.png" />
+		<widget name="timeline5" position="0,115" zPosition="1" size="1,548" pixmap="GigabluePax/epg/timeline.png" />
+		<widget name="timeline_now" position="40,144" zPosition="2" size="30,541" pixmap="GigabluePax/epg/timeline-now.png" alphatest="blend" transparent="1" />
 	</screen>
 	<screen name="ChannelContextMenu" position="0, 0" flags="wfNoBorder" transparent="0" title="Channellist menu" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
