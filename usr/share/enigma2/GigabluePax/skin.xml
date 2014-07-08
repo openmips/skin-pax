@@ -2500,7 +2500,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 			<convert type="StringList" />
 		</widget>
 	</screen>
-	<screen name="PiPSetupNEW" position="240,250" size="800,220" title="PiPSetup" flags="wfNoBorder" backgroundColor="layer-a-background">
+	<screen name="PiPSetup" position="240,250" size="800,220" title="PiPSetup" flags="wfNoBorder" backgroundColor="layer-a-background">
 		<eLabel text="PiPSetup" position="10,5" size="800,50" font="SetrixHD;35" backgroundColor="layer-a-background" transparent="0" />
 		<widget name="text" position="10,55" size="800,170" font="SetrixHD;20" halign="left" scrollbarMode="showNever" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" transparent="0" />
 	</screen>
