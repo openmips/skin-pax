@@ -989,7 +989,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="hddA" render="Label" position="535,455" size="700,200" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
 		<ePixmap position="59,12" size="350,44" pixmap="GigabluePax/menu/db.png" transparent="1" alphatest="blend" zPosition="-7"/>
 	</screen>
-	<screen name="ExtensionsList" position="0,0" size="1280,720" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="ExtensionsList" position="0,0" size="1280,720" title="Extensions" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="GigabluePax/construct/menu/main/plugins.png" position="187,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<panel name="PANEL_GIGABLUE_TOP"/>
@@ -1159,6 +1159,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 				}
 			</convert>
 		</widget>
+	</screen>
+	<screen name="UpdatePlugin" position="0,0" size="1280,720" title="Software Update..." flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<ePixmap pixmap="GigabluePax/construct/menu/setup/software_management.png" position="137,289" size="200,200" alphatest="blend"/>
+		<widget source="Title" render="Label" position="369,-1" size="540,46" zPosition="1" halign="left" font="SetrixHD; 32" backgroundColor="layer-a-background" transparent="1" />
+		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
+		<eLabel position="477,66" zPosition="-1" size="769,602" backgroundColor="layer-a-background"/>
+		<widget name="list" position="495,135" size="725,387" font="SetrixHD; 29" zPosition="3" itemHeight="35" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="activityslider" position="530,160" size="655,15" borderWidth="1" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="package" render="Label" position="530,190" size="655,30" font="SetrixHD;20" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="status" render="Label" position="530,230" size="655,30" font="SetrixHD;20" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="slider" position="530,400" size="655,20" borderWidth="1" transparent="1" />
 	</screen>
 	<screen name="TimeshiftState" position="0,200" zPosition="2" size="1281,228" backgroundColor="transparent" flags="wfNoBorder">
 		<widget name="state" position="442,21" size="381,95" font="Arial; 100" halign="center" backgroundColor="layer-a-background" transparent="1" valign="top"/>
