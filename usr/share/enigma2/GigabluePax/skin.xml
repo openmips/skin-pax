@@ -821,44 +821,44 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
 		<!-- IconBar -->
-		<ePixmap alphatest="on" pixmap="GigabluePax/construct/iconbar/rec-off.png" position="716,10" size="59,30" zPosition="1"/>
-		<widget position="716,10" render="Pixmap" pixmap="GigabluePax/construct/iconbar/rec.png" size="59,30" source="session.RecordState" zPosition="2" alphatest="on">
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/rec-off.png" position="716,10" size="59,30" zPosition="1"/>
+		<widget position="716,10" render="Pixmap" pixmap="GigabluePax/construct/iconbar/rec.png" size="59,30" source="session.RecordState" zPosition="2" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<!--/* SERVICE INFO -->
-		<ePixmap alphatest="on" pixmap="GigabluePax/construct/iconbar/subtitle-off.png" position="404,10" size="59,30"/>
-		<widget alphatest="on" pixmap="GigabluePax/construct/iconbar/subtitle.png" position="404,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="1">
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/subtitle-off.png" position="404,10" size="59,30"/>
+		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/subtitle.png" position="404,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="1">
 			<convert type="ServiceInfo">SubservicesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap alphatest="on" pixmap="GigabluePax/construct/iconbar/hbbtv-off.png" position="456,10" size="59,30" zPosition="1"/>
-		<widget alphatest="on" pixmap="GigabluePax/construct/iconbar/hbbtv.png" position="456,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2">
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/hbbtv-off.png" position="456,10" size="59,30" zPosition="1"/>
+		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/hbbtv.png" position="456,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2">
 			<convert type="ServiceInfo">HasHBBTV</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap alphatest="on" pixmap="GigabluePax/construct/iconbar/teletext-off.png" position="508,10" size="59,30" zPosition="1"/>
-		<widget alphatest="on" pixmap="GigabluePax/construct/iconbar/teletext.png" position="508,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2">
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/teletext-off.png" position="508,10" size="59,30" zPosition="1"/>
+		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/teletext.png" position="508,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2">
 			<convert type="ServiceInfo">HasTelext</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap alphatest="on" pixmap="GigabluePax/construct/iconbar/dolby-off.png" position="560,10" size="59,30" zPosition="1"/>
-		<widget alphatest="on" pixmap="GigabluePax/construct/iconbar/dolby.png" position="560,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2">
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/dolby-off.png" position="560,10" size="59,30" zPosition="1"/>
+		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/dolby.png" position="560,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2">
 			<convert type="ServiceInfo">IsMultichannel</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap alphatest="on" pixmap="GigabluePax/construct/iconbar/hd-off.png" position="664,10" size="59,30" zPosition="1"/>
-		<widget pixmap="GigabluePax/construct/iconbar/hd.png" position="664,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2" alphatest="on">
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/hd-off.png" position="664,10" size="59,30" zPosition="1"/>
+		<widget pixmap="GigabluePax/construct/iconbar/hd.png" position="664,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap alphatest="on" pixmap="GigabluePax/construct/iconbar/wide-off.png" position="612,10" size="59,30" zPosition="1"/>
-		<widget alphatest="on" pixmap="GigabluePax/construct/iconbar/wide.png" position="612,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2">
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/wide-off.png" position="612,10" size="59,30" zPosition="1"/>
+		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/wide.png" position="612,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2">
 			<convert type="ServiceInfo">IsWidescreen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<ePixmap alphatest="on" pixmap="GigabluePax/construct/iconbar/crypt-off.png" position="352,10" size="59,30" zPosition="1"/>
-		<widget alphatest="on" pixmap="GigabluePax/construct/iconbar/crypt.png" render="Pixmap" position="352,10" size="59,30" source="session.CurrentService" zPosition="2">
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/crypt-off.png" position="352,10" size="59,30" zPosition="1"/>
+		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/crypt.png" render="Pixmap" position="352,10" size="59,30" source="session.CurrentService" zPosition="2">
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
@@ -869,7 +869,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="ValueBitTest">1</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget position="806,-3" source="session.FrontendInfo" render="Pixmap" zPosition="5" size="26,13" alphatest="on" pixmap="GigabluePax/construct/iconbar/tuner.png">
+		<widget position="806,-3" source="session.FrontendInfo" render="Pixmap" zPosition="5" size="26,13" alphatest="blend" pixmap="GigabluePax/construct/iconbar/tuner.png">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide"/>
@@ -880,7 +880,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="ValueBitTest">2</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget position="834,-3" source="session.FrontendInfo" render="Pixmap" zPosition="5" size="26,13" alphatest="on" pixmap="GigabluePax/construct/iconbar/tuner.png">
+		<widget position="834,-3" source="session.FrontendInfo" render="Pixmap" zPosition="5" size="26,13" alphatest="blend" pixmap="GigabluePax/construct/iconbar/tuner.png">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide"/>
@@ -891,7 +891,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="ValueBitTest">4</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget position="862,-3" source="session.FrontendInfo" render="Pixmap" zPosition="5" size="26,13" alphatest="on" pixmap="GigabluePax/construct/iconbar/tuner.png">
+		<widget position="862,-3" source="session.FrontendInfo" render="Pixmap" zPosition="5" size="26,13" alphatest="blend" pixmap="GigabluePax/construct/iconbar/tuner.png">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide"/>
@@ -902,7 +902,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="ValueBitTest">8</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget position="890,-3" source="session.FrontendInfo" render="Pixmap" zPosition="5" size="26,13" alphatest="on" pixmap="GigabluePax/construct/iconbar/tuner.png">
+		<widget position="890,-3" source="session.FrontendInfo" render="Pixmap" zPosition="5" size="26,13" alphatest="blend" pixmap="GigabluePax/construct/iconbar/tuner.png">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">3,3</convert>
 			<convert type="ConditionalShowHide"/>
