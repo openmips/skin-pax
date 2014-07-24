@@ -730,7 +730,6 @@
 		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="on"/>
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="on"/>
 		<!--Button */-->
-		<widget name="title" render="eLabel" position="269,-1" size="540,46" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
 	<screen name="MessageBox" position="240,178" size="800,10" zPosition="1" title="Message" backgroundColor="layer-a-background">
 		<widget name="text" position="110,8" size="680,0" font="Regular;22" backgroundColor="layer-a-background"/>
