@@ -2623,4 +2623,16 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="description" position="550,595" size="592,25" font="Regular;18" halign="center" valign="center" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="found" position="550,620" size="592,25" font="Regular;18" halign="center" valign="center" backgroundColor="layer-a-background" transparent="1" />
 	</screen>
+	<screen name="SleepTimerSetup" position="0, 0" flags="wfNoBorder" title="SleepTimerSetup" transparent="0" backgroundColor="transparent" size="1280, 720">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_WINDOW_LARGE" />
+		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X" />
+		<ePixmap name="" position="1103,680" size="94,40" pixmap="GigabluePax/buttons/ok.png" alphatest="blend" zPosition="0" />
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend" zPosition="1" />
+		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend" />
+		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend" />
+		<widget name="config" position="130,71" size="1091,450" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="description" position="130,537" size="1091,100" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1" font="Regular; 22" />
+	</screen>
 </skin>
