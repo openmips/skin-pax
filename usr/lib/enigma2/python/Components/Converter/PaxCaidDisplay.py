@@ -90,6 +90,15 @@ class PaxCaidDisplay(Poll, Converter, object):
 						caid = caid.upper()
 						caid = caid.zfill(4)
 						caid = "CAID: %s" % caid
+						
+						# prov
+						prov = ecm_info.get("prov", "")
+						prov = prov.lstrip("0x")
+						prov = prov.upper()
+						prov = prov.zfill(6)
+						prov = ":%s" % prov
+						
+												
 						# hops
 						hops = ecm_info.get("hops", None)
 						hops = "HOPS: %s" % hops
@@ -120,9 +129,9 @@ class PaxCaidDisplay(Poll, Converter, object):
 								else:
 									textvalue = "%s - %s - %s" % (caid, source, ecm_time)
 							# oscam
-							oscsource = ecm_info.get("from", None)
+							oscsource = ecm_info.get("reader", None)
 							if oscsource:
-								textvalue = "%s - %s - %s - %s" % (caid, oscsource, hops, ecm_time)
+								textvalue = "%s%s - %s - %s - %s" % (caid, prov, oscsource, hops, ecm_time)
 							# gbox
 							decode = ecm_info.get("decode", None)
 							if decode:
