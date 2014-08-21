@@ -990,15 +990,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<eLabel position="524,66" zPosition="-1" size="722,615" backgroundColor="layer-a-background"/>
 		<widget source="AboutHeader" render="Label" position="535,76" size="700,40" font="SetrixHD; 30" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="KernelVersion" render="Label" position="535,130" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="EnigmaVersion" render="Label" position="535,155" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="ImageVersion" render="Label" position="535,180" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" position="535,215" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="535,155" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
+			<convert type="STBInfo">DriverInfo,Full</convert>
+		</widget>
+		<widget source="EnigmaVersion" render="Label" position="535,180" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="ImageVersion" render="Label" position="535,205" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="session.CurrentService" render="Label" position="535,240" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
 			<convert type="STBInfo">LoadAvg,Full</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="535,240" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="535,265" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
 			<convert type="STBInfo">FlashInfo,Full</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="535,265" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
+		<widget source="session.CurrentService" render="Label" position="535,290" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
 			<convert type="STBInfo">MemTotal,Full</convert>
 		</widget>
 		<widget source="TunerHeader" render="Label" position="535,340" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
