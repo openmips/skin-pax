@@ -89,37 +89,54 @@ class PaxCaidDisplay(Poll, Converter, object):
 						caid = caid.lstrip("0x")
 						caid = caid.upper()
 						caid = caid.zfill(4)
-						caid = "CAID: %s" % caid
+						caid = "%s" % caid
 						
 						# prov
 						prov = ecm_info.get("prov", "")
 						prov = prov.lstrip("0x")
 						prov = prov.upper()
-						prov = prov.zfill(6)
+						prov = prov.zfill(5)
 						prov = ":%s" % prov
+						
+						#provid cccam
+						provid = ecm_info.get("provid", "")
+						provid = provid.lstrip("0x")
+						provid = provid.upper()
+						provid = provid.zfill(5)
+						provid = ":%s" % provid
+						
+						#provider cccam
+						provider = ecm_info.get("provider", None)
+						provider = "%s" % provider				
+						provider = provider[:25]
 						
 												
 						# hops
 						hops = ecm_info.get("hops", None)
-						hops = "HOPS: %s" % hops
+						hops = "%s" % hops
 						# ecm time	
 						ecm_time = ecm_info.get("ecm time", None)
 						if ecm_time:
 							if "msec" in ecm_time:
-								ecm_time = "ECM: %s " % ecm_time
+								ecm_time = "%s " % ecm_time
 							else:
-								ecm_time = "ECM: %s s" % ecm_time
+								ecm_time = "%s s" % ecm_time
 						# address
 						address = ecm_info.get("address", "")
 						# source
 						using = ecm_info.get("using", "")
+						# protocol
+						protocol = ecm_info.get("protocol", None)
+						protocol = protocol[:8]
+						protocol = "%s" % protocol
+						
 						if using:
 							if using == "emu":
-								textvalue = "(EMU) %s - %s" % (caid, ecm_time)
+								textvalue = "EMU - %s - %s - %s" % (caid, ecm_time, provider)
 							elif using == "CCcam-s2s":
-								textvalue = "(NET) %s - %s - %s - %s" % (caid, address, hops, ecm_time)
+								textvalue = "CCcam - %s%s - HOP:%s - %s - %s" % (caid, provid, hops, ecm_time, provider)
 							else:
-								textvalue = "%s - %s - %s - %s" % (caid, address, hops, ecm_time)
+								textvalue = "%s %s%s - HOP:%s - %s - %s" % (using, caid, provid, hops, ecm_time, provider)
 						else:
 							# mgcamd
 							source = ecm_info.get("source", None)
@@ -130,8 +147,9 @@ class PaxCaidDisplay(Poll, Converter, object):
 									textvalue = "%s - %s - %s" % (caid, source, ecm_time)
 							# oscam
 							oscsource = ecm_info.get("reader", None)
+							oscsource = oscsource[:8]
 							if oscsource:
-								textvalue = "%s%s - %s - %s - %s" % (caid, prov, oscsource, hops, ecm_time)
+								textvalue = "OSC/%s - %s - %s%s - HOP:%s - %s" % (protocol, oscsource, caid, prov, hops, ecm_time)
 							# gbox
 							decode = ecm_info.get("decode", None)
 							if decode:
