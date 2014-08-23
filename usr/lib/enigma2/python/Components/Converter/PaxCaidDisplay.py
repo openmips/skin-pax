@@ -106,7 +106,7 @@ class PaxCaidDisplay(Poll, Converter, object):
 						provid = ":%s" % provid
 						
 						#provider cccam
-						provider = ecm_info.get("provider", None)
+						provider = ecm_info.get("provider", "")
 						provider = "%s" % provider				
 						provider = provider[:25]
 						
@@ -126,7 +126,7 @@ class PaxCaidDisplay(Poll, Converter, object):
 						# source
 						using = ecm_info.get("using", "")
 						# protocol
-						protocol = ecm_info.get("protocol", None)
+						protocol = ecm_info.get("protocol", "")
 						protocol = protocol[:8]
 						protocol = "%s" % protocol
 						
@@ -142,11 +142,11 @@ class PaxCaidDisplay(Poll, Converter, object):
 							source = ecm_info.get("source", None)
 							if source:
 								if source == "emu":
-									textvalue = "(EMU) %s" % (caid)
+									textvalue = "(mgcamd-emu) %s" % (caid)
 								else:
 									textvalue = "%s - %s - %s" % (caid, source, ecm_time)
 							# oscam
-							oscsource = ecm_info.get("reader", None)
+							oscsource = ecm_info.get("reader", "")
 							oscsource = oscsource[:8]
 							if oscsource:
 								textvalue = "OSC/%s - %s - %s%s - HOP:%s - %s" % (protocol, oscsource, caid, prov, hops, ecm_time)
