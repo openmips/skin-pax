@@ -91,13 +91,15 @@ class PaxCaidDisplay(Poll, Converter, object):
 						caid = caid.zfill(4)
 						caid = "%s" % caid
 						
+						
 						# prov
 						prov = ecm_info.get("prov", "")
 						prov = prov.lstrip("0x")
 						prov = prov.upper()
 						prov = prov.zfill(5)
 						prov = ":%s" % prov
-						
+
+
 						#provid cccam
 						provid = ecm_info.get("provid", "")
 						provid = provid.lstrip("0x")
@@ -114,6 +116,11 @@ class PaxCaidDisplay(Poll, Converter, object):
 						# hops
 						hops = ecm_info.get("hops", None)
 						hops = "%s" % hops
+						
+						# from
+						froms = ecm_info.get("from", "")
+						froms = "%s" % froms
+						
 						# ecm time	
 						ecm_time = ecm_info.get("ecm time", None)
 						if ecm_time:
@@ -132,24 +139,46 @@ class PaxCaidDisplay(Poll, Converter, object):
 						
 						if using:
 							if using == "emu":
-								textvalue = "EMU - %s - %s - %s" % (caid, ecm_time, provider)
+								textvalue = "%s - %s - (EMU) - %s" % (caid, ecm_time, provider)
 							elif using == "CCcam-s2s":
-								textvalue = "CCcam - %s%s - HOP:%s - %s - %s" % (caid, provid, hops, ecm_time, provider)
+								textvalue = "%s%s - %s - HOP:%s - (NET) - %s" % (caid, provid, ecm_time, hops, provider)
+							elif using == "sci":
+								textvalue = "%s%s - %s - (local) - %s" % (caid, provid, ecm_time, provider)
 							else:
-								textvalue = "%s %s%s - HOP:%s - %s - %s" % (using, caid, provid, hops, ecm_time, provider)
+								textvalue = "%s %s%s - hop:%s - %s - %s" % (using, caid, provid, hops, ecm_time, provider)
 						else:
 							# mgcamd
 							source = ecm_info.get("source", None)
 							if source:
 								if source == "emu":
-									textvalue = "(mgcamd-emu) %s" % (caid)
+									emprov = ecm_info.get("prov", "")
+									emprov = ":%s" % emprov
+									emprov = emprov[:7]
+									textvalue = "%s%s - (EMU)" % (caid, emprov)
 								else:
-									textvalue = "%s - %s - %s" % (caid, source, ecm_time)
+									share = ecm_info.get("source", "")
+									share = share.lstrip("net")
+									textvalue = "%s%s - %s - %s" % (caid, prov, ecm_time, share)
 							# oscam
 							oscsource = ecm_info.get("reader", "")
-							oscsource = oscsource[:8]
 							if oscsource:
-								textvalue = "OSC/%s - %s - %s%s - HOP:%s - %s" % (protocol, oscsource, caid, prov, hops, ecm_time)
+								if protocol == "internal":
+									textvalue = "%s%s - %s - local - %s" % (caid, prov, ecm_time, oscsource)
+								elif protocol == "mouse":
+									textvalue = "%s%s - %s - usb - %s" % (caid, prov, ecm_time, oscsource)
+								elif protocol == "cs357x":
+									textvalue = "%s%s - %s - camd35 - %s - %s" % (caid, prov, ecm_time, oscsource, froms)	
+								elif protocol == "cs378x":
+									textvalue = "%s%s - %s - camd378 - %s - %s" % (caid, prov, ecm_time, oscsource, froms)	
+								elif protocol == "newcamd":
+									textvalue = "%s%s - %s - newcamd - %s - %s" % (caid, prov, ecm_time, oscsource, froms)
+								elif protocol == "cccam":
+									textvalue = "%s%s - %s - cccam - hop:%s - %s - %s" % (caid, prov, ecm_time, hops, oscsource ,froms)
+								elif oscsource == "Cache":
+									textvalue = "%s%s - %s - %s" % (caid, prov, ecm_time, froms)	
+								else:
+									oscsource = oscsource[:25]
+									textvalue = "%s%s - hop:%s - %s - oscam-%s %s - %s" % (caid, prov, hops, ecm_time, protocol, oscsource, froms)
 							# gbox
 							decode = ecm_info.get("decode", None)
 							if decode:
