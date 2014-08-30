@@ -2645,4 +2645,14 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="config" position="130,71" size="1091,450" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="description" position="130,537" size="1091,100" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1" font="Regular; 22" />
 	</screen>
+	<screen name="OMBManagerList" position="0, 0" flags="wfNoBorder" title="OMBManagerList" transparent="0" backgroundColor="transparent" size="1280, 720">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<panel name="PANEL_WINDOW_LARGE"/>
+		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/gigablue.png" position="137,289" size="200,200" alphatest="blend"/>
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
+		<widget source="list" render="Listbox" position="482,84" size="728,561" zPosition="3" scrollbarMode="showOnDemand" transparent="1">
+			<convert type="StringList" />
+		</widget>
+	</screen>
 </skin>
