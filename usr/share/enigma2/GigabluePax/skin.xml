@@ -495,6 +495,14 @@
 				}
 			</convert>
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/system/audio.png" position="237,289" size="200,200" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">audio_menu</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/system/video.png" position="237,289" size="200,200" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">video_menu</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/setup/scan.png" position="237,289" size="200,200" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">service_searching_selection</convert>
 			<convert type="ConditionalShowHide"/>
@@ -519,14 +527,6 @@
 			<convert type="MenuEntryCompare">parental_setup</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/setup/reset.png" position="237,289" size="200,200" alphatest="blend" zPosition="1">
-			<convert type="MenuEntryCompare">factory_reset</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/setup/software_management.png" position="237,289" size="200,200" alphatest="blend" zPosition="1">
-			<convert type="MenuEntryCompare">software_manager</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
 		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/setup/update.png" position="237,289" size="200,200" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">software_update</convert>
 			<convert type="ConditionalShowHide"/>
@@ -545,14 +545,6 @@
 				"itemHeight": 60
 				}
 			</convert>
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/system/audio.png" position="237,289" size="200,200" alphatest="blend" zPosition="1">
-			<convert type="MenuEntryCompare">audio_menu</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/system/video.png" position="237,289" size="200,200" alphatest="blend" zPosition="1">
-			<convert type="MenuEntryCompare">video_menu</convert>
-			<convert type="ConditionalShowHide"/>
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/setup/system.png" position="237,289" size="200,200" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">ui_setup</convert>
@@ -580,6 +572,14 @@
 		</widget>
 		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/setup/system.png" position="237,289" size="200,200" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">system_setup</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/setup/reset.png" position="237,289" size="200,200" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">factory_reset</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/setup/software_management.png" position="237,289" size="200,200" alphatest="blend" zPosition="1">
+			<convert type="MenuEntryCompare">software_manager</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
