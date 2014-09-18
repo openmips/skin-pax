@@ -1,6 +1,5 @@
-<?xml version="1.0"?>
 <skin>
-	<!-- GIGABLUE PAX v1.2 by SINTHEX | optimized for openMIPS; USAGE ONLY ALLOWED ON GIGABLUE DEVICES -->
+	<!-- GIGABLUE PAX v1.3 by SINTHEX | optimized for openMIPS; USAGE ONLY ALLOWED ON GIGABLUE DEVICES -->
 	<!-- You can modify and redistribute it as long as you keep this license and the original author for the skin. Usage is only allowed on Gigablue devices! -->
 	<output id="0">
 		<resolution xres="1280" yres="720" bpp="32"/>
@@ -132,24 +131,24 @@
 		</widget>
 		<ePixmap name="menu-top" position="0,0" size="940,53" pixmap="GigabluePax/construct/menu-top.png" alphatest="blend" zPosition="-2"/>
 			  <!-- /* WEATHER WIDGET  -->
-		  <widget render="MetrixWeatherWidget" source="global.CurrentTime" position="920,0" size="360,51" alphatest="blend" pixmap="GigabluePax/construct/general/weather-back.png" zPosition="-1" />
+		  <widget render="OMMetrixWeatherWidget" source="global.CurrentTime" position="920,0" size="360,51" alphatest="blend" pixmap="GigabluePax/construct/general/weather-back.png" zPosition="-1" />
 		  <widget backgroundColor="layer-a-background" font="RegularLight; 40" foregroundColor="layer-a-foreground" halign="right" noWrap="1" position="957,-3" render="Label" size="48,42" source="global.CurrentTime" transparent="1" valign="top" zPosition="10">
-		    <convert type="MetrixWeather">currentWeatherTemp</convert>
+		    <convert type="OMMetrixWeather">currentWeatherTemp</convert>
 		  </widget>
 		  <widget backgroundColor="layer-a-background" font="Regular; 17" foregroundColor="layer-a-foreground" halign="left" noWrap="1" position="1011,5" render="Label" size="30,26" source="global.CurrentTime" transparent="1" valign="center" zPosition="10">
-		    <convert type="MetrixWeather">CF</convert>
+		    <convert type="OMMetrixWeather">CF</convert>
 		  </widget>
 		  <widget backgroundColor="layer-c-background" font="Meteo; 42" foregroundColor="layer-b-foreground" halign="left" noWrap="1" position="1210,2" render="Label" size="48,48" source="global.CurrentTime" transparent="1" valign="center" zPosition="15">
-		    <convert type="MetrixWeather">forecastTomorrowCode</convert>
+		    <convert type="OMMetrixWeather">forecastTomorrowCode</convert>
 		  </widget>
 		  <widget backgroundColor="layer-c-background" font="Regular; 16" foregroundColor="layer-b-foreground" halign="left" noWrap="1" position="1148,1" render="Label" size="44,26" source="global.CurrentTime" transparent="1" valign="center" zPosition="10">
-		    <convert type="MetrixWeather">forecastTomorrowTempMax</convert>
+		    <convert type="OMMetrixWeather">forecastTomorrowTempMax</convert>
 		  </widget>
 		  <widget backgroundColor="layer-c-background" font="Regular; 16" foregroundColor="layer-b-foreground" halign="left" noWrap="1" position="1142,24" render="Label" size="44,26" source="global.CurrentTime" transparent="1" valign="center" zPosition="10">
-		    <convert type="MetrixWeather">forecastTomorrowTempMin</convert>
+		    <convert type="OMMetrixWeather">forecastTomorrowTempMin</convert>
 		  </widget>
 		  <widget backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" font="Meteo; 42" halign="left" noWrap="1" position="1042,2" render="Label" size="48,48" source="global.CurrentTime" transparent="1" valign="center" zPosition="15">
-		    <convert type="MetrixWeather">forecastTodayCode</convert>
+		    <convert type="OMMetrixWeather">forecastTodayCode</convert>
 		  </widget>
 		  <!--  WEATHER WIDGET */ -->
 	</screen>
@@ -794,7 +793,7 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
-	<screen name="MetrixWeatherSetup" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="OMMetrixWeatherSetup" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 	  <panel name="PANEL_GIGABLUE_TOP" />
 	  <ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
 	  <eLabel text="Setup" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background" />
@@ -825,20 +824,20 @@
 		<widget source="Title" render="Label" position="476,75" size="744,45" font="SetrixHD; 29" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
 		<widget name="list" position="477,131" size="743,515" scrollbarMode="showNever" colorServiceDescription="layer-a-accent2" colorServiceDescriptionSelected="layer-a-foreground" colorEventProgressbarBorder="selection-background" colorEventProgressbarBorderSelected="layer-a-foreground" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceNumberFont="SetrixHD;26" serviceNameFont="SetrixHD;26" serviceInfoFont="Regular;22" transparent="1" backgroundColor="layer-a-background" itemHeight="50"/>
 	</screen>
-	<screen name="Volume" position="0,0" size="940,53" title="Volume" zPosition="10" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
+	<screen name="Volume" position="0,0" size="1280,53" title="Volume" zPosition="10" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<widget name="Volume" position="425,22" size="390,5" zPosition="3" foregroundColor="layer-a-progress" transparent="1"/>
 		<ePixmap position="365,0" size="48,48" zPosition="1" pixmap="GigabluePax/construct/general/sound.png" transparent="0" alphatest="blend"/>
 		<widget position="835,0" size="80,43" font="SetrixHD; 35" transparent="1" valign="center" zPosition="1" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" render="Volume2Text" source="global.CurrentTime"/>
 		<eLabel position="425,24" size="390,1" backgroundColor="layer-a-accent1" foregroundColor="layer-a-accent1"/>
 	</screen>
-	<screen name="Mute" position="0,0" size="940,53" title="Volume" zPosition="10" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
+	<screen name="Mute" position="0,0" size="1280,53" title="Volume" zPosition="10" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<ePixmap position="365,0" size="48,48" zPosition="1" pixmap="GigabluePax/construct/general/sound.png" transparent="0" alphatest="blend"/>
 		<ePixmap position="415,12" size="24,24" zPosition="1" pixmap="GigabluePax/construct/general/cross.png" transparent="0" alphatest="blend"/>
 		<eLabel position="460,-1" size="400,46" font="SetrixHD; 35" transparent="1" valign="center" zPosition="1" text="Mute"/>
 	</screen>
-	<screen name="UnhandledKey" position="0,0" size="940,53" title="Volume" zPosition="10" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
+	<screen name="UnhandledKey" position="0,0" size="1280,53" title="Volume" zPosition="10" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<widget name="UnhandledKeyPixmap" pixmap="GigabluePax/construct/general/forbidden.png" position="365,0" size="48,48" zPosition="1" transparent="0" alphatest="blend" />
 		<eLabel position="450,-1" size="400,43" font="SetrixHD; 35" transparent="1" valign="center" zPosition="1" text="Unsupported"/>
