@@ -7,6 +7,9 @@ GigabluePax
 ###InfoBar
 ![alt tag](https://raw.github.com/openmips/skin-pax/master/Pax-INFO/InfoBar.jpg)
 
+###InfoBar with WeatherWidget
+![alt tag](https://raw.github.com/openmips/skin-pax/master/Pax-INFO/InfoBar-WeatherWidget.jpg)
+
 ###ChannelSelection
 ![alt tag](https://raw.github.com/openmips/skin-pax/master/Pax-INFO/ChannelSelection.jpg)
 
