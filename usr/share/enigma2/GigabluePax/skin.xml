@@ -148,7 +148,7 @@
 		    <convert type="OMMetrixWeather">forecastTomorrowTempMin</convert>
 		  </widget>
 		  <widget backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" font="Meteo; 42" halign="left" noWrap="1" position="1042,2" render="Label" size="48,48" source="global.CurrentTime" transparent="1" valign="center" zPosition="15">
-		    <convert type="OMMetrixWeather">forecastTodayCode</convert>
+		    <convert type="OMMetrixWeather">currentWeatherCode</convert>
 		  </widget>
 		  <!--  WEATHER WIDGET */ -->
 	</screen>
