@@ -316,6 +316,23 @@
 		<ePixmap name="" position="278,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend" />
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend" />
 	</screen>
+	<screen name="PANEL_SETTINGS_SETUP">
+		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
+		<eLabel text="Setup" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget name="config" position="492,86" size="700,555" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
+		<eLabel position="476,70" zPosition="-1" size="735,585" backgroundColor="layer-a-background"/>
+		<!-- /*Buttons-->
+		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="580,680" size="30,40" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/buttons/key_green.png" position="882,680" size="30,40" alphatest="blend"/>
+		<widget name="key_red" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key_green" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="key_red" render="Label" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="key_green" render="Label" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
+		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
+		<!--Button */-->
+	</screen>
 	<!-- SCREENS -->
 	<screen name="ChannelSelection" position="0,0" size="1281,721" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
@@ -963,136 +980,43 @@
 	</screen>
 	<screen name="Setup" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
-		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel text="Setup" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget name="config" position="492,86" size="700,555" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
-		<eLabel position="476,70" zPosition="-1" size="735,585" backgroundColor="layer-a-background"/>
 		<ePixmap position="137,289" size="200,200" zPosition="2" pixmap="GigabluePax/construct/menu/main/setup.png" transparent="1" alphatest="blend"/>
-		<!-- /*Buttons-->
-		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="580,680" size="30,40" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_green.png" position="882,680" size="30,40" alphatest="blend"/>
-		<widget name="key_red" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget name="key_green" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="key_red" render="Label" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="key_green" render="Label" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
-		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
-		<!--Button */-->
+		<panel name="PANEL_SETTINGS_SETUP"/>
 	</screen>
 	<screen name="VideoSetup" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
-		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel text="Setup" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget name="config" position="492,86" size="700,555" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
-		<eLabel position="476,70" zPosition="-1" size="735,585" backgroundColor="layer-a-background"/>
 		<ePixmap position="137,289" size="200,200" zPosition="2" pixmap="GigabluePax/construct/menu/system/video.png" transparent="1" alphatest="blend"/>
-		<!-- /*Buttons-->
-		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="580,680" size="30,40" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_green.png" position="882,680" size="30,40" alphatest="blend"/>
-		<widget name="key_red" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget name="key_green" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="key_red" render="Label" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="key_green" render="Label" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
-		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
-		<!--Button */-->
+		<panel name="PANEL_SETTINGS_SETUP"/>
 	</screen>
 	<screen name="AutoResSetupMenu" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
-		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel text="Setup" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget name="config" position="492,86" size="700,555" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
-		<eLabel position="476,70" zPosition="-1" size="735,585" backgroundColor="layer-a-background"/>
 		<ePixmap position="137,289" size="200,200" zPosition="2" pixmap="GigabluePax/construct/menu/system/video.png" transparent="1" alphatest="blend"/>
-		<!-- /*Buttons-->
-		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="580,680" size="30,40" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_green.png" position="882,680" size="30,40" alphatest="blend"/>
-		<widget name="key_red" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget name="key_green" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="key_red" render="Label" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="key_green" render="Label" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
-		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
-		<!--Button */-->
+		<panel name="PANEL_SETTINGS_SETUP"/>
 	</screen>
 	<screen name="AudioSetup" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
-		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel text="Setup" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget name="config" position="492,86" size="700,555" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
-		<eLabel position="476,70" zPosition="-1" size="735,585" backgroundColor="layer-a-background"/>
 		<ePixmap position="137,289" size="200,200" zPosition="2" pixmap="GigabluePax/construct/menu/system/audio.png" transparent="1" alphatest="blend"/>
-		<!-- /*Buttons-->
-		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="580,680" size="30,40" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_green.png" position="882,680" size="30,40" alphatest="blend"/>
-		<widget name="key_red" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget name="key_green" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="key_red" render="Label" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="key_green" render="Label" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
-		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
-		<!--Button */-->
+		<panel name="PANEL_SETTINGS_SETUP"/>
 	</screen>
 	<screen name="setup_subtitlesetup" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
-		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel text="Setup" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget name="config" position="492,86" size="700,555" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
-		<eLabel position="476,70" zPosition="-1" size="735,585" backgroundColor="layer-a-background"/>
 		<ePixmap position="137,289" size="200,200" zPosition="2" pixmap="GigabluePax/construct/menu/system/audio.png" transparent="1" alphatest="blend"/>
-		<!-- /*Buttons-->
-		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="580,680" size="30,40" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_green.png" position="882,680" size="30,40" alphatest="blend"/>
-		<widget name="key_red" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget name="key_green" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="key_red" render="Label" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="key_green" render="Label" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
-		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
-		<!--Button */-->
+		<panel name="PANEL_SETTINGS_SETUP"/>
 	</screen>
 	<screen name="setup_autolanguagesetup" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
-		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel text="Setup" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget name="config" position="492,86" size="700,555" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
-		<eLabel position="476,70" zPosition="-1" size="735,585" backgroundColor="layer-a-background"/>
 		<ePixmap position="137,289" size="200,200" zPosition="2" pixmap="GigabluePax/construct/menu/system/audio.png" transparent="1" alphatest="blend"/>
-		<!-- /*Buttons-->
-		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="580,680" size="30,40" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_green.png" position="882,680" size="30,40" alphatest="blend"/>
-		<widget name="key_red" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget name="key_green" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="key_red" render="Label" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="key_green" render="Label" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
-		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
-		<!--Button */-->
+		<panel name="PANEL_SETTINGS_SETUP"/>
 	</screen>
 	<screen name="ParentalControlSetup" position="0,0" size="1280,720" title="Parentalcontrol setup" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
-		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel text="Setup" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget name="config" position="492,86" size="700,555" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
-		<eLabel position="476,70" zPosition="-1" size="735,585" backgroundColor="layer-a-background"/>
 		<ePixmap position="137,289" size="200,200" zPosition="2" pixmap="GigabluePax/construct/menu/setup/parental.png" transparent="1" alphatest="blend"/>
-		<!-- /*Buttons-->
-		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="580,680" size="30,40" alphatest="blend"/>
-		<ePixmap pixmap="GigabluePax/buttons/key_green.png" position="882,680" size="30,40" alphatest="blend"/>
-		<widget name="key_red" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget name="key_green" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="key_red" render="Label" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="key_green" render="Label" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
-		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
-		<!--Button */-->
+		<panel name="PANEL_SETTINGS_SETUP"/>
+	</screen>
+	<screen name="setup_userinterface" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<ePixmap position="137,289" size="200,200" zPosition="2" pixmap="GigabluePax/construct/menu/system/ui.png" transparent="1" alphatest="blend"/>
+		<panel name="PANEL_SETTINGS_SETUP"/>
 	</screen>
 	<!-- Messagebox -->
 	<screen name="MessageBoxTemplate">
@@ -3029,5 +2953,43 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="lab2" position="483,332" size="180,30" font="Regular; 24" valign="center" transparent="0" halign="left" zPosition="3" />
 		<widget name="labstop" position="693,332" size="200,30" font="Regular; 24" valign="center" halign="center" backgroundColor="red" zPosition="2" />
 		<widget name="labrun" position="693,332" size="200,30" zPosition="3" font="Regular; 24" valign="center" halign="center" backgroundColor="green" />
+	</screen>
+	<!-- Hotkey -->
+	<screen name="HotkeySetup" position="0,0" size="1280,720" title="Input" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<ePixmap position="137,289" size="200,200" zPosition="2" pixmap="GigabluePax/construct/plugins/remote.png" transparent="1" alphatest="blend"/>
+		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
+		<widget name="list" position="492,86" size="700,555" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
+		<eLabel position="476,70" zPosition="-1" size="735,585" backgroundColor="layer-a-background"/>
+		<!-- /*Buttons-->
+		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="580,680" size="30,40" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/buttons/key_green.png" position="882,680" size="30,40" alphatest="blend"/>
+		<widget name="key_red" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key_green" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="key_red" render="Label" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="key_green" render="Label" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
+		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
+		<!--Button */-->
+	</screen>
+	<screen name="HotkeySetupSelect" position="0,0" size="1280,720" title="Input" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<ePixmap position="137,289" size="200,200" zPosition="2" pixmap="GigabluePax/construct/plugins/remote.png" transparent="1" alphatest="blend"/>
+		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
+		<widget name="list" position="492,86" size="350,555" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="choosen" position="842,86" size="350,555" scrollbarMode="showOnDemand" />
+		<eLabel position="476,70" zPosition="-1" size="735,585" backgroundColor="layer-a-background"/>
+		<!-- /*Buttons-->
+		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="580,680" size="30,40" alphatest="blend"/>
+		<ePixmap pixmap="GigabluePax/buttons/key_green.png" position="882,680" size="30,40" alphatest="blend"/>
+		<widget name="key_red" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="key_green" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="key_red" render="Label" position="603,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="key_green" render="Label" position="907,685" size="270,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1"/>
+		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
+		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
+		<!--Button */-->
 	</screen>
 </skin>
