@@ -1790,10 +1790,19 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/av.png" position="137,289" size="200,200" alphatest="blend"/>
-		<eLabel text="VideoEnhancementSetup" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
-		<widget name="config" position="483,90" size="725,490" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1"/>
+		<ePixmap pixmap="GigabluePax/construct/menu/system/video.png" position="137,289" size="200,200" alphatest="blend"/>
+		<eLabel text="Extended settings" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
+		<widget name="config" position="483,90" size="725,520" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1"/>
 		<widget name="introduction" position="483,600" size="725,40" font="SetrixHD; 28" halign="right" backgroundColor="layer-a-background" transparent="1" valign="bottom"/>
+	</screen>
+	<screen name="VideoEnhancementPreview" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<ePixmap name="menu-band" position="0,420" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-3"/>
+		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
+		<ePixmap pixmap="GigabluePax/construct/menu/system/video.png" position="232,439" size="200,200" alphatest="blend"/>
+		<eLabel text="Extended settings preview" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
+		<widget name="config" position="621,445" size="580,142" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget source="introduction" render="Label" position="622,604" size="580,40" font="Regular;28" halign="left" valign="center" transparent="1"/>
 	</screen>
 	<screen name="HddMount" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
@@ -1841,15 +1850,6 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 				}
 			</convert>
 		</widget>
-	</screen>
-	<screen name="VideoEnhancementPreview" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<ePixmap name="menu-band" position="0,420" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-3"/>
-		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X"/>
-		<ePixmap pixmap="GigabluePax/construct/menu/setup/system.png" position="232,439" size="200,200" alphatest="blend"/>
-		<eLabel text="VideoEnhancementPreview" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
-		<widget name="config" position="621,445" size="580,142" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
-		<widget source="introduction" render="Label" position="622,604" size="580,40" font="Regular;28" halign="left" valign="center" transparent="1"/>
 	</screen>
 	<screen name="FlashOnline" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
