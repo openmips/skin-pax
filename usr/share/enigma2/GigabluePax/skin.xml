@@ -1792,8 +1792,8 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/system/video.png" position="137,289" size="200,200" alphatest="blend"/>
 		<eLabel text="Extended settings" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
-		<widget name="config" position="483,90" size="725,520" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1"/>
-		<widget name="description" position="483,600" size="725,40" font="SetrixHD; 28" halign="right" backgroundColor="layer-a-background" transparent="1" valign="bottom"/>
+		<widget name="config" position="483,85" size="725,520" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1"/>
+		<widget name="description" position="483,610" size="725,50" font="SetrixHD; 18" halign="right" backgroundColor="layer-a-background" transparent="1" valign="bottom"/>
 	</screen>
 	<screen name="VideoEnhancementPreview" position="0, 0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
