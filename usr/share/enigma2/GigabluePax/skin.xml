@@ -865,6 +865,10 @@
 			<convert type="MenuEntryCompare">openstore</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/plugins/gigablue.png" position="237,289" size="200,200" alphatest="blend">
+			<convert type="MenuEntryCompare">ipbox_client_Start</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 	</screen>
 	<screen name="OMMetrixWeatherSetup" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 	  <panel name="PANEL_GIGABLUE_TOP" />
