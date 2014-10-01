@@ -2908,7 +2908,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 	<screen name="PinInputPopup" position="center,center" size="1280,720" title="PIN code needed">
 		<panel name="PinInputTemplate" />
 	</screen>
-	<screen name="GBImport" position="0, 0" flags="wfNoBorder" title="GigaBlue IPBox Client" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="GBIpboxMenu" position="0, 0" flags="wfNoBorder" title="GigaBlue IPBox Client" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X"/>
@@ -2918,11 +2918,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend" zPosition="1"/>
 		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
-		<widget name="list" position="482,99" size="728,540" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="config" position="482,99" size="728,540" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="activityslider" position="550,580" size="592,5" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="description" position="550,595" size="592,25" font="Regular;18" halign="center" valign="center" backgroundColor="layer-a-background" transparent="1" />
-		<widget name="found" position="550,620" size="592,25" font="Regular;18" halign="center" valign="center" backgroundColor="layer-a-background" transparent="1" />
 	</screen>
 	<screen name="SleepTimerSetup" position="0, 0" flags="wfNoBorder" title="SleepTimerSetup" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP" />
@@ -2945,18 +2941,6 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="list" render="Listbox" position="482,84" size="728,561" zPosition="3" scrollbarMode="showOnDemand" transparent="1">
 			<convert type="StringList" />
 		</widget>
-	</screen>
-	<screen name="NetworkGBIPBoxServer" title="GBIPBoxServer Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_WINDOW_LARGE"/>
-		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend"/>
-		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
-		<widget name="lab1" position="483,165" size="180,30" font="Regular; 24" valign="center" transparent="0" halign="left" zPosition="3" />
-		<widget name="labactive" position="693,166" size="200,30" font="Regular; 24" valign="center" transparent="0" zPosition="3" />
-		<widget name="lab2" position="483,332" size="180,30" font="Regular; 24" valign="center" transparent="0" halign="left" zPosition="3" />
-		<widget name="labstop" position="693,332" size="200,30" font="Regular; 24" valign="center" halign="center" backgroundColor="red" zPosition="2" />
-		<widget name="labrun" position="693,332" size="200,30" zPosition="3" font="Regular; 24" valign="center" halign="center" backgroundColor="green" />
 	</screen>
 	<!-- Hotkey -->
 	<screen name="HotkeySetup" position="0,0" size="1280,720" title="Input" flags="wfNoBorder" backgroundColor="transparent">
