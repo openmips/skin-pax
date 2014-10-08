@@ -1132,7 +1132,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<!--/* SERVICE INFO -->
 		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/subtitle-off.png" position="404,10" size="59,30"/>
 		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/subtitle.png" position="404,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="1">
-			<convert type="ServiceInfo">SubservicesAvailable</convert>
+			<convert type="ServiceInfo">SubtitlesAvailable</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
 		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/hbbtv-off.png" position="456,10" size="59,30" zPosition="1"/>
