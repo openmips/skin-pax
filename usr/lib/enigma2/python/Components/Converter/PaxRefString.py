@@ -50,7 +50,10 @@ class PaxRefString(Converter, object):
 			if len(InfoBar.instance.session.dialog_stack)>1:
 				for zz in InfoBar.instance.session.dialog_stack:
 					if (str(zz[0]) == "<class 'Screens.MovieSelection.MovieSelection'>") or (str(InfoBar.instance.session.dialog_stack[1][0]) == "<class 'Screens.InfoBar.MoviePlayer'>"):
-						return self.source.text
+						try:
+							return self.source.text
+						except:
+							return []
 			vSrv = self.CHANSEL.servicelist.getCurrent()
 			return str(vSrv.toString())
 		else:
