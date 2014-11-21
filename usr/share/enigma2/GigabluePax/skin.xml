@@ -1337,18 +1337,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="chapter" position="35,15" size="110,25" font="SetrixHD;23"/>
 		<widget name="number" position="145,15" size="80,25" halign="right" font="SetrixHD;23"/>
 	</screen>
-	<screen name="NumberZapExt" position="0,0" size="700,165" title="Channel" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<eLabel text="QuickZap" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground"/>
-		<ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<widget name="Picon" position="178,319" size="220,132" transparent="1" zPosition="1" alphatest="blend" backgroundColor="layer-c-background"/>
-		<widget name="number" position="521,316" size="122,27" halign="left" font="Regular; 20" transparent="1" foregroundColor="layer-b-foreground" backgroundColor="layer-b-foreground"/>
-		<widget name="chNum" position="684,315" size="340,27" halign="left" font="Regular; 20" transparent="1" foregroundColor="layer-b-foreground" backgroundColor="layer-b-background"/>
-		<widget name="channel" position="498,372" size="122,26" halign="left" font="Regular; 20" transparent="1" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground"/>
-		<widget name="chName" position="665,372" size="308,26" halign="left" font="Regular; 20" noWrap="1" transparent="1" foregroundColor="layer-b-foreground" backgroundColor="layer-b-background"/>
-		<widget name="bouquet" position="482,427" size="122,26" halign="left" font="Regular; 20" transparent="1" foregroundColor="layer-b-foreground" backgroundColor="layer-b-background"/>
-		<widget name="chBouq" position="648,428" size="308,26" halign="left" font="Regular; 20" noWrap="1" transparent="1" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground"/>
-	</screen>
 	<screen name="NumberZap" position="0,0" size="1281,721" title="QuickZap" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<ePixmap pixmap="GigabluePax/construct/plugins/numberzap.png" position="237,289" size="200,200" alphatest="blend"/>
@@ -2582,7 +2570,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
 		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
 		<ePixmap pixmap="GigabluePax/construct/menu/main/setup.png" position="129,285" size="200,200" alphatest="blend" />
-		<widget name="menu" position="477,69" size="769,588" />
+		<widget name="menu" position="477,69" size="769,588" itemHeight="35" scrollbarMode="showNever" enableWrapAround="1" transparent="1" />
 		<widget name="key_red" position="0,0" size="0,0" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="key_green" position="0,0" size="0,0" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1" />
 		<widget name="key_yellow" position="0,0" size="0,0" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1" />
