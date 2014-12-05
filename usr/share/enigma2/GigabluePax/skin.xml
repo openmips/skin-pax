@@ -351,7 +351,7 @@
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="ServiceEvent" valign="bottom" render="NextEvent" position="30,555" size="378,98" font="Regular;19" backgroundColor="layer-b-background" foregroundColor="layer-a-foreground" transparent="1"/>
+		<widget source="ServiceEvent" valign="bottom" render="OMNextEvent" position="30,555" size="378,98" font="Regular;19" backgroundColor="layer-b-background" foregroundColor="layer-a-foreground" transparent="1"/>
 		<widget source="ServiceEvent" render="Label" position="351,256" size="77,24" font="SetrixHD; 21" backgroundColor="layer-b-background" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
