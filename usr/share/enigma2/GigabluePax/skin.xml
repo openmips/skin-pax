@@ -1284,13 +1284,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.CurrentService" render="Label" position="535,290" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
 			<convert type="STBInfo">MemTotal,Full</convert>
 		</widget>
-		<widget source="TunerHeader" render="Label" position="535,340" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner0" render="Label" position="535,365" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner1" render="Label" position="535,390" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner2" render="Label" position="535,415" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner3" render="Label" position="535,440" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="HDDHeader" render="Label" position="535,480" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="hddA" render="Label" position="535,505" size="700,200" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="session.CurrentService" render="Label" position="535,315" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
+			<convert type="STBInfo">SystemTemp,Full</convert>
+		</widget>
+		<widget source="TunerHeader" render="Label" position="535,365" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="Tuner0" render="Label" position="535,390" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="Tuner1" render="Label" position="535,415" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="Tuner2" render="Label" position="535,440" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="Tuner3" render="Label" position="535,465" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="HDDHeader" render="Label" position="535,505" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="hddA" render="Label" position="535,530" size="700,200" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
 	<screen name="ExtensionsList" position="0,0" size="1280,720" title="Extensions" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="GigabluePax/construct/menu/main/plugins.png" position="187,289" size="200,200" alphatest="blend"/>
