@@ -1284,9 +1284,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.CurrentService" render="Label" position="535,290" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
 			<convert type="STBInfo">MemTotal,Full</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="535,315" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
+		<!-- <widget source="session.CurrentService" render="Label" position="535,315" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
 			<convert type="STBInfo">SystemTemp,Full</convert>
-		</widget>
+		</widget> -->
 		<widget source="TunerHeader" render="Label" position="535,365" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="Tuner0" render="Label" position="535,390" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="Tuner1" render="Label" position="535,415" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
