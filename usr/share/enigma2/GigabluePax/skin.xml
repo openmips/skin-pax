@@ -70,7 +70,6 @@
 		<color name="yellow" value="#00e5b243"/>
 	</colors>
 	<fonts>
-		<font filename="/usr/share/fonts/lcd.ttf" name="LCD" scale="100"/>
 		<font filename="/usr/share/fonts/ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1"/>
 		<font filename="/usr/share/fonts/tuxtxt.ttf" name="Console" scale="100"/>
 		<font filename="/usr/share/fonts/nmsbd.ttf" name="Arial" scale="100"/>
@@ -130,27 +129,27 @@
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<ePixmap name="menu-top" position="0,0" size="940,53" pixmap="GigabluePax/construct/menu-top.png" alphatest="blend" zPosition="-2"/>
-			  <!-- /* WEATHER WIDGET  -->
-		  <widget render="OMMetrixWeatherWidget" source="global.CurrentTime" position="920,0" size="360,51" alphatest="blend" pixmap="GigabluePax/construct/general/weather-back.png" zPosition="-1" />
-		  <widget backgroundColor="layer-a-background" font="RegularLight; 40" foregroundColor="layer-a-foreground" halign="right" noWrap="1" position="957,-3" render="Label" size="48,42" source="global.CurrentTime" transparent="1" valign="top" zPosition="10">
-		    <convert type="OMMetrixWeather">currentWeatherTemp</convert>
-		  </widget>
-		  <widget backgroundColor="layer-a-background" font="Regular; 17" foregroundColor="layer-a-foreground" halign="left" noWrap="1" position="1011,5" render="Label" size="30,26" source="global.CurrentTime" transparent="1" valign="center" zPosition="10">
-		    <convert type="OMMetrixWeather">CF</convert>
-		  </widget>
-		  <widget backgroundColor="layer-c-background" font="Meteo; 42" foregroundColor="layer-b-foreground" halign="left" noWrap="1" position="1210,2" render="Label" size="48,48" source="global.CurrentTime" transparent="1" valign="center" zPosition="15">
-		    <convert type="OMMetrixWeather">forecastTomorrowCode</convert>
-		  </widget>
-		  <widget backgroundColor="layer-c-background" font="Regular; 16" foregroundColor="layer-b-foreground" halign="left" noWrap="1" position="1148,1" render="Label" size="44,26" source="global.CurrentTime" transparent="1" valign="center" zPosition="10">
-		    <convert type="OMMetrixWeather">forecastTomorrowTempMax</convert>
-		  </widget>
-		  <widget backgroundColor="layer-c-background" font="Regular; 16" foregroundColor="layer-b-foreground" halign="left" noWrap="1" position="1142,24" render="Label" size="44,26" source="global.CurrentTime" transparent="1" valign="center" zPosition="10">
-		    <convert type="OMMetrixWeather">forecastTomorrowTempMin</convert>
-		  </widget>
-		  <widget backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" font="Meteo; 42" halign="left" noWrap="1" position="1042,2" render="Label" size="48,48" source="global.CurrentTime" transparent="1" valign="center" zPosition="15">
-		    <convert type="OMMetrixWeather">currentWeatherCode</convert>
-		  </widget>
-		  <!--  WEATHER WIDGET */ -->
+		<!-- /* WEATHER WIDGET  -->
+		<widget render="OMMetrixWeatherWidget" source="global.CurrentTime" position="920,0" size="360,51" alphatest="blend" pixmap="GigabluePax/construct/general/weather-back.png" zPosition="-1" />
+		<widget backgroundColor="layer-a-background" font="RegularLight; 40" foregroundColor="layer-a-foreground" halign="right" noWrap="1" position="957,-3" render="Label" size="48,42" source="global.CurrentTime" transparent="1" valign="top" zPosition="10">
+			<convert type="OMMetrixWeather">currentWeatherTemp</convert>
+		</widget>
+		<widget backgroundColor="layer-a-background" font="Regular; 17" foregroundColor="layer-a-foreground" halign="left" noWrap="1" position="1011,5" render="Label" size="30,26" source="global.CurrentTime" transparent="1" valign="center" zPosition="10">
+			<convert type="OMMetrixWeather">CF</convert>
+		</widget>
+		<widget backgroundColor="layer-c-background" font="Meteo; 42" foregroundColor="layer-b-foreground" halign="left" noWrap="1" position="1210,2" render="Label" size="48,48" source="global.CurrentTime" transparent="1" valign="center" zPosition="15">
+			<convert type="OMMetrixWeather">forecastTomorrowCode</convert>
+		</widget>
+		<widget backgroundColor="layer-c-background" font="Regular; 16" foregroundColor="layer-b-foreground" halign="left" noWrap="1" position="1148,1" render="Label" size="44,26" source="global.CurrentTime" transparent="1" valign="center" zPosition="10">
+			<convert type="OMMetrixWeather">forecastTomorrowTempMax</convert>
+		</widget>
+		<widget backgroundColor="layer-c-background" font="Regular; 16" foregroundColor="layer-b-foreground" halign="left" noWrap="1" position="1142,24" render="Label" size="44,26" source="global.CurrentTime" transparent="1" valign="center" zPosition="10">
+			<convert type="OMMetrixWeather">forecastTomorrowTempMin</convert>
+		</widget>
+		<widget backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" font="Meteo; 42" halign="left" noWrap="1" position="1042,2" render="Label" size="48,48" source="global.CurrentTime" transparent="1" valign="center" zPosition="15">
+			<convert type="OMMetrixWeather">currentWeatherCode</convert>
+		</widget>
+		<!--  WEATHER WIDGET */ -->
 	</screen>
 	<screen name="PANEL_WINDOW_LARGE">
 		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-3"/>
