@@ -339,7 +339,7 @@
 		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
 		<eLabel position="0,81" zPosition="-10" size="1281,579" backgroundColor="layer-b-background"/>
 		<eLabel position="416,65" zPosition="-1" size="835,605" backgroundColor="layer-a-background"/>
-		<eLabel text="Channel Selection" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<eLabel text="Channel selection" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="Title" render="Label" position="425,65" size="810,45" font="SetrixHD; 29" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
 		<eLabel position="87,270" size="256,1" backgroundColor="layer-a-accent1" foregroundColor="layer-a-accent1"/>
 		<widget name="list" position="425,115" size="810,540" scrollbarMode="showNever" colorServiceDescription="layer-a-accent2" colorServiceDescriptionSelected="layer-a-foreground" colorEventProgressbarBorder="selection-background" colorEventProgressbarBorderSelected="layer-a-foreground" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceNumberFont="SetrixHD;24" serviceNameFont="SetrixHD;24" serviceInfoFont="Regular;22" transparent="1" backgroundColor="layer-a-background" itemHeight="30"/>
