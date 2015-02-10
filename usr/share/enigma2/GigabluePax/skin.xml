@@ -2332,7 +2332,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="config" position="480,80" size="730,363" itemHeight="30" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget source="introduction" render="Label" position="480,630" size="730,25" font="Regular; 18" halign="right" backgroundColor="layer-a-background" transparent="1"/>
-	</screen>	
+	</screen>
 	<screen name="LanguageSelection" position="0, 0" flags="wfNoBorder" transparent="0" title="Setup Language" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
@@ -2797,7 +2797,8 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_MENU_X" />
 		<panel name="PANEL_WINDOW_LARGE" />
 		<eLabel text="E n h a n c e d  M o v i e  C e n t e r" position="369,-1" size="550,46" font="SetrixHD;35" foregroundColor="foreground" backgroundColor="un444444" transparent="1" />
-		<ePixmap position="137,289" size="200,200" zPosition="2" pixmap="GigabluePax/construct/plugins/emc.png" transparent="1" alphatest="blend" />		
+		<ePixmap position="137,289" size="200,200" zPosition="2" pixmap="GigabluePax/construct/plugins/emc.png" transparent="1" alphatest="blend" />
+		<widget name="Cover" position="475,535" size="80,100" zPosition="3" alphatest="on" />
 		<widget source="Title" render="Label" position="475,70" size="740,35" font="SetrixHD;25" halign="center" valign="center" foregroundColor="unbab329" backgroundColor="un444444" transparent="1" />
 		<widget name="list" position="475,105" size="740,390" itemHeight="28" CoolFont="Regular;20" CoolSelectFont="Regular;20" CoolDateFont="Regular;20" CoolMoviePos="35" CoolMovieSize="545" CoolFolderSize="545" CoolTitleColor="0" CoolDatePos="1000" CoolDateWidth="122" CoolDateColor="0" CoolHighlightColor="0" CoolProgressPos="1000" CoolBarPos="590" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/EnhancedMovieCenter/img/cursor.png" DefaultColor="#FFFFFF" UnwatchedColor="#FFFFFF" WatchingColor="#3486F4" FinishedColor="#46D93A" RecordingColor="#9F1313" BackColorSel="#00000000" foregroundColorSelected="#ffffff" backgroundColor="black" scrollbarMode="showNever" transparent="1" />
 		<widget source="Service" render="Label" position="882,503" size="120,24" font="Regular;20" halign="left" foregroundColor="unbab329" backgroundColor="un444444" transparent="1">
@@ -2808,7 +2809,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 			<convert type="EMCMovieInfo">FileSize</convert>
 		</widget>
 		<!-- EMC Short Description -->
-		<widget source="Service" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,startdelay=3000,wrap" backgroundColor="layer-a-background" position="475,535" size="740,120" font="Regular;18" foregroundColor="foreground" transparent="1" halign="left" valign="top">
+		<widget source="Service" render="RunningText" options="movetype=running,startpoint=0,direction=top,steptime=90,repeat=2,startdelay=3000,wrap" backgroundColor="layer-a-background" position="575,535" size="540,120" font="Regular;18" foregroundColor="foreground" transparent="1" halign="left" valign="top">
 			<convert type="EMCEventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
@@ -2883,7 +2884,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		</widget>
 		<widget source="session.CurrentService" pixmap="GigabluePax/colors/00007eff.png" render="Progress" position="151,624" size="980,5" backgroundColor="layer-a-progress" borderWidth="0" transparent="1">
 			<convert type="ServicePosition">Position</convert>
-		</widget>	
+		</widget>
 	</screen>
 	<screen name="PinInputTemplate">
 		<widget name="service" position="center,150" size="1280,80" font="Regular;70" halign="center" />
