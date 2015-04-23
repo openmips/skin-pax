@@ -1300,6 +1300,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="HDDHeader" render="Label" position="535,505" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="hddA" render="Label" position="535,530" size="700,200" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
+	<screen name="SystemNetworkInfo" position="1,1" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<eLabel text="Network" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<eLabel position="524,66" zPosition="-1" size="722,615" backgroundColor="layer-a-background"/>
+		<ePixmap pixmap="GigabluePax/construct/menu/system/network.png" position="187,289" size="200,200" alphatest="blend"/>
+		<widget name="AboutScrollLabel" position="535,76" size="700,500" valign="left" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="IFtext" render="Label" position="535,640" size="120,25" zPosition="10" font="SetrixHD; 20" halign="left" valign="center" transparent="1" backgroundColor="layer-a-background" />
+		<widget source="IF" render="Label" position="665,640" size="600,25" zPosition="10" font="SetrixHD; 20" halign="left" valign="center" transparent="1" backgroundColor="layer-a-background" />
+	</screen>
 	<screen name="ExtensionsList" position="0,0" size="1280,720" title="Extensions" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="GigabluePax/construct/menu/main/plugins.png" position="187,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
