@@ -1310,6 +1310,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="IFtext" render="Label" position="535,640" size="120,25" zPosition="10" font="SetrixHD; 20" halign="left" valign="center" transparent="1" backgroundColor="layer-a-background" />
 		<widget source="IF" render="Label" position="665,640" size="600,25" zPosition="10" font="SetrixHD; 20" halign="left" valign="center" transparent="1" backgroundColor="layer-a-background" />
 	</screen>
+	<screen name="MemoryInfo" position="0,-3" size="1440,720" title="MemoryInfo" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<eLabel text="MemoryInfo - only for Developers" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background" />
+		<eLabel text="pfree:" position="659,552" size="50,25" font="SetrixHD; 16" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background" />
+		<eLabel text="pused:" position="658,590" size="50,25" font="SetrixHD; 16" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background" />
+		<eLabel position="225,99" zPosition="-1" size="848,541" backgroundColor="layer-a-background" />
+		<widget name="info" position="657,109" size="404,128" font="SetrixHD; 16" valign="top" />
+		<widget name="rmemtext" position="658,244" size="200,300" font="SetrixHD; 16" />
+		<widget name="lmemvalue" position="441,108" size="200,518" font="SetrixHD; 16" />
+		<widget name="pused" position="715,590" size="100,25" font="SetrixHD; 16" />
+		<widget name="lmemtext" position="235,109" size="200,517" font="SetrixHD; 16" />
+		<widget name="rmemvalue" position="859,243" size="200,300" font="SetrixHD; 16" />
+		<widget name="pfree" position="715,551" size="100,25" font="SetrixHD; 16" />
+		<panel name="PANEL_BUTTONBAR_SOURCE_RGB_X" />
+	</screen>
 	<screen name="ExtensionsList" position="0,0" size="1280,720" title="Extensions" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="GigabluePax/construct/menu/main/plugins.png" position="187,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
