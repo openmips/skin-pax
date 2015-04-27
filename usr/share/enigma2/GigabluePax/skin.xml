@@ -1017,10 +1017,10 @@
 	<!-- Messagebox -->
 	<screen name="MessageBoxTemplate">
 		<widget name="text" position="65,8" size="520,0" font="Regular;22" />
-		<widget name="ErrorPixmap" pixmap="GigabluePax/construct/message/attention-53.png" position="5,5" size="53,53" alphatest="blend" />
-		<widget name="QuestionPixmap" pixmap="GigabluePax/construct/message/question-53.png" position="5,5" size="53,53" alphatest="blend" />
-		<widget name="InfoPixmap" pixmap="GigabluePax/construct/message/info-53.png" position="5,5" size="53,53" alphatest="blend" />
-		<widget name="WarningPixmap" pixmap="GigabluePax/construct/message/warning-53.png" position="5,5" size="53,53" alphatest="blend" />
+		<widget name="ErrorPixmap" pixmap="GigabluePax/construct/message/attention.png" position="5,5" size="53,53" alphatest="blend" />
+		<widget name="QuestionPixmap" pixmap="GigabluePax/construct/message/question.png" position="5,5" size="53,53" alphatest="blend" />
+		<widget name="InfoPixmap" pixmap="GigabluePax/construct/message/info.png" position="5,5" size="53,53" alphatest="blend" />
+		<widget name="WarningPixmap" pixmap="GigabluePax/construct/message/warning.png" position="5,5" size="53,53" alphatest="blend" />
 		<widget name="list" position="100,100" size="480,375" />
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
