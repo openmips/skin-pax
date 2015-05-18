@@ -22,6 +22,40 @@ from Components.Converter.Converter import Converter
 from enigma import iServiceInformation, iPlayableService
 from Components.Element import cached
 from Poll import Poll
+import datetime
+
+def cardnames(caid,prov):
+        if caid   == '098C' and prov =='000000':cn = 'SKY NDS V14'
+        elif caid == '09C4' and prov =='000000':cn = 'SKY NDS V13'
+        elif caid == '09C7' and prov =='000000':cn = 'KD G02/G09'
+        elif caid == '09AF' and prov =='000000':cn = 'KabelKiosk'
+        elif caid == '1702' and prov =='000000':cn = 'SKY BC S02'
+        elif caid == '1722' and prov =='000000':cn = 'KD D01/D02'
+        elif caid == '1833' and prov =='000000':cn = 'SKY(BCu)S02'
+        elif caid == '1830' and prov =='000000':cn = 'HDplus HD01'
+        elif caid == '1843' and prov =='000000':cn = 'HDplus HD02'
+        elif caid == '1834' and prov =='000000':cn = 'KD D02/D09'
+        elif caid == '098E' and prov =='000000':cn = 'UMKBW V23 '
+        elif caid == '1831' and prov =='000000':cn = 'UMKBW UM1/3'
+        elif caid == '1838' and prov =='000000':cn = 'UMKBW UM02'
+        elif caid == '183E' and prov =='000000':cn = 'RAI NAGRA '
+        elif caid == '0D05' and prov =='000004':cn = 'ORF-CW'
+        elif caid == '0D95' and prov =='000004':cn = 'ORF-CW'
+        elif caid == '0648' and prov =='000000':cn = 'ORF-Irdeto'
+        elif caid == '0D96' and prov =='000004':cn = 'SkyLink CZ'
+        elif caid == '0500' and prov =='023800':cn = 'SRGv2'
+        elif caid == '0500' and prov =='040810':cn = 'SRGv4'
+        elif caid == '0500' and prov =='050800':cn = 'SRGv5'
+        elif caid == '0500' and prov =='042700':cn = 'MCT/SCT'
+        elif caid == '0500' and prov =='043800':cn = 'RedlightHD'
+        elif caid == '0500' and prov =='050F00':cn = 'Dorcel TV'
+        elif caid == '0500' and prov =='042800':cn = 'BisTV'
+        elif caid == '0500' and prov =='041700':cn = 'FreeXTV'
+        elif caid == '0500' and prov =='030b00':cn = 'TNTSAT'
+        elif caid == '0C00' and prov =='000000':cn = 'Conax'
+        else: cn = 'Card'
+        return cn
+
 
 class PaxCaidDisplay(Poll, Converter, object):
 	def __init__(self, type):
@@ -39,7 +73,6 @@ class PaxCaidDisplay(Poll, Converter, object):
 			"0B" : "CON",
 			"0D" : "CRW",
 			"4A" : "DRE" }
-
 		self.poll_interval = 2000
 		self.poll_enabled = True
 
@@ -90,15 +123,17 @@ class PaxCaidDisplay(Poll, Converter, object):
 						caid = caid.upper()
 						caid = caid.zfill(4)
 						caid = "%s" % caid
-						
-						
+
 						# prov
 						prov = ecm_info.get("prov", "")
 						prov = prov.lstrip("0x")
 						prov = prov.upper()
-						prov = prov.zfill(5)
-						prov = ":%s" % prov
-
+						if prov == '':
+						 prov = ''
+						 prov = "%s" % prov.zfill(6)
+						else:
+						 prov = prov.zfill(6)
+						 prov = "%s" % prov
 
 						#provid cccam
 						provid = ecm_info.get("provid", "")
@@ -112,14 +147,18 @@ class PaxCaidDisplay(Poll, Converter, object):
 						provider = "%s" % provider				
 						provider = provider[:25]
 						
-												
 						# hops
 						hops = ecm_info.get("hops", None)
 						hops = "%s" % hops
 						
 						# from
 						froms = ecm_info.get("from", "")
+						fromsorg = froms
+						if froms.count("192.168.")>0 or froms.count("172.16.")>0 or froms.count("10.")>0:froms = 'HomeNet'
+						if froms.count(".")==0: froms = 'HomeNet'
+						else:froms = 'Internet'
 						froms = "%s" % froms
+						fromsorg = "%s" % fromsorg
 						
 						# ecm time	
 						ecm_time = ecm_info.get("ecm time", None)
@@ -132,20 +171,17 @@ class PaxCaidDisplay(Poll, Converter, object):
 						address = ecm_info.get("address", "")
 						# source
 						using = ecm_info.get("using", "")
+						
 						# protocol
 						protocol = ecm_info.get("protocol", "")
-						protocol = protocol[:8]
+						#protocol = protocol.replace('cccam_ext','CCcam_ext')
 						protocol = "%s" % protocol
 						
 						if using:
-							if using == "emu":
-								textvalue = "%s - %s - (EMU) - %s" % (caid, ecm_time, provider)
-							elif using == "CCcam-s2s":
-								textvalue = "%s%s - %s - HOP:%s - (NET) - %s" % (caid, provid, ecm_time, hops, provider)
-							elif using == "sci":
-								textvalue = "%s%s - %s - (local) - %s" % (caid, provid, ecm_time, provider)
-							else:
-								textvalue = "%s %s%s - hop:%s - %s - %s" % (using, caid, provid, hops, ecm_time, provider)
+							if using == "emu":textvalue = "%s - %s - (EMU) - %s" % (caid, ecm_time, provider)
+							elif using == "CCcam-s2s":textvalue = "%s%s - %s - HOP:%s - (NET) - %s" % (caid, provid, ecm_time, hops, provider)
+							elif using == "sci":textvalue = "%s%s - %s - (local) - %s" % (caid, provid, ecm_time, provider)
+							else:textvalue = "%s %s%s - hop:%s - %s - %s" % (using, caid, provid, hops, ecm_time, provider)
 						else:
 							# mgcamd
 							source = ecm_info.get("source", None)
@@ -159,36 +195,44 @@ class PaxCaidDisplay(Poll, Converter, object):
 									share = ecm_info.get("source", "")
 									share = share.lstrip("net")
 									textvalue = "%s%s - %s - %s" % (caid, prov, ecm_time, share)
-							# oscam
+							
+							#------------- oscam-------------------------------------------#
 							oscsource = ecm_info.get("reader", "")
+							oscsource = oscsource.replace('emulator','EMU')
 							if oscsource:
-								if protocol == "internal":
-									textvalue = "%s%s - %s - local - %s" % (caid, prov, ecm_time, oscsource)
-								elif protocol == "mouse":
-									textvalue = "%s%s - %s - usb - %s" % (caid, prov, ecm_time, oscsource)
-								elif protocol == "cs357x":
-									textvalue = "%s%s - %s - camd35 - %s - %s" % (caid, prov, ecm_time, oscsource, froms)	
-								elif protocol == "cs378x":
-									textvalue = "%s%s - %s - camd378 - %s - %s" % (caid, prov, ecm_time, oscsource, froms)	
-								elif protocol == "newcamd":
-									textvalue = "%s%s - %s - newcamd - %s - %s" % (caid, prov, ecm_time, oscsource, froms)
-								elif protocol == "cccam":
-									textvalue = "%s%s - %s - cccam - hop:%s - %s - %s" % (caid, prov, ecm_time, hops, oscsource ,froms)
-								elif oscsource == "Cache":
-									textvalue = "%s%s - %s - %s" % (caid, prov, ecm_time, froms)	
+								karte = cardnames(caid,prov)
+								first =("%s - %s:%s - Hop:%s - %s" % (karte, caid, prov, hops, ecm_time))
+								last = ("%s - %s - %s: %s" % (protocol, oscsource, froms, fromsorg))
+								ax ='{:%S}'.format(datetime.datetime.now())
+								ax = float(ax)
+								
+								if ax >0 and ax <4 or ax> 6 and ax<10 or ax>12 and ax<16 or ax>18 and ax<22 or ax>24 and ax<28 or ax>27 and ax<31 or ax>33 and ax<37 or ax>39 and ax<43 or ax>45 and ax<49 or ax>51 and ax<55 or ax>57 and ax<60:
+									textvalue=first
 								else:
-									oscsource = oscsource[:25]
-									textvalue = "%s%s - hop:%s - %s - oscam-%s %s - %s" % (caid, prov, hops, ecm_time, protocol, oscsource, froms)
+									textvalue=last
+								if protocol == "internal":	textvalue = "%s - %s:%s - %s - local - %s" % (karte, caid, prov, ecm_time, oscsource)
+								elif protocol == "emu":		textvalue = "%s - %s:%s - %s - %s" % (karte, caid, prov, ecm_time, oscsource)
+								elif oscsource == "Cache":	textvalue = "%s - %s:%s - %s - %s" % (karte, caid, prov, ecm_time, fromsorg)	
+								elif protocol == "cccam": 	textvalue = textvalue.replace('cccam','OSCam')
+								elif protocol == "cccam_ext":   textvalue = textvalue.replace('cccam_ext','OSCam')
+								elif protocol == "cs357x":	textvalue = textvalue.replace('cs357x','CS357x')
+								elif protocol == "cs378x":	textvalue = textvalue.replace('cs378x','CS378x')
+								elif protocol == "newcamd":	textvalue = textvalue.replace('newcamd','NEWCAMD')
+								elif protocol == "mouse":	textvalue = textvalue.replace('mouse','Mouse')
+								else:
+									textvalue = textvalue
+							#------------------oscam----------------------------------#
+									
 							# gbox
 							decode = ecm_info.get("decode", None)
 							if decode:
-								if decode == "Internal":
-									textvalue = "(EMU) %s" % (caid)
-								else:
-									textvalue = "%s - %s" % (caid, decode)
+								if decode == "Internal":textvalue = "(EMU) %s" % (caid)
+								else:textvalue = "%s - %s" % (caid, decode)
+
 		return textvalue 
 
 	text = property(getText)
+
 
 	def ecmfile(self):
 		ecm = None
@@ -198,7 +242,7 @@ class PaxCaidDisplay(Poll, Converter, object):
 			frontendInfo = service.frontendInfo()
 			if frontendInfo:
 				try:
-					ecmpath = "/tmp/ecm%s.info" % frontendInfo.getAll(False).get("tuner_number")
+					ecmpath = "/tmp/ecm.info"
 					ecm = open(ecmpath, "rb").readlines()
 				except:
 					try:
