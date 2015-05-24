@@ -47,13 +47,13 @@ class PaxRefString(Converter, object):
 		elif (self.type == self.CURRENT):
 			if self.CHANSEL == None:
 				self.CHANSEL = InfoBar.instance.servicelist
-			if len(InfoBar.instance.session.dialog_stack)>1:
-				for zz in InfoBar.instance.session.dialog_stack:
-					if (str(zz[0]) == "<class 'Screens.MovieSelection.MovieSelection'>") or (str(InfoBar.instance.session.dialog_stack[1][0]) == "<class 'Screens.InfoBar.MoviePlayer'>"):
-						try:
-							return self.source.text
-						except:
-							return []
+			# if len(InfoBar.instance.session.dialog_stack)>1:
+				# for zz in InfoBar.instance.session.dialog_stack:
+					# if (str(zz[0]) == "<class 'Screens.MovieSelection.MovieSelection'>") or (str(InfoBar.instance.session.dialog_stack[1][0]) == "<class 'Screens.InfoBar.MoviePlayer'>"):
+						# try:
+							# return self.source.text
+						# except:
+							# raise Exception("error trying to return self.source.text")
 			vSrv = self.CHANSEL.servicelist.getCurrent()
 			return str(vSrv.toString())
 		else:
