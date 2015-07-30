@@ -915,7 +915,7 @@
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<ePixmap position="365,0" size="48,48" zPosition="1" pixmap="GigabluePax/construct/general/sound.png" transparent="0" alphatest="blend"/>
 		<ePixmap position="415,12" size="24,24" zPosition="1" pixmap="GigabluePax/construct/general/cross.png" transparent="0" alphatest="blend"/>
-		<eLabel position="460,-1" size="400,46" font="SetrixHD; 35" transparent="1" valign="center" zPosition="1" text="Mute"/>
+		<eLabel position="460,-1" size="400,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" valign="center" zPosition="1" text="Mute"/>
 	</screen>
 	<screen name="UnhandledKey" position="0,0" size="1280,53" title="Volume" zPosition="10" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
@@ -1068,7 +1068,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<screen name="MessageBoxSimple" position="center,center" size="600,10" title="Message">
 		<panel name= "MessageBoxTemplate" />
 	</screen>
-	<screen backgroundColor="transparent" flags="wfNoBorder" name="InfoBar" position="0,0" size="1281,721" title="InfoBar">
+	<screen name="InfoBar" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1281,721">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<!-- InfoWidget -->
 		<ePixmap name="info-widget" position="821,534" size="460,51" pixmap="GigabluePax/construct/infowidget.png" alphatest="blend" zPosition="-1"/>
