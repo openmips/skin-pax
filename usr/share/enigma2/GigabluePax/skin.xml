@@ -1685,26 +1685,25 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/setup/scan.png" position="137,289" size="200,200" alphatest="blend"/>
-		<eLabel text="Satfinder" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<ePixmap position="0,0" zPosition="-20" size="1280,720" pixmap="GigabluePax/construct/plugins/dvd-back.png"/>
-		<eLabel position="858,72" size="359,204" zPosition="2" backgroundColor="layer-a-foreground"/>
-		<eLabel position="860,74" size="355,200" zPosition="3" backgroundColor="layer-a-background"/>
-		<eLabel name="" position="561,177" backgroundColor="layer-a-accent1" size="195,1" zPosition="-1"/>
-		<widget source="Frontend" render="Label" position="474,83" size="370,22" zPosition="2" font="Regular;21" backgroundColor="layer-a-background" halign="center" transparent="1">
+		<widget source="Frontend" render="Label" position="474,83" size="720,22" zPosition="2" font="Regular;21" backgroundColor="layer-a-background" halign="center" transparent="1">
 			<convert type="FrontendInfo">SNRdB</convert>
 		</widget>
 		<eLabel name="snr" text="SNR:" position="474,125" size=" 80,25" font="Regular; 21" halign="right" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Frontend" render="Progress" position="561,135" size="195,5" backgroundColor="layer-a-progress" transparent="1" zPosition="5">
+		<eLabel name="" position="561,137" backgroundColor="layer-a-accent1" size="545,1" zPosition="-1"/>
+		<widget source="Frontend" render="Progress" position="561,135" size="545,5" backgroundColor="layer-a-progress" transparent="1" zPosition="5">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="765,125" size=" 80,25" font="Regular; 21" backgroundColor="layer-a-background" transparent="1">
+		<widget source="Frontend" render="Label" position="1115,125" size=" 80,25" font="Regular; 21" backgroundColor="layer-a-background" transparent="1">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
 		<eLabel name="ber" text="BER:" position="472,167" size=" 80,25" font="Regular; 21" halign="right" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Frontend" render="Progress" position="561,175" size="194, 5" backgroundColor="layer-a-progress" transparent="1" zPosition="5">
+		<eLabel name="" position="561,177" backgroundColor="layer-a-accent1" size="545,1" zPosition="-1"/>
+		<widget source="Frontend" render="Progress" position="561,175" size="545, 5" backgroundColor="layer-a-progress" transparent="1" zPosition="5">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
-		<widget source="Frontend" render="Label" position="765,167" size=" 80,25" font="Regular; 21" backgroundColor="layer-a-background" transparent="1">
+		<widget source="Frontend" render="Label" position="1115,167" size=" 80,25" font="Regular; 21" backgroundColor="layer-a-background" transparent="1">
 			<convert type="FrontendInfo">BER</convert>
 		</widget>
 		<eLabel name="lock" text="Lock:" position="472,216" size=" 80,25" font="Regular; 21" halign="right" backgroundColor="layer-a-background" transparent="1"/>
@@ -1715,7 +1714,6 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<eLabel position="561,211" backgroundColor="layer-a-accent1" size=" 32,32" zPosition="1"/>
 		<widget name="config" position="471,285" size="748,330" itemHeight="30" scrollbarMode="showOnDemand" transparent="1"/>
 		<widget name="introduction" position="471,622" size="748,31" font="Regular; 22" halign="center" backgroundColor="layer-a-background" transparent="1"/>
-		<eLabel name="" position="561,137" backgroundColor="layer-a-accent1" size="195,1" zPosition="-1"/>
 	</screen>
 	<screen name="CIselectMainMenu" position="0,0" size="1280,720" title="CI Assignment" flags="wfNoBorder" backgroundColor="transparent">
 		<widget name="CiList" position="620,82" size="523,565" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
