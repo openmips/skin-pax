@@ -1280,7 +1280,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.CurrentService" render="Label" position="885,155" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
 			<convert type="STBInfo">DriverInfo,Full</convert>
 		</widget>
-		<widget source="EnigmaVersion" render="Label" position="535,200" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="EnigmaVersion" render="Label" position="535,200" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="EnigmaSkin" render="Label" position="885,200" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="FlashDate" render="Label" position="535,225" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="ImageVersion" render="Label" position="885,225" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="session.CurrentService" render="Label" position="535,270" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
