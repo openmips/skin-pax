@@ -852,6 +852,10 @@
 			<convert type="MenuEntryCompare">media_player</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/plugins/media.png" position="237,289" size="200,200" alphatest="blend">
+			<convert type="MenuEntryCompare">play_cd</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/main/power.png" position="237,289" size="200,200" alphatest="blend">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide"/>
