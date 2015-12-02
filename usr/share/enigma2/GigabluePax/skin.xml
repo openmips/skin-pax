@@ -3001,20 +3001,24 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
 		<!--Button */-->
 	</screen>
-<screen name="AnimationSetupScreen" title="Animations Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="PANEL_GIGABLUE_TOP" />
-  <panel name="PANEL_WINDOW_LARGE" />
-  <panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X" />
-  <ePixmap pixmap="GigabluePax/construct/plugins/gigablue.png" position="137,289" size="200,200" alphatest="blend" />
-  <widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
-  <widget name="list" position="492,86" size="710,555" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1" />
-</screen>
- <screen name="AnimationSetupConfig" title="Animations Speed" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-  <panel name="PANEL_GIGABLUE_TOP" />
-  <panel name="PANEL_WINDOW_LARGE" />
-  <panel name="PANEL_BUTTONBAR_SOURCE_RGY_X" />
-  <ePixmap pixmap="GigabluePax/construct/plugins/gigablue.png" position="137,289" size="200,200" alphatest="blend" />
-  <widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
-  <widget name="config" position="492,86" size="710,555" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1" />
-</screen>
+	<screen name="AnimationSetupScreen" title="Animations Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_WINDOW_LARGE" />
+		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X" />
+		<ePixmap pixmap="GigabluePax/construct/plugins/gigablue.png" position="137,289" size="200,200" alphatest="blend" />
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<widget name="list" position="492,86" size="710,555" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1" />
+	</screen>
+	<screen name="AnimationSetupConfig" title="Animations Speed" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_WINDOW_LARGE" />
+		<panel name="PANEL_BUTTONBAR_SOURCE_RGY_X" />
+		<ePixmap pixmap="GigabluePax/construct/plugins/gigablue.png" position="137,289" size="200,200" alphatest="blend" />
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<widget name="config" position="492,86" size="710,555" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1" />
+	</screen>
+	<screen name="ResolutionLabel" position="0,50" size="250,40" flags="wfNoBorder" backgroundColor="layer-a-background">
+			<widget name="content" position="10,0" size="230,20" font="SetrixHD;16" valign="center" />
+			<widget name="restxt" position="10,20" size="230,20" font="SetrixHD;16" valign="center" />
+	</screen>
 </skin>
