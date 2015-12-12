@@ -485,6 +485,15 @@
 		<widget name="text" position="616,73" size="530,60" font="SetrixHD; 28" backgroundColor="layer-a-background" transparent="1"/>
 		<widget name="entries" position="616,145" size="530,500" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
+	<screen name="CIconfigMenu" position="0,0" size="1280,720" title="CI Assignments" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_BUTTONBAR_SOURCE_RGYB_X" />
+		<ePixmap pixmap="GigabluePax/construct/menu/setup/ci.png" position="237,289" size="200,200" alphatest="blend" />
+		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+		<eLabel position="607,65" zPosition="-1" size="654,605" backgroundColor="layer-a-background" />
+		<eLabel text="CI Assignments" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background" />
+		<widget name="ServiceList" position="617,76" size="630,583" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1" />
+  	</screen>
 	<screen name="menu_shutdown" position="0,0" size="1281,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
 		<!-- MENU-TOP -->
 		<panel name="PANEL_GIGABLUE_TOP"/>
