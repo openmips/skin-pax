@@ -1186,6 +1186,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="skin_default/icons/stream.png" foregroundColor="#ff0000" size="26,23" position="1060,698" zPosition="1" alphatest="blend" >
+			<convert type="ClientsStreaming"/>
+			<convert type="ConditionalShowHide"/>
+		</widget>
+		<widget source="session.HddSleepingState" render="Pixmap" pixmap="skin_default/icons/hdd.png" foregroundColor="#ff0000" size="24,21" position="1100,698" zPosition="1" alphatest="blend" >
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<!-- TUNER -->
 		<eLabel position="807,8" text="A" zPosition="1" size="22,29" font="RegularLight; 28" halign="center" transparent="1" valign="center" backgroundColor="layer-b-background" foregroundColor="layer-b-accent2"/>
 		<widget position="807,8" text="A" source="session.TunerInfo" render="FixedLabel" zPosition="2" size="22,29" font="RegularLight; 28" halign="center" transparent="1" valign="center" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground">
@@ -1295,22 +1302,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="RassLogo" position="0,0" size="0,0" halign="left" />
 	</screen>
 	<screen name="About" position="1,1" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="GigabluePax/construct/plugins/gigablue.png" position="187,289" size="200,200" alphatest="blend"/>
-		<ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<eLabel text="About" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<eLabel position="524,66" zPosition="-1" size="722,595" backgroundColor="layer-a-background"/>
-		<widget source="AboutHeader" render="Label" position="535,76" size="700,40" font="SetrixHD; 30" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="CPUinfo" render="Label" position="535,130" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="ChipsetInfo" render="Label" position="885,130" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="KernelVersion" render="Label" position="535,155" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" position="885,155" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
+		<ePixmap pixmap="GigabluePax/construct/plugins/gigablue.png" position="187,289" size="200,200" alphatest="blend" />
+		<ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<eLabel text="About" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background" />
+		<eLabel position="524,66" zPosition="-1" size="722,595" backgroundColor="layer-a-background" />
+		<widget source="AboutHeader" render="Label" position="535,76" size="700,40" font="SetrixHD; 30" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="CPUinfo" render="Label" position="535,122" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="ChipsetInfo" render="Label" position="885,122" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="KernelVersion" render="Label" position="535,148" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="885,148" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
 			<convert type="STBInfo">DriverInfo,Full</convert>
 		</widget>
-		<widget source="EnigmaVersion" render="Label" position="535,200" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="EnigmaSkin" render="Label" position="885,200" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="FlashDate" render="Label" position="535,225" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="ImageVersion" render="Label" position="885,225" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
+		<widget source="EnigmaVersion" render="Label" position="535,181" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="GStreamerVersion" render="Label" position="535,236" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="EnigmaSkin" render="Label" position="885,181" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="FlashDate" render="Label" position="535,209" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="ImageVersion" render="Label" position="885,209" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1" />
 		<widget source="session.CurrentService" render="Label" position="535,270" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
 			<convert type="STBInfo">LoadAvg,Full</convert>
 		</widget>
@@ -1321,16 +1329,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 			<convert type="STBInfo">MemTotal,Full</convert>
 		</widget>
 		<!-- <widget source="session.CurrentService" render="Label" position="535,340" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
-			<convert type="STBInfo">SystemTemp,Full</convert>
-		</widget> -->
-		<widget source="TunerHeader" render="Label" position="535,365" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner0" render="Label" position="535,390" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner1" render="Label" position="535,415" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner2" render="Label" position="535,440" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner3" render="Label" position="535,465" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="HDDHeader" render="Label" position="535,510" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="hddA" render="Label" position="535,535" size="700,200" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
-		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
+					<convert type="STBInfo">SystemTemp,Full</convert>
+				</widget> -->
+		<widget source="TunerHeader" render="Label" position="535,365" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="Tuner0" render="Label" position="535,390" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="Tuner1" render="Label" position="535,415" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="Tuner2" render="Label" position="535,440" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="Tuner3" render="Label" position="535,465" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="HDDHeader" render="Label" position="535,510" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1" />
+		<widget source="hddA" render="Label" position="535,535" size="700,200" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1" />
+		<panel name="PANEL_BUTTONBAR_RGYB_X" />
 	</screen>
 	<screen name="CommitInfo" position="1,1" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="GigabluePax/construct/plugins/gigablue.png" position="187,289" size="200,200" alphatest="blend"/>
