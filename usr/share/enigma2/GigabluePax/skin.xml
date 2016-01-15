@@ -1186,57 +1186,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 			<convert type="ServiceInfo">IsCrypted</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="skin_default/icons/stream.png" foregroundColor="#ff0000" size="26,23" position="1060,698" zPosition="1" alphatest="blend" >
+		<widget source="session.CurrentService" render="Pixmap" pixmap="skin_default/icons/stream.png" foregroundColor="#ff0000" size="26,23" position="1060,698" zPosition="1" alphatest="blend">
 			<convert type="ClientsStreaming"/>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="session.HddSleepingState" render="Pixmap" pixmap="skin_default/icons/hdd.png" foregroundColor="#ff0000" size="24,21" position="1100,698" zPosition="1" alphatest="blend" >
+		<widget source="session.HddSleepingState" render="Pixmap" pixmap="skin_default/icons/hdd.png" foregroundColor="#ff0000" size="24,21" position="1100,698" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<!-- TUNER -->
-		<eLabel position="807,8" text="A" zPosition="1" size="22,29" font="RegularLight; 28" halign="center" transparent="1" valign="center" backgroundColor="layer-b-background" foregroundColor="layer-b-accent2"/>
-		<widget position="807,8" text="A" source="session.TunerInfo" render="FixedLabel" zPosition="2" size="22,29" font="RegularLight; 28" halign="center" transparent="1" valign="center" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">1</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget position="806,-3" source="session.FrontendInfo" render="Pixmap" zPosition="5" size="26,13" alphatest="blend" pixmap="GigabluePax/construct/iconbar/tuner.png">
-			<convert type="FrontendInfo">NUMBER</convert>
-			<convert type="ValueRange">0,0</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<eLabel position="835,8" text="B" zPosition="1" size="22,29" font="RegularLight; 28" halign="center" transparent="1" valign="center" backgroundColor="layer-b-background" foregroundColor="layer-b-accent2"/>
-		<widget position="835,8" text="B" source="session.TunerInfo" render="FixedLabel" zPosition="2" size="22,29" font="RegularLight; 28" halign="center" transparent="1" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-b-foreground">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">2</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget position="834,-3" source="session.FrontendInfo" render="Pixmap" zPosition="5" size="26,13" alphatest="blend" pixmap="GigabluePax/construct/iconbar/tuner.png">
-			<convert type="FrontendInfo">NUMBER</convert>
-			<convert type="ValueRange">1,1</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<eLabel position="863,8" text="C" zPosition="1" size="22,29" font="RegularLight; 28" halign="center" transparent="1" valign="center" backgroundColor="layer-b-background" foregroundColor="layer-b-accent2"/>
-		<widget position="863,8" text="C" source="session.TunerInfo" render="FixedLabel" zPosition="2" size="22,29" font="RegularLight; 28" halign="center" transparent="1" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-b-foreground">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">4</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget position="862,-3" source="session.FrontendInfo" render="Pixmap" zPosition="5" size="26,13" alphatest="blend" pixmap="GigabluePax/construct/iconbar/tuner.png">
-			<convert type="FrontendInfo">NUMBER</convert>
-			<convert type="ValueRange">2,2</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<eLabel position="891,8" text="D" zPosition="1" size="22,29" font="RegularLight; 28" halign="center" transparent="1" valign="center" backgroundColor="layer-b-background" foregroundColor="layer-b-accent2"/>
-		<widget position="891,8" text="D" source="session.TunerInfo" render="FixedLabel" zPosition="2" size="22,29" font="RegularLight; 28" halign="center" transparent="1" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-b-foreground">
-			<convert type="TunerInfo">TunerUseMask</convert>
-			<convert type="ValueBitTest">8</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
-		<widget position="890,-3" source="session.FrontendInfo" render="Pixmap" zPosition="5" size="26,13" alphatest="blend" pixmap="GigabluePax/construct/iconbar/tuner.png">
-			<convert type="FrontendInfo">NUMBER</convert>
-			<convert type="ValueRange">3,3</convert>
-			<convert type="ConditionalShowHide"/>
+		<eLabel text="TUNER:" position="730,6" size="250,20" font="Regular; 16" halign="center" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1"/>
+		<widget source="session.FrontendInfo" render="Label" position="730,23" size="250,20" font="Regular; 16" halign="center" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1">
+			<convert type="FrontendInfo">STRING,10</convert>
 		</widget>
 		<eLabel text="SNR:" position="700,699" size="50,20" font="Regular; 16" halign="left" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1"/>
 		<widget source="session.FrontendStatus" render="Label" position="740,699" size="70,20" font="Regular; 16" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" halign="left">
@@ -1352,16 +1311,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<ePixmap position="1090,682" size="36,36" zPosition="10" pixmap="GigabluePax/construct/general/left.png" transparent="1" alphatest="blend"/>
 		<ePixmap position="1140,682" size="36,36" zPosition="10" pixmap="GigabluePax/construct/general/right.png" transparent="1" alphatest="blend"/>
 	</screen>
-	<screen name="SystemNetworkInfo" position="1,1" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<eLabel text="Network" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<eLabel position="524,66" zPosition="-1" size="722,615" backgroundColor="layer-a-background"/>
-		<ePixmap pixmap="GigabluePax/construct/menu/system/network.png" position="187,289" size="200,200" alphatest="blend"/>
-		<widget name="AboutScrollLabel" position="535,76" size="700,500" valign="left" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="IFtext" render="Label" position="535,640" size="120,25" zPosition="10" font="SetrixHD; 20" halign="left" valign="center" transparent="1" backgroundColor="layer-a-background"/>
-		<widget source="IF" render="Label" position="665,640" size="600,25" zPosition="10" font="SetrixHD; 20" halign="left" valign="center" transparent="1" backgroundColor="layer-a-background"/>
-	</screen>
+    <screen name="SystemNetworkInfo" position="1,1" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
+        <ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+        <panel name="PANEL_GIGABLUE_TOP" />
+        <eLabel text="Network" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background" />
+        <eLabel position="524,66" zPosition="-1" size="722,615" backgroundColor="layer-a-background" />
+        <ePixmap pixmap="GigabluePax/construct/menu/system/network.png" position="187,289" size="200,200" alphatest="blend" />
+        <widget name="AboutScrollLabel" position="535,114" size="700,546" valign="left" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1" halign="left" noWrap="1" />
+        <widget source="IFtext" render="Label" position="536,79" size="120,25" zPosition="10" font="SetrixHD; 20" halign="left" valign="center" transparent="1" backgroundColor="layer-a-background" />
+        <widget source="IF" render="Label" position="677,79" size="558,25" zPosition="10" font="SetrixHD; 20" halign="left" valign="center" transparent="1" backgroundColor="layer-a-background" />
+    </screen>
 	<screen name="MemoryInfo" position="0,0" size="1280,720" title="MemoryInfo" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<eLabel text="MemoryInfo - only for Developers" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
