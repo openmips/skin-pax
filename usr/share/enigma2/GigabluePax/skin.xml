@@ -3039,4 +3039,15 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="config" position="480,80" size="730,363" itemHeight="30" backgroundColor="layer-a-background" foregroundColor="layer-a-foreground" backgroundColorSelected="layer-a-selection-background" foregroundColorSelected="layer-a-selection-foreground" scrollbarMode="showOnDemand" transparent="1"/>
 	</screen>
+	<screen name="SoftcamSetup" title="SoftcamSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	    <panel name="PANEL_GIGABLUE_TOP" />
+        <panel name="PANEL_BUTTONBAR_SOURCE_RG_X" />
+        <ePixmap pixmap="GigabluePax/construct/menu/setup/ci.png" position="128,285" size="200,200" alphatest="blend" />
+        <ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-3" />
+        <widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+        <widget name="config" position="621,136" size="506,164" itemHeight="22" transparent="1" font="Regular; 18" />
+        <eLabel position="597,111" zPosition="-2" size="550,500" backgroundColor="layer-a-background" />
+        <widget name="key_red" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1" />
+        <widget name="key_green" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1" />
+</screen>
 </skin>
