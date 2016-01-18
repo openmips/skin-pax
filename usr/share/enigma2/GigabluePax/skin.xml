@@ -1410,6 +1410,22 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="label" render="Label" position="494,444" size="400,215" font="SetrixHD; 30" backgroundColor="layer-a-background" transparent="1" halign="right"/>
 		<widget name="filelist" position="491,79" size="739,355" itemHeight="30" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
+    <screen name="Pic_Exif" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_BUTTONBAR_SOURCE_R_X" />
+		<ePixmap pixmap="GigabluePax/construct/plugins/picshow.png" position="137,289" size="200,200" alphatest="blend" />
+		<eLabel text="PicturePlayer-ExifInfo" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+		<eLabel position="477,66" zPosition="-1" size="769,601" backgroundColor="layer-a-background" />
+		<widget source="key_red" render="Label" position="0,0" zPosition="1" size="0,0" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
+		<widget source="menu" render="Listbox" position="491,78" size="741,579" scrollbarMode="showOnDemand" selectionDisabled="1" zPosition="1" itemHeight="24">
+			<convert type="TemplatedMultiContent">{
+				"template": [MultiContentEntryText(pos = (5, 5), size = (250, 22), flags = RT_HALIGN_LEFT, text = 0),MultiContentEntryText(pos = (260, 5), size = (290, 22), flags = RT_HALIGN_LEFT, text = 1)],
+				"fonts": [gFont("Regular", 18)],
+				"itemHeight": 24}
+			</convert>
+		</widget>
+	</screen>
 	<screen name="EPGSelection" position="0,0" size="1280,720" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
