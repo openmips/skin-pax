@@ -1193,6 +1193,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.HddSleepingState" render="Pixmap" pixmap="skin_default/icons/hdd.png" size="24,21" position="1100,698" zPosition="1" alphatest="blend">
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="session.CurrentService" render="CiModuleControl" allVisible="1" position="1160,699" size="130,20" halign="left" valign="center" borderWidth="1" zPosition="1" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" font="Regular;16"/>
 		<eLabel text="TUNER:" position="730,6" size="250,20" font="Regular; 16" halign="center" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1"/>
 		<widget source="session.FrontendInfo" render="Label" position="730,23" size="250,20" font="Regular; 16" halign="center" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1">
 			<convert type="FrontendInfo">STRING,10</convert>
