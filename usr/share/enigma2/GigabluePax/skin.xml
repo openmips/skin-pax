@@ -1096,15 +1096,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<panel name= "MessageBoxTemplate"/>
 	</screen>
 	<screen name="InfoBar" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder" position="0,0" size="1281,721">
-		<panel name="PANEL_GIGABLUE_TOP"/>
+		<panel name="PANEL_GIGABLUE_TOP" />
 		<!-- InfoWidget -->
-		<ePixmap name="info-widget" position="821,534" size="460,51" pixmap="GigabluePax/construct/infowidget.png" alphatest="blend" zPosition="-1"/>
+		<ePixmap name="info-widget" position="821,534" size="460,51" pixmap="GigabluePax/construct/infowidget.png" alphatest="blend" zPosition="-1" />
 		<widget source="session.CurrentService" render="Label" position="947,538" size="314,40" font="SetrixHD; 30" noWrap="1" backgroundColor="layer-c-background" transparent="1" zPosition="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="session.CurrentService" render="ChannelNumber" position="844,538" size="73,40" font="SetrixHD; 30" halign="center" valign="center" noWrap="1" backgroundColor="layer-a-background" transparent="1" zPosition="1"/>
+		<widget source="session.CurrentService" render="ChannelNumber" position="844,538" size="73,40" font="SetrixHD; 30" halign="center" valign="center" noWrap="1" backgroundColor="layer-a-background" transparent="1" zPosition="1" />
 		<!-- InfoBar -->
-		<eLabel name="infobar-back" position="0,584" size="1281,136" zPosition="-2"/>
+		<eLabel name="infobar-back" position="0,584" size="1281,136" zPosition="-2" />
 		<widget source="session.CurrentService" render="Picon" position="19,595" size="190,114" transparent="1" alphatest="blend" zPosition="1">
 			<convert type="ServiceName">Reference</convert>
 		</widget>
@@ -1112,19 +1112,19 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel text="-" position="1194,590" size="15,30" font="Regular; 19" halign="center" backgroundColor="layer-a-background" transparent="1"/>
+		<eLabel text="-" position="1194,590" size="15,30" font="Regular; 19" halign="center" backgroundColor="layer-a-background" transparent="1" />
 		<widget source="session.Event_Now" render="Label" position="1197,590" size="60,30" font="Regular; 19" halign="right" backgroundColor="layer-a-background" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="229,588" size="905,53" font="SetrixHD; 40" halign="left" backgroundColor="layer-a-background" transparent="1" noWrap="1">
-			<convert type="EventName">Name</convert>
+				<convert type="EventName">Name</convert>
 		</widget>
 		<widget source="session.Event_Now" render="Label" position="1146,617" size="113,30" font="Regular; 19" halign="right" backgroundColor="layer-a-background" transparent="1">
 			<convert type="EventTime">Remaining</convert>
 			<convert type="RemainingToText">InMinutes</convert>
 		</widget>
-		<eLabel name="progressbar-back" position="229,650" size="1029,1" backgroundColor="layer-a-accent1"/>
+		<eLabel name="progressbar-back" position="229,650" size="1029,1" backgroundColor="layer-a-accent1" />
 		<widget source="session.Event_Now" render="Progress" pixmap="GigabluePax/colors/00007eff.png" backgroundColor="layer-a-progress" position="229,648" size="1029,5" zPosition="7" transparent="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
@@ -1132,7 +1132,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Default</convert>
 		</widget>
-		<eLabel text="-" position="1194,656" size="15,28" font="Regular; 19" halign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" noWrap="1" valign="top"/>
+		<eLabel text="-" position="1194,656" size="15,28" font="Regular; 19" halign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" noWrap="1" valign="top" />
 		<widget source="session.Event_Next" render="Label" position="1197,656" size="60,28" font="Regular; 19" halign="right" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" noWrap="1" valign="top">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Default</convert>
@@ -1140,79 +1140,80 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="session.Event_Next" render="Label" position="229,661" size="903,50" font="Regular; 30" halign="left" backgroundColor="layer-a-background" transparent="1" foregroundColor="layer-a-accent1" valign="top" zPosition="-1" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="session.Event_Next" render="Label" position="1144,684" size="113,28" font="Regular; 19" halign="right" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1">
+		<widget source="session.Event_Next" render="Label" position="1175,684" size="82,28" font="Regular; 19" halign="right" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1">
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
 		<!-- IconBar -->
-		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/rec-off.png" position="716,10" size="59,30" zPosition="1"/>
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/rec-off.png" position="716,10" size="59,30" zPosition="1" />
 		<widget position="716,10" render="Pixmap" pixmap="GigabluePax/construct/iconbar/rec.png" size="59,30" source="session.RecordState" zPosition="2" alphatest="blend">
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
 		<!--/* SERVICE INFO -->
-		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/subtitle-off.png" position="404,10" size="59,30"/>
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/subtitle-off.png" position="404,10" size="59,30" />
 		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/subtitle.png" position="404,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="1">
 			<convert type="ServiceInfo">SubtitlesAvailable</convert>
-			<convert type="ConditionalShowHide"/>
+			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/hbbtv-off.png" position="456,10" size="59,30" zPosition="1"/>
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/hbbtv-off.png" position="456,10" size="59,30" zPosition="1" />
 		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/hbbtv.png" position="456,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2">
 			<convert type="ServiceInfo">HasHBBTV</convert>
-			<convert type="ConditionalShowHide"/>
+			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/teletext-off.png" position="508,10" size="59,30" zPosition="1"/>
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/teletext-off.png" position="508,10" size="59,30" zPosition="1" />
 		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/teletext.png" position="508,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2">
 			<convert type="ServiceInfo">HasTelext</convert>
-			<convert type="ConditionalShowHide"/>
+			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/dolby-off.png" position="560,10" size="59,30" zPosition="1"/>
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/dolby-off.png" position="560,10" size="59,30" zPosition="1" />
 		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/dolby.png" position="560,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2">
 			<convert type="ServiceInfo">IsMultichannel</convert>
-			<convert type="ConditionalShowHide"/>
+			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/hd-off.png" position="664,10" size="59,30" zPosition="1"/>
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/hd-off.png" position="664,10" size="59,30" zPosition="1" />
 		<widget pixmap="GigabluePax/construct/iconbar/hd.png" position="664,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2" alphatest="blend">
 			<convert type="ServiceInfo">VideoWidth</convert>
 			<convert type="ValueRange">721,1980</convert>
-			<convert type="ConditionalShowHide"/>
+			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/wide-off.png" position="612,10" size="59,30" zPosition="1"/>
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/wide-off.png" position="612,10" size="59,30" zPosition="1" />
 		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/wide.png" position="612,10" render="Pixmap" size="59,30" source="session.CurrentService" zPosition="2">
 			<convert type="ServiceInfo">IsWidescreen</convert>
-			<convert type="ConditionalShowHide"/>
+			<convert type="ConditionalShowHide" />
 		</widget>
-		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/crypt-off.png" position="352,10" size="59,30" zPosition="1"/>
+		<ePixmap alphatest="blend" pixmap="GigabluePax/construct/iconbar/crypt-off.png" position="352,10" size="59,30" zPosition="1" />
 		<widget alphatest="blend" pixmap="GigabluePax/construct/iconbar/crypt.png" render="Pixmap" position="352,10" size="59,30" source="session.CurrentService" zPosition="2">
 			<convert type="ServiceInfo">IsCrypted</convert>
-			<convert type="ConditionalShowHide"/>
+			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.CurrentService" render="Pixmap" pixmap="skin_default/icons/stream.png" size="26,23" position="1060,698" zPosition="1" alphatest="blend">
-			<convert type="ClientsStreaming"/>
-			<convert type="ConditionalShowHide"/>
+		<widget source="session.CurrentService" render="Pixmap" pixmap="skin_default/icons/stream.png" size="26,23" position="1110,699" zPosition="1" alphatest="blend">
+			<convert type="ClientsStreaming" />
+			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.HddSleepingState" render="Pixmap" pixmap="skin_default/icons/hdd.png" size="24,21" position="1100,698" zPosition="1" alphatest="blend">
-			<convert type="ConditionalShowHide"/>
+		<widget source="session.HddSleepingState" render="Pixmap" pixmap="skin_default/icons/hdd.png" size="24,21" position="1147,699" zPosition="1" alphatest="blend">
+			<convert type="ConditionalShowHide" />
 		</widget>
-		<eLabel text="TUNER:" position="730,6" size="250,20" font="Regular; 16" halign="center" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1"/>
+		<widget source="session.CurrentService" render="CiModuleControl" allVisible="1" position="1016,699" size="80,20" halign="left" valign="center" borderWidth="1" zPosition="1" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" font="Regular;16" />
+		<eLabel text="TUNER:" position="730,6" size="250,20" font="Regular; 16" halign="center" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" />
 		<widget source="session.FrontendInfo" render="Label" position="730,23" size="250,20" font="Regular; 16" halign="center" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1">
 			<convert type="FrontendInfo">STRING,10</convert>
 		</widget>
-		<eLabel text="SNR:" position="700,699" size="50,20" font="Regular; 16" halign="left" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1"/>
+		<eLabel text="SNR:" position="700,699" size="50,20" font="Regular; 16" halign="left" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" />
 		<widget source="session.FrontendStatus" render="Label" position="740,699" size="70,20" font="Regular; 16" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" halign="left">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
-		<eLabel text="AGC:" position="800,699" size="35,20" font="Regular; 16" halign="left" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1"/>
+		<eLabel text="AGC:" position="800,699" size="35,20" font="Regular; 16" halign="left" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" />
 		<widget source="session.FrontendStatus" render="Label" position="840,699" size="40,20" font="Regular; 16" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" halign="left">
 			<convert type="FrontendInfo">AGC</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="880,699" size="60,20" font="Regular; 16" halign="right" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1">
 			<convert type="ServiceInfo">VideoWidth</convert>
 		</widget>
-		<eLabel text="x" position="940,699" size="16,20" font="Regular; 16" halign="center" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1"/>
+		<eLabel text="x" position="940,699" size="16,20" font="Regular; 16" halign="center" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1" />
 		<widget source="session.CurrentService" render="Label" position="955,699" size="60,20" font="Regular; 16" halign="left" valign="center" backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" transparent="1">
 			<convert type="ServiceInfo">VideoHeight</convert>
 		</widget>
-	</screen>
+	</screen>	
 	<screen position="0,0" size="1281,721" name="ZapHistoryBrowser" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
