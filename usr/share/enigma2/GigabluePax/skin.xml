@@ -249,6 +249,17 @@
 		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend"/>
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
 	</screen>
+	<screen name="PANEL_BUTTONBAR_RGB_X">
+		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend" zPosition="1" />
+		<ePixmap pixmap="GigabluePax/buttons/key_red.png" position="580,680" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="GigabluePax/buttons/key_green.png" position="777,680" size="30,40" alphatest="blend" />
+		<ePixmap pixmap="GigabluePax/buttons/key_blue.png" position="976,680" size="30,40" alphatest="blend" />
+		<widget name="key_red" position="603,685" size="170,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="key_green" position="800,685" size="170,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="key_blue" position="998,685" size="180,26" zPosition="1" font="Regular; 20" halign="left" backgroundColor="layer-a-background" transparent="1" />
+		<ePixmap name="" position="583,680" size="900,40" pixmap="GigabluePax/construct/general/button-back.png" zPosition="-2" alphatest="blend" />
+		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend" />
+	</screen>
 	<screen name="PANEL_BUTTONBAR_MENU">
 		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_menu.png" alphatest="blend" zPosition="10"/>
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
@@ -1298,7 +1309,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="Tuner3" render="Label" position="535,465" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="HDDHeader" render="Label" position="535,510" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
 		<widget source="hddA" render="Label" position="535,535" size="700,200" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
-		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
+		<panel name="PANEL_BUTTONBAR_RGB_X"/>
 	</screen>
 	<screen name="CommitInfo" position="1,1" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="GigabluePax/construct/plugins/gigablue.png" position="187,289" size="200,200" alphatest="blend"/>
