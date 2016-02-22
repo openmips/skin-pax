@@ -2551,6 +2551,24 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 			<convert type="PaxCaidDisplay">Default</convert>
 		</widget>
 	</screen>
+	<screen name="SecondInfoBarSimple" title="Second InfoBar" position="0,0" flags="wfNoBorder" transparent="0" backgroundColor="transparent" size="1280, 720">
+		<panel name="InfoBar"/>
+		<ePixmap pixmap="GigabluePax/construct/plugins/eventview.png" position="132,194" size="200,200" alphatest="blend"/>
+		<eLabel position="460,65" zPosition="-2" size="791,455" backgroundColor="layer-a-background"/>
+		<ePixmap name="menu-band" position="-100,175" size="1380,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-3"/>
+		<widget render="Label" source="session.Event_Now" position="473,117" size="765,210" font="Regular; 20" backgroundColor="layer-a-background" transparent="1" zPosition="5" valign="top">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<widget noWrap="1" render="Label" source="session.Event_Now" position="473,71" size="765,40" font="SetrixHD; 30" halign="left" backgroundColor="layer-b-background" foregroundColor="layer-b-foreground" zPosition="10" transparent="1">
+			<convert type="EventName">Name</convert>
+		</widget>
+		<widget backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" font="Regular; 18" halign="right" position="473,362" render="Label" size="765,143" source="session.Event_Next" transparent="0" zPosition="1" valign="top">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<widget backgroundColor="layer-a-background" foregroundColor="layer-a-accent1" font="Regular; 23" halign="right" position="473,325" render="Label" size="765,33" source="session.Event_Next" transparent="0" valign="bottom" zPosition="2">
+			<convert type="EventName">Name</convert>
+		</widget>
+	</screen>
 	<screen name="LanguageWizard" position="0, 0" flags="wfNoBorder" title="Welcome..." transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<ePixmap name="" position="1183,680" size="94,40" pixmap="GigabluePax/buttons/key_exit.png" alphatest="blend" zPosition="1"/>
