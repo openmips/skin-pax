@@ -1684,6 +1684,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<ePixmap pixmap="GigabluePax/construct/menu/setup/scan.png" position="137,289" size="200,200" alphatest="blend"/>
 		<eLabel text="Choose Tuner" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
+        <panel name="PANEL_BUTTONBAR_INFO_MENU_OK_X" />
 		<widget source="nimlist" render="Listbox" position="484,79" size="725,570" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
