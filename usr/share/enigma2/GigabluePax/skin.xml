@@ -399,10 +399,10 @@
 		<widget source="session.CurrentService" render="Label" position="25,660" size="120,40" font="SetrixHD; 35" halign="center" valign="center" backgroundColor="layer-a-background" shadowColor="layer-a-background" shadowOffset="-1,-1" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
-		<widget source="session.CurrentService" render="PositionGauge" position="151,682" size="980,7" transparent="1">
+		<widget source="session.CurrentService" render="PositionGauge" position="151,682" size="980,7" transparent="1" zPosition="-8">
 			<convert type="ServicePosition">Gauge</convert>
 		</widget>
-		<widget source="session.CurrentService" pixmap="GigabluePax/colors/00007eff.png" render="Progress" position="151,684" size="980,5" backgroundColor="layer-a-progress" borderWidth="0" transparent="1">
+		<widget source="session.CurrentService" pixmap="GigabluePax/colors/00007eff.png" render="Progress" position="151,684" size="980,5" backgroundColor="layer-a-progress" borderWidth="0" transparent="1" zPosition="-9">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="1140,660" size="120,40" font="SetrixHD; 35" halign="center" valign="center" backgroundColor="layer-a-background" transparent="1">
