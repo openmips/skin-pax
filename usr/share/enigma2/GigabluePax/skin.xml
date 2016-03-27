@@ -2190,7 +2190,8 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/main/timer.png" position="137,289" size="200,200" alphatest="blend"/>
 		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
-		<widget name="timerlist" position="482,84" size="728,561" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="timerlist" position="482,84" size="728,480" scrollbarMode="showOnDemand" transparent="1"/>
+		<widget name="description" position="482,580" size="728,80" font="Regular; 15" backgroundColor="layer-a-background" transparent="1"/>
 		<widget name="HelpWindow" position="31,79" size="1,1" zPosition="1" transparent="1" alphatest="blend"/>
 	</screen>
 	<screen name="NumericalTextInputHelpDialog" position="550,530" size="604,125" backgroundColor="layer-a-background" flags="wfNoBorder" zPosition="8">
