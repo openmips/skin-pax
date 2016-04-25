@@ -851,6 +851,10 @@
 			<convert type="MenuEntryCompare">about_screen</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/info/streamingclients.png" position="237,289" size="200,200" alphatest="blend">
+			<convert type="MenuEntryCompare">streaming_clients_info_screen</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 	</screen>
 	<screen name="menu_mainmenu" position="0,0" size="1312,720" title="Main menu" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
 		<!-- MENU-TOP -->
