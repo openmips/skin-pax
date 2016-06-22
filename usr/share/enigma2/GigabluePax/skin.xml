@@ -2740,21 +2740,21 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="labstop" position="693,332" size="200,30" font="Regular; 24" valign="center" halign="center" backgroundColor="red" zPosition="2"/>
 		<widget name="labrun" position="693,332" size="200,30" zPosition="3" font="Regular; 24" valign="center" halign="center" backgroundColor="green"/>
 	</screen>
-    <screen name="NetworkNfs" title="NFS Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-        <panel name="PANEL_GIGABLUE_TOP" />
-        <panel name="PANEL_WINDOW_LARGE" />
-        <panel name="PANEL_BUTTONBAR_RGYB_X" />
-        <ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend" />
-        <widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
-        <widget name="lab1" position="500,200" size="180,30" font="Regular; 24" valign="center" transparent="0" halign="left" zPosition="3" />
-        <widget name="labactive" position="750,200" size="200,30" font="Regular; 24" valign="center" transparent="0" zPosition="3" />
-        <widget name="lab2" position="500,120" size="180,30" font="Regular; 24" valign="center" transparent="0" halign="left" zPosition="3" />
-        <widget name="labstop" position="750,120" size="200,30" font="Regular; 24" valign="center" halign="center" backgroundColor="red" zPosition="2" />
-        <widget name="labrun" position="750,120" size="200,30" zPosition="3" font="Regular; 24" valign="center" halign="center" backgroundColor="green" />
-        <widget name="lab3" position="500,450" size="715,126" font="Regular; 24" valign="top" transparent="0" halign="left" zPosition="3" />
-        <widget name="lab4" position="500,400" size="360,30" font="Regular; 24" valign="center" transparent="0" halign="left" zPosition="3" />
-    </screen>
-    <screen name="NetworkLog" title="Network Log" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="NetworkNfs" title="NFS Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_WINDOW_LARGE" />
+		<panel name="PANEL_BUTTONBAR_RGYB_X" />
+		<ePixmap pixmap="GigabluePax/construct/plugins/network.png" position="137,289" size="200,200" alphatest="blend" />
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<widget name="lab1" position="500,200" size="180,30" font="Regular; 24" valign="center" transparent="0" halign="left" zPosition="3" />
+		<widget name="labactive" position="750,200" size="200,30" font="Regular; 24" valign="center" transparent="0" zPosition="3" />
+		<widget name="lab2" position="500,120" size="180,30" font="Regular; 24" valign="center" transparent="0" halign="left" zPosition="3" />
+		<widget name="labstop" position="750,120" size="200,30" font="Regular; 24" valign="center" halign="center" backgroundColor="red" zPosition="2" />
+		<widget name="labrun" position="750,120" size="200,30" zPosition="3" font="Regular; 24" valign="center" halign="center" backgroundColor="green" />
+		<widget name="lab3" position="500,450" size="715,126" font="Regular; 24" valign="top" transparent="0" halign="left" zPosition="3" />
+		<widget name="lab4" position="500,400" size="360,30" font="Regular; 24" valign="center" transparent="0" halign="left" zPosition="3" />
+	</screen>
+	<screen name="NetworkLog" title="Network Log" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<panel name="PANEL_BUTTONBAR_OK_X"/>
