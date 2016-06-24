@@ -2111,21 +2111,22 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="config" position="482,99" size="728,540"/>
 	</screen>
 	<screen name="SwapManager" position="0, 0" flags="wfNoBorder" title="Swap File Manager" transparent="0" backgroundColor="transparent" size="1280, 720">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_WINDOW_SMALL"/>
-		<panel name="PANEL_BUTTONBAR_RGY_X"/>
-		<ePixmap pixmap="GigabluePax/construct/plugins/swap.png" position="237,289" size="200,200" alphatest="blend"/>
-		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
-		<widget name="autostart_on" pixmap="GigabluePax/colors/00007eff.png" position="659,108" size="24,24" zPosition="20" alphatest="blend"/>
-		<eLabel position="655,104" backgroundColor="layer-a-accent1" size=" 32,32" zPosition="1"/>
-		<widget name="lab1" position="696,105" size="355,30" font="Regular;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" valign="center" transparent="1"/>
-		<widget name="lab2" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" position="656,169" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="lab3" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" position="657,223" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="lab4" position="657,280" size="150,30" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labplace" position="816,170" size="220,30" font="Regular;20" valign="center" backgroundColor="layer-b-accent2"/>
-		<widget name="labsize" position="816,223" size="220,30" font="Regular;20" valign="center" backgroundColor="layer-b-accent2"/>
-		<widget name="inactive" position="816,280" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" foregroundColor="layer-a-foreground"/>
-		<widget name="active" position="816,280" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="green" foregroundColor="layer-a-foreground"/>
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_BUTTONBAR_RGY_X" />
+		<ePixmap pixmap="GigabluePax/construct/plugins/swap.png" position="237,289" size="200,200" alphatest="blend" />
+		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-3" />
+		<eLabel position="645,91" zPosition="-2" size="450,500" backgroundColor="layer-a-background" foregroundColor="layer-a-background" />
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" />
+		<widget name="autostart_off" pixmap="skin_default/icons/lock_off.png" position="660,107" size="24,24" zPosition="20" alphatest="blend" />
+		<widget name="autostart_on" pixmap="skin_default/icons/lock_on.png" position="660,107" size="24,24" zPosition="20" alphatest="blend" />
+		<widget name="lab1" position="696,106" size="380,60" font="Regular;20" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" valign="top" transparent="1" />
+		<widget name="lab2" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" position="656,180" size="150,30" font="Regular;20" valign="center" transparent="1" />
+		<widget name="lab3" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" position="657,230" size="150,30" font="Regular;20" valign="center" transparent="1" />
+		<widget name="lab4" position="657,280" size="150,30" foregroundColor="layer-a-foreground" backgroundColor="layer-a-background" font="Regular;20" valign="center" transparent="1" />
+		<widget name="labplace" position="817,180" size="260,30" font="Regular;20" valign="center" backgroundColor="layer-b-accent2" />
+		<widget name="labsize" position="817,230" size="260,30" font="Regular;20" valign="center" backgroundColor="layer-b-accent2" />
+		<widget name="inactive" position="817,280" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" foregroundColor="layer-a-foreground" />
+		<widget name="active" position="817,280" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="green" foregroundColor="layer-a-foreground" />
 	</screen>
 	<screen name="AutoTimerOverview" position="0, 0" flags="wfNoBorder" title="AutoTimer Overview" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
