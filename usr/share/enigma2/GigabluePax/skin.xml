@@ -342,7 +342,7 @@
 	</screen>
 	<screen name="PANEL_SETTINGS_SETUP">
 		<ePixmap name="menu-band" position="-100,265" size="1381,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
-		<eLabel text="Setup" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background" />
+        <widget source="Title" render="Label" position="333,3" size="596,45" font="Regular; 32" backgroundColor="layer-a-background" transparent="1" noWrap="1" />
 		<widget name="config" position="470,90" size="720,453" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1" valign="top" />
 		<eLabel position="450,70" zPosition="-1" size="760,585" backgroundColor="layer-a-background" />
 		<!-- /*Buttons-->
@@ -359,35 +359,35 @@
 		<widget name="description" position="473,559" size="720,90" font="Regular; 18" halign="left" backgroundColor="layer-a-background" transparent="1" zPosition="2" valign="top" foregroundColor="unfcc000" />
 	</screen>
 	<!-- SCREENS -->
-	<screen name="ChannelSelection" position="0,0" size="1281,721" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENU"/>
-		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
-		<eLabel position="0,81" zPosition="-10" size="1281,579" backgroundColor="layer-b-background"/>
-		<eLabel position="416,65" zPosition="-1" size="835,605" backgroundColor="layer-a-background"/>
-		<eLabel text="Channel selection" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="Title" render="Label" position="425,65" size="810,45" font="SetrixHD; 29" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
-		<eLabel position="87,270" size="256,1" backgroundColor="layer-a-accent1" foregroundColor="layer-a-accent1"/>
-		<widget name="list" position="425,115" size="810,540" scrollbarMode="showNever" colorServiceDescription="layer-a-accent1" colorServiceDescriptionSelected="layer-a-foreground" colorEventProgressbarBorder="selection-background" colorEventProgressbarBorderSelected="layer-a-foreground" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceNumberFont="SetrixHD;24" serviceNameFont="SetrixHD;24" serviceInfoFont="Regular;22" transparent="1" foregroundColor="layer-a-accent2" backgroundColor="layer-a-background" itemHeight="30"/>
-		<widget source="ServiceEvent" render="Label" position="30,205" size="376,50" font="SetrixHD; 30" backgroundColor="layer-b-background" transparent="1" valign="bottom" noWrap="1">
+	<screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<panel name="PANEL_BUTTONBAR_MENU" />
+		<panel name="PANEL_BUTTONBAR_RGYB_X" />
+		<eLabel position="0,75" zPosition="-10" size="1281,585" backgroundColor="layer-b-background" />
+		<eLabel position="426,58" zPosition="-1" size="835,612" backgroundColor="layer-a-background" />
+		<eLabel text="Channel selection" position="1,1" size="1,1" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background" />
+		<widget source="Title" render="Label" position="333,3" size="900,45" font="Regular; 32" backgroundColor="layer-a-background" transparent="1" noWrap="1" />
+		<eLabel position="87,275" size="256,1" backgroundColor="layer-a-accent1" foregroundColor="layer-a-accent1" />
+		<widget name="list" position="435,62" size="820,604" scrollbarMode="showNever" colorServiceDescription="layer-a-accent1" colorServiceDescriptionSelected="layer-a-foreground" colorEventProgressbarBorder="selection-background" colorEventProgressbarBorderSelected="layer-a-foreground" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceNumberFont="SetrixHD;24" serviceNameFont="SetrixHD;24" serviceInfoFont="Regular;22" transparent="1" foregroundColor="layer-a-accent2" backgroundColor="layer-a-background" itemHeight="30" />
+		<widget source="ServiceEvent" render="Label" position="20,210" size="400,50" font="SetrixHD; 30" backgroundColor="layer-b-background" transparent="1" valign="bottom" noWrap="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="13,256" size="64,24" font="SetrixHD; 21" backgroundColor="layer-b-background" transparent="1" halign="right">
+		<widget source="ServiceEvent" render="Label" position="18,261" size="64,24" font="SetrixHD; 21" backgroundColor="layer-b-background" transparent="1" halign="right">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="ServiceEvent" valign="bottom" render="OMNextEvent" position="30,555" size="378,98" font="Regular;19" backgroundColor="layer-b-background" foregroundColor="layer-a-foreground" transparent="1"/>
-		<widget source="ServiceEvent" render="Label" position="351,256" size="77,24" font="SetrixHD; 21" backgroundColor="layer-b-background" transparent="1">
+		<widget source="ServiceEvent" valign="bottom" render="OMNextEvent" position="20,555" size="400,98" font="Regular;19" backgroundColor="layer-b-background" foregroundColor="layer-a-foreground" transparent="1" />
+		<widget source="ServiceEvent" render="Label" position="346,261" size="77,24" font="SetrixHD; 21" backgroundColor="layer-b-background" transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Progress" position="87,268" size="256,5" borderWidth="0" backgroundColor="selection-background" pixmap="GigabluePax/colors/00ffffff.png" transparent="1" zPosition="1">
+		<widget source="ServiceEvent" render="Progress" position="87,273" size="256,5" borderWidth="0" backgroundColor="selection-background" pixmap="GigabluePax/colors/00ffffff.png" transparent="1" zPosition="1">
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="30,290" size="378,265" font="Regular; 20" backgroundColor="layer-b-background" transparent="1" valign="top">
+		<widget source="ServiceEvent" render="Label" position="20,290" size="400,265" font="Regular; 20" backgroundColor="layer-b-background" transparent="1" valign="top">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<widget position="130,87" size="190,114" render="Picon" source="ServiceEvent" alphatest="blend" zPosition="2">
+		<widget position="130,75" size="220,132" render="Picon" source="ServiceEvent" alphatest="blend" zPosition="2">
 			<convert type="PaxRefString">ServicelistRef</convert>
 		</widget>
 	</screen>
