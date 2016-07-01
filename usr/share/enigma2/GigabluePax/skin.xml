@@ -491,7 +491,8 @@
 		<ePixmap pixmap="GigabluePax/construct/menu/main/setup.png" position="237,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -526,7 +527,8 @@
 		<ePixmap pixmap="GigabluePax/construct/menu/main/power.png" position="237,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -542,7 +544,8 @@
 		<ePixmap pixmap="GigabluePax/construct/menu/system/audio.png" position="237,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -558,7 +561,8 @@
 		<ePixmap pixmap="GigabluePax/construct/menu/system/video.png" position="237,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -574,7 +578,8 @@
 		<ePixmap pixmap="GigabluePax/construct/menu/setup/softcam.png" position="237,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -590,7 +595,8 @@
 		<ePixmap pixmap="GigabluePax/construct/menu/setup/system.png" position="237,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -605,7 +611,8 @@
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -648,7 +655,8 @@
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -704,7 +712,8 @@
 		<ePixmap pixmap="GigabluePax/construct/menu/system/ui.png" position="237,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -720,7 +729,8 @@
 		<ePixmap pixmap="GigabluePax/construct/menu/system/frontpanel.png" position="237,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -736,7 +746,8 @@
 		<ePixmap pixmap="GigabluePax/construct/menu/system/recording.png" position="237,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -752,7 +763,8 @@
 		<ePixmap pixmap="GigabluePax/construct/menu/system/epg.png" position="237,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -768,7 +780,8 @@
 		<ePixmap pixmap="GigabluePax/construct/menu/system/network.png" position="237,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -784,7 +797,8 @@
 		<ePixmap pixmap="GigabluePax/construct/menu/system/devices.png" position="237,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -800,7 +814,8 @@
 		<ePixmap pixmap="GigabluePax/construct/menu/system/general.png" position="237,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -816,7 +831,8 @@
 		<ePixmap pixmap="GigabluePax/construct/menu/setup/scan.png" position="237,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -831,7 +847,8 @@
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
@@ -862,7 +879,8 @@
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<ePixmap name="menu-band" position="0,265" size="1281,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 30" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
 		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
