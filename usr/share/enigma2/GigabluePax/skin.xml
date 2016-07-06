@@ -370,6 +370,22 @@
 		<!--Button */-->
 		<widget name="description" position="473,559" size="720,90" font="Regular; 18" halign="left" backgroundColor="layer-a-background" transparent="1" zPosition="2" valign="top" foregroundColor="unfcc000"/>
 	</screen>
+	<screen name="PANEL_MENU">
+		<panel name="PANEL_GIGABLUE_TOP"/>
+		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
+		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
+		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
+		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="menu_path_compressed" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
+			<convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
+				"fonts": [gFont("SetrixHD", 30)],
+				"itemHeight": 60
+				}
+			</convert>
+		</widget>
+	</screen>
 	<!-- SCREENS -->
 	<screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
@@ -501,21 +517,8 @@
 		<widget name="duration" position="938,616" size="270,40" font="SetrixHD; 24" halign="right" backgroundColor="layer-a-background" foregroundColor="layer-b-foreground" transparent="1"/>
 	</screen>
 	<screen name="Menu" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
+		<panel name="PANEL_MENU"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/main/setup.png" position="237,289" size="200,200" alphatest="blend"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
 	</screen>
 	<screen name="CiSelection" position="0,0" size="1280,720" title="Common Interface" flags="wfNoBorder" backgroundColor="transparent">
 		<!-- MENU-TOP -->
@@ -537,88 +540,23 @@
 		<widget name="ServiceList" position="617,76" size="630,583" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
 	<screen name="menu_shutdown" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
+		<panel name="PANEL_MENU"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/main/power.png" position="237,289" size="200,200" alphatest="blend"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
 	</screen>
 	<screen name="menu_audio_menu" position="0,0" size="1280,720" title="Audio menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
+		<panel name="PANEL_MENU"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/system/audio.png" position="237,289" size="200,200" alphatest="blend"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
 	</screen>
 	<screen name="menu_video_menu" position="0,0" size="1280,720" title="Video menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
+		<panel name="PANEL_MENU"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/system/video.png" position="237,289" size="200,200" alphatest="blend"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
 	</screen>
 	<screen name="menu_cam" position="0,0" size="1280,720" title="CAM/CI menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
+		<panel name="PANEL_MENU"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/setup/softcam.png" position="237,289" size="200,200" alphatest="blend"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
 	</screen>
 	<screen name="menu_system" position="0,0" size="1280,720" title="System menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
+		<panel name="PANEL_MENU"/>
 		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/system/ui.png" position="237,289" size="200,200" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">ui_menu</convert>
 			<convert type="ConditionalShowHide"/>
@@ -660,39 +598,8 @@
 			<convert type="ConditionalShowHide"/>
 		</widget>
 	</screen>
-	<!--"double entry menu_system"
-	<screen name="menu_system" position="0,0" size="1280,720" title="System menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
-		<ePixmap pixmap="GigabluePax/construct/menu/setup/system.png" position="237,289" size="200,200" alphatest="blend"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
-	</screen>-->
 	<screen name="menu_setup" position="0,0" size="1280,720" title="Setup menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
+		<panel name="PANEL_MENU"/>
 		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/system/audio.png" position="237,289" size="200,200" alphatest="blend" zPosition="1">
 			<convert type="MenuEntryCompare">audio_menu</convert>
 			<convert type="ConditionalShowHide"/>
@@ -723,21 +630,8 @@
 		</widget>
 	</screen>
 	<screen name="menu_ui_menu" position="0,0" size="1280,720" title="UI menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
+		<panel name="PANEL_MENU"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/system/ui.png" position="237,289" size="200,200" alphatest="blend"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
 	</screen>
 	<screen name="menu_frontpanel_menu" position="0,0" size="1280,720" title="Frontpanel menu" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
@@ -757,122 +651,31 @@
 		</widget>
 	</screen>
 	<screen name="menu_recording_menu" position="0,0" size="1280,720" title="Recording menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
+		<panel name="PANEL_MENU"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/system/recording.png" position="237,289" size="200,200" alphatest="blend"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
 	</screen>
 	<screen name="menu_epg_menu" position="0,0" size="1280,720" title="EPG menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
+		<panel name="PANEL_MENU"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/system/epg.png" position="237,289" size="200,200" alphatest="blend"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
 	</screen>
 	<screen name="menu_network_menu" position="0,0" size="1280,720" title="Network menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
+		<panel name="PANEL_MENU"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/system/network.png" position="237,289" size="200,200" alphatest="blend"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
 	</screen>
 	<screen name="menu_devices_menu" position="0,0" size="1280,720" title="Devices menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
+		<panel name="PANEL_MENU"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/system/devices.png" position="237,289" size="200,200" alphatest="blend"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
 	</screen>
 	<screen name="menu_general_menu" position="0,0" size="1280,720" title="General menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
+		<panel name="PANEL_MENU"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/system/general.png" position="237,289" size="200,200" alphatest="blend"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
 	</screen>
 	<screen name="menu_scan" position="0,0" size="1280,721" title="Scan menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
+		<panel name="PANEL_MENU"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/setup/scan.png" position="237,289" size="200,200" alphatest="blend"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
 	</screen>
 	<screen name="menu_information" position="0,0" size="1280,720" title="Information menu" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
+		<panel name="PANEL_MENU"/>
 		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/info/channel.png" position="237,289" size="200,200" alphatest="blend">
 			<convert type="MenuEntryCompare">service_info_screen</convert>
 			<convert type="ConditionalShowHide"/>
@@ -891,20 +694,7 @@
 		</widget>
 	</screen>
 	<screen name="menu_mainmenu" position="0,0" size="1312,720" title="Main menu" flags="wfNoBorder" transparent="0" backgroundColor="transparent">
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
-		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="thistory" render="Label" position="369,0" size="540,20" font="SetrixHD; 15" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="menu" render="Listbox" position="636,97" size="429,555" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
-			<convert type="TemplatedMultiContent">
-				{"template": [ MultiContentEntryText(pos = (30, 5), size = (420, 50), flags = RT_HALIGN_LEFT, text = 0) ],
-				"fonts": [gFont("SetrixHD", 30)],
-				"itemHeight": 60
-				}
-			</convert>
-		</widget>
+		<panel name="PANEL_MENU"/>
 		<widget source="menu" render="Pixmap" pixmap="GigabluePax/construct/menu/main/timer.png" position="237,289" size="200,200" alphatest="blend">
 			<convert type="MenuEntryCompare">timer_menu</convert>
 			<convert type="ConditionalShowHide"/>
