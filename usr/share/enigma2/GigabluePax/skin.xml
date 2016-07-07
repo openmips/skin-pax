@@ -372,7 +372,7 @@
 	</screen>
 	<screen name="PANEL_MENU">
 		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_BUTTONBAR_MENUEDIT"/>
+		<!-- <panel name="PANEL_BUTTONBAR_MENUEDIT"/> */-->
 		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
 		<eLabel position="645,91" zPosition="-11" size="412,565" backgroundColor="layer-a-background" foregroundColor="layer-a-background"/>
 		<widget source="title" render="Label" position="369,10" size="540,35" font="SetrixHD; 28" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
