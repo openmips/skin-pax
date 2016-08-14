@@ -1512,7 +1512,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/setup/scan.png" position="137,289" size="200,200" alphatest="blend"/>
-		<eLabel text="Service scan" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
+		<eLabel text="Service scan" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="center" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget name="config" position="481,115" size="725,499" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="layer-a-background" transparent="1"/>
 		<widget name="header" position="481,73" size="725,30" backgroundColor="layer-a-background" transparent="1" font="Regular; 26"/>
 		<widget name="introduction" position="482,623" size="725,27" font="Regular;22" halign="center" backgroundColor="layer-a-background" transparent="1"/>
@@ -1549,10 +1549,10 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 			</convert>
 		</widget>
 	</screen>
-	<screen name="NimSetup" position="0,0" size="1280,720" title="Setup tuner" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="NimSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
 		<ePixmap pixmap="GigabluePax/construct/menu/setup/scan.png" position="137,289" size="200,200" alphatest="blend"/>
-		<eLabel text="Setup tuner" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
+		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
 		<panel name="PANEL_WINDOW_LARGE"/>
 		<widget name="config" position="484,79" size="725,570" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1"/>
 		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
@@ -2985,7 +2985,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<eLabel text="MenuSort" position="369,0" size="200,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
 		<widget source="title" render="Label" position="599,0" size="339,46" font="SetrixHD; 35" transparent="1" valign="top"/>
 		<widget source="menu" render="Listbox" position="477,81" size="742,569" scrollbarMode="showOnDemand">
-            <convert type="StringList"/>
+			<convert type="StringList"/>
 		</widget>
 		<ePixmap pixmap="GigabluePax/buttons/right.png" position="320,686" size="30,29" alphatest="blend" zPosition="1"/>
 		<ePixmap pixmap="GigabluePax/buttons/left.png" position="128,686" size="30,29" alphatest="blend" zPosition="1"/>
