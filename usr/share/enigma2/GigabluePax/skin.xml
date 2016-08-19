@@ -1102,80 +1102,54 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="RassLogo" position="0,0" size="40,40"/>
 	</screen>
 	<screen name="About" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="GigabluePax/construct/plugins/gigablue.png" position="187,289" size="200,200" alphatest="blend"/>
-		<ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<eLabel text="About" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<eLabel position="524,66" zPosition="-1" size="722,595" backgroundColor="layer-a-background"/>
-		<widget source="AboutHeader" render="Label" position="535,76" size="700,40" font="SetrixHD; 30" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="CPUinfo" render="Label" position="535,122" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="ChipsetInfo" render="Label" position="885,122" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="KernelVersion" render="Label" position="535,148" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" position="885,148" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
-			<convert type="STBInfo">DriverInfo,Full</convert>
-		</widget>
-		<widget source="EnigmaVersion" render="Label" position="535,181" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="GStreamerVersion" render="Label" position="535,236" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="EnigmaSkin" render="Label" position="885,181" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="FlashDate" render="Label" position="535,209" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="ImageVersion" render="Label" position="885,209" size="350,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" position="535,270" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
-			<convert type="STBInfo">LoadAvg,Full</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="535,295" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
-			<convert type="STBInfo">FlashInfo,Full</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="535,320" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
-			<convert type="STBInfo">MemTotal,Full</convert>
-		</widget>
-		<!-- <widget source="session.CurrentService" render="Label" position="535,340" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1">
-					<convert type="STBInfo">SystemTemp,Full</convert>
-				</widget> -->
-		<widget source="TunerHeader" render="Label" position="535,365" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner0" render="Label" position="535,390" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner1" render="Label" position="535,415" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner2" render="Label" position="535,440" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="Tuner3" render="Label" position="535,465" size="700,25" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="HDDHeader" render="Label" position="535,510" size="700,25" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1"/>
-		<widget source="hddA" render="Label" position="535,535" size="700,200" font="SetrixHD; 18" backgroundColor="layer-a-background" transparent="1"/>
-		<panel name="PANEL_BUTTONBAR_RGB_X"/>
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+		<ePixmap pixmap="GigabluePax/construct/menu/info/about.png" position="237,289" size="200,200" alphatest="blend" />
+		<widget source="AboutHeader" render="Label" position="369,0" size="560,46" font="SetrixHD; 32" transparent="1" valign="top" zPosition="100" backgroundColor="layer-a-background" noWrap="1" />
+		<eLabel position="645,91" zPosition="-1" size="590,580" backgroundColor="layer-a-background" />
+		<widget name="AboutScrollLabel" split="1" dividechar=":" position="665,105" size="570,560" valign="top" font="Regular; 20" backgroundColor="layer-a-background" transparent="1" halign="left" noWrap="1" />
+		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
 	</screen>
 	<screen name="CommitInfo" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP"/>
 		<ePixmap pixmap="GigabluePax/construct/plugins/gigablue.png" position="187,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<eLabel text="Commits" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="Title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
 		<eLabel position="524,66" zPosition="-1" size="722,595" backgroundColor="layer-a-background"/>
-		<widget source="AboutHeader" render="Label" position="535,76" size="700,40" font="SetrixHD; 30" backgroundColor="layer-a-background" transparent="1"/>
 		<widget name="AboutScrollLabel" font="SetrixHD; 18" position="535,80" size="700,565" zPosition="2" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<panel name="PANEL_BUTTONBAR_R_X"/>
 		<ePixmap position="1090,682" size="36,36" zPosition="10" pixmap="GigabluePax/construct/general/left.png" transparent="1" alphatest="blend"/>
 		<ePixmap position="1140,682" size="36,36" zPosition="10" pixmap="GigabluePax/construct/general/right.png" transparent="1" alphatest="blend"/>
+		<panel name="PANEL_BUTTONBAR_R_X"/>
 	</screen>
-	<screen name="SystemNetworkInfo" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<eLabel text="Network" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<eLabel position="524,66" zPosition="-1" size="722,615" backgroundColor="layer-a-background"/>
-		<ePixmap pixmap="GigabluePax/construct/menu/system/network.png" position="187,289" size="200,200" alphatest="blend"/>
-		<widget name="AboutScrollLabel" position="535,114" size="700,546" valign="left" font="SetrixHD; 20" backgroundColor="layer-a-background" transparent="1" halign="left" noWrap="1"/>
-		<widget source="IFtext" render="Label" position="536,79" size="120,25" zPosition="10" font="SetrixHD; 20" halign="left" valign="center" transparent="1" backgroundColor="layer-a-background"/>
-		<widget source="IF" render="Label" position="677,79" size="558,25" zPosition="10" font="SetrixHD; 20" halign="left" valign="center" transparent="1" backgroundColor="layer-a-background"/>
+	<screen name="SystemNetworkInfo" position="0,0" size="1280,720" title="SystemNetworkInfo" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<widget source="Title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
+		<ePixmap pixmap="GigabluePax/construct/menu/system/network.png" position="237,289" size="200,200" alphatest="blend" />
+		<eLabel position="645,91" zPosition="-1" size="590,580" backgroundColor="layer-a-background" />
+		<widget name="AboutScrollLabel" font="Regular; 20" split="1" dividechar=":" position="665,105" size="570,560" valign="top" backgroundColor="layer-a-background" transparent="1" halign="left" noWrap="1" />
+		<panel name="PANEL_BUTTONBAR_OK_X" />
 	</screen>
 	<screen name="MemoryInfo" position="0,0" size="1280,720" title="MemoryInfo" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<eLabel text="MemoryInfo - only for Developers" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<eLabel text="pfree:" position="659,552" size="50,25" font="SetrixHD; 16" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<eLabel text="pused:" position="658,590" size="50,25" font="SetrixHD; 16" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<eLabel position="225,99" zPosition="-1" size="848,541" backgroundColor="layer-a-background"/>
-		<widget name="info" position="657,109" size="404,128" font="SetrixHD; 16" valign="top"/>
-		<widget name="rmemtext" position="658,244" size="200,300" font="SetrixHD; 16"/>
-		<widget name="lmemvalue" position="441,108" size="200,518" font="SetrixHD; 16"/>
-		<widget name="pused" position="715,590" size="100,25" font="SetrixHD; 16"/>
-		<widget name="lmemtext" position="235,109" size="200,517" font="SetrixHD; 16"/>
-		<widget name="rmemvalue" position="859,243" size="200,300" font="SetrixHD; 16"/>
-		<widget name="pfree" position="715,551" size="100,25" font="SetrixHD; 16"/>
-		<panel name="PANEL_BUTTONBAR_SOURCE_RGB_X"/>
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<widget source="Title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1" />
+		<eLabel position="225,70" zPosition="-1" size="848,570" backgroundColor="layer-a-background" />
+		<eLabel text="pfree:" position="655,573" size="50,25" font="SetrixHD; 18" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background" />
+		<eLabel text="pused:" position="655,595" size="50,25" font="SetrixHD; 18" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background" />
+		<widget name="info" position="235,75" size="823,75" font="SetrixHD; 20" valign="top" halign="center" foregroundColor="un9f1313" zPosition="10" />
+		<widget name="rmemtext" position="655,160" size="200,410" font="SetrixHD; 18" />
+		<widget name="lmemvalue" position="441,160" size="200,460" font="SetrixHD; 18" />
+		<widget name="pused" position="860,595" size="100,25" font="SetrixHD; 18" />
+		<widget name="lmemtext" position="235,160" size="200,460" font="SetrixHD; 18" />
+		<widget name="rmemvalue" position="860,160" size="200,410" font="SetrixHD; 18" />
+		<widget name="pfree" position="860,573" size="100,25" font="SetrixHD; 18" />
+		<eLabel name="progressbar-back" position="234,626" size="820,2" backgroundColor="layer-a-accent1" zPosition="2" />
+		<eLabel name="line" position="235,154" size="825,1" backgroundColor="layer-a-accent1" zPosition="2" />
+		<widget name="slide" pixmap="GigabluePax/colors/00007eff.png" backgroundColor="layer-a-progress" position="234,625" size="820,4" zPosition="7" transparent="1">
+			  <convert type="slide">Progress</convert>
+		</widget>
+		<panel name="PANEL_BUTTONBAR_RGB_X" />
+		<widget name="params" rowsincolumn="19" />
 	</screen>
 	<screen name="ExtensionsList" position="0,0" size="1280,720" title="Extensions" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="GigabluePax/construct/menu/main/plugins.png" position="187,289" size="200,200" alphatest="blend"/>
@@ -1917,13 +1891,15 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<ePixmap name="" position="1187,680" size="200,40" pixmap="GigabluePax/construct/general/button-back-light.png" zPosition="-1" alphatest="blend"/>
 		<widget name="config" position="482,99" size="728,540" transparent="1"/>
 	</screen>
-	<screen name="ServiceInfo" position="0, 0" flags="wfNoBorder" title="Serviceinfo" transparent="0" backgroundColor="transparent" size="1280, 720">
+	<screen name="ServiceInfo" position="0,0" size="1280, 720" title="Serviceinfo" flags="wfNoBorder" backgroundColor="transparent" >
 		<panel name="PANEL_GIGABLUE_TOP"/>
-		<panel name="PANEL_WINDOW_LARGE"/>
+		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+		<ePixmap pixmap="GigabluePax/construct/menu/info/channel.png" position="237,289" size="200,200" alphatest="blend"/>
+		<widget source="Title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
+		<eLabel position="645,91" zPosition="-1" size="590,580" backgroundColor="layer-a-background" />
+		<widget name="infotext" noWrap="1" split="1" dividechar=":" font="Regular; 20" position="665,105" size="580,560" backgroundColor="layer-a-background" transparent="1" />
+		<widget name="infolist" font="SetrixHD; 22" itemHeight="40" enableWrapAround="1" selectionDisabled="1" position="0,0" size="1,1" backgroundColor="layer-a-background" transparent="1" />
 		<panel name="PANEL_BUTTONBAR_RGYB_X"/>
-		<ePixmap pixmap="GigabluePax/construct/menu/main/info.png" position="137,289" size="200,200" alphatest="blend"/>
-		<widget source="Title" render="Label" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
-		<widget name="infolist" position="482,99" size="728,540" itemHeight="40" selectionDisabled="1" scrollbarMode="showOnDemand" backgroundColor="layer-a-background" transparent="1"/>
 	</screen>
 	<screen name="OSD3DSetupScreen" position="0, 0" flags="wfNoBorder" title="OSD 3D setup" transparent="0" backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
@@ -2970,11 +2946,15 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="key_red" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1"/>
 		<widget name="key_green" position="0,0" zPosition="-2" size="0,0" font="Regular;21" transparent="1"/>
 	</screen>
-	<screen name="StreamingClientsInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="un90000000">
-		<eLabel position="center,117" zPosition="-2" size="600,500" backgroundColor="layer-a-background"/>
-		<widget source="Title" render="Label" position="center,126" size="580,44" font="Regular; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" halign="center"/>
-		<widget source="total" render="Label" position="center,174" size="580,50" zPosition="1" font="Regular; 22" halign="left" backgroundColor="layer-a-background" transparent="1" valign="center"/>
-		<widget source="liste" render="Label" position="center,234" size="580,370" zPosition="1" transparent="1" noWrap="1" font="Regular; 20" valign="top"/>
+	<screen name="StreamingClientsInfo" position="0,0" size="1280, 720" flags="wfNoBorder" title="StreamingClientsInfo" backgroundColor="transparent" >
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+		<ePixmap pixmap="GigabluePax/construct/menu/info/streamingclients.png" position="237,289" size="200,200" alphatest="blend" />
+		<widget source="Title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
+		<eLabel position="645,91" zPosition="-1" size="590,580" backgroundColor="layer-a-background" />
+		<widget source="total" render="Label" position="665,108" size="550,50" zPosition="1" transparent="1" font="SetrixHD; 24" halign="left" backgroundColor="layer-a-background" valign="top" />
+		<widget source="liste" render="Label" position="665,180" size="550,470" zPosition="1" transparent="1" font="SetrixHD; 22" halign="left" backgroundColor="layer-a-background" valign="top" noWrap="1" />
+		<panel name="PANEL_BUTTONBAR_OK_X" />
 	</screen>
 	<screen name="MenuSort" position="0,0" size="1280,720" title="MenuSort" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
@@ -2992,5 +2972,24 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<eLabel text="Move" position="160,687" size="160,26" font="Regular; 20" transparent="1" valign="center" zPosition="0" backgroundColor="layer-a-background" halign="center"/>
 		<ePixmap name="" position="107,680" size="260,40" pixmap="GigabluePax/construct/general/button-back-single.png" zPosition="-3" alphatest="blend"/>
 		<ePixmap pixmap="GigabluePax/buttons/key_withe.png" position="105,680" size="30,40" alphatest="blend"/>
+	</screen>
+	<screen name="TranslationInfo" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<ePixmap pixmap="GigabluePax/construct/plugins/gigablue.png" position="187,289" size="200,200" alphatest="blend" />
+		<ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+		<widget source="Title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1" />
+		<eLabel position="645,91" zPosition="-1" size="590,580" backgroundColor="layer-a-background" />
+		<widget name="AboutScrollLabel" zPosition="1" split="1" dividechar=":" position="665,105" size="570,560" valign="top" font="Regular; 20" backgroundColor="layer-a-background" transparent="1" halign="left" noWrap="1" />
+		<panel name="PANEL_BUTTONBAR_OK_X" />
+	</screen>
+	<screen name="ContactInfo" position="0,0" size="1280, 720" flags="wfNoBorder" title="Contact Info" backgroundColor="transparent" >
+		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<ePixmap pixmap="GigabluePax/construct/menu/info/about.png" position="237,289" size="200,200" alphatest="blend" />
+		<widget source="Title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
+		<eLabel position="645,91" zPosition="0" size="590,580" backgroundColor="layer-a-background" />
+		<widget source="manufacturerinfo" render="Label" position="665,105" size="570,560" font="Regular; 20" zPosition="2" transparent="1" halign="left" backgroundColor="layer-a-background" valign="top" />
+		<panel name="PANEL_BUTTONBAR_OK_X" />
+		<ePixmap pixmap="GigabluePax/construct/impex.png" position="665,545" size="576,107" alphatest="blend" zPosition="2"/>
 	</screen>
 </skin>
