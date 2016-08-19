@@ -3012,4 +3012,14 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="AboutScrollLabel" zPosition="1" split="1" dividechar=":" position="665,105" size="570,560" valign="top" font="Regular; 20" backgroundColor="layer-a-background" transparent="1" halign="left" noWrap="1" />
 		<panel name="PANEL_BUTTONBAR_OK_X" />
 	</screen>
+	<screen name="ContactInfo" position="0,0" size="1280, 720" flags="wfNoBorder" title="Contact Info" backgroundColor="transparent" >
+		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<ePixmap pixmap="GigabluePax/construct/menu/info/about.png" position="237,289" size="200,200" alphatest="blend" />
+		<widget source="Title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
+		<eLabel position="645,91" zPosition="0" size="590,580" backgroundColor="layer-a-background" />
+		<widget source="manufacturerinfo" render="Label" position="665,105" size="570,560" font="Regular; 20" zPosition="2" transparent="1" halign="left" backgroundColor="layer-a-background" valign="top" />
+		<panel name="PANEL_BUTTONBAR_OK_X" />
+		<ePixmap pixmap="GigabluePax/construct/impex.png" position="665,545" size="576,107" alphatest="blend" zPosition="2"/>
+	</screen>
 </skin>
