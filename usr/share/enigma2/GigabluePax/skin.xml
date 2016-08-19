@@ -1141,16 +1141,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<panel name="PANEL_BUTTONBAR_RGB_X"/>
 	</screen>
 	<screen name="CommitInfo" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP"/>
 		<ePixmap pixmap="GigabluePax/construct/plugins/gigablue.png" position="187,289" size="200,200" alphatest="blend"/>
 		<ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<eLabel text="Commits" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
+		<widget source="Title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
 		<eLabel position="524,66" zPosition="-1" size="722,595" backgroundColor="layer-a-background"/>
-		<widget source="AboutHeader" render="Label" position="535,76" size="700,40" font="SetrixHD; 30" backgroundColor="layer-a-background" transparent="1"/>
 		<widget name="AboutScrollLabel" font="SetrixHD; 18" position="535,80" size="700,565" zPosition="2" halign="left" backgroundColor="layer-a-background" transparent="1"/>
-		<panel name="PANEL_BUTTONBAR_R_X"/>
 		<ePixmap position="1090,682" size="36,36" zPosition="10" pixmap="GigabluePax/construct/general/left.png" transparent="1" alphatest="blend"/>
 		<ePixmap position="1140,682" size="36,36" zPosition="10" pixmap="GigabluePax/construct/general/right.png" transparent="1" alphatest="blend"/>
+		<panel name="PANEL_BUTTONBAR_R_X"/>
 	</screen>
 	<screen name="SystemNetworkInfo" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2"/>
