@@ -3003,4 +3003,13 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<ePixmap name="" position="107,680" size="260,40" pixmap="GigabluePax/construct/general/button-back-single.png" zPosition="-3" alphatest="blend"/>
 		<ePixmap pixmap="GigabluePax/buttons/key_withe.png" position="105,680" size="30,40" alphatest="blend"/>
 	</screen>
+	<screen name="TranslationInfo" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<ePixmap pixmap="GigabluePax/construct/plugins/gigablue.png" position="187,289" size="200,200" alphatest="blend" />
+		<ePixmap name="menu-band" position="-50,265" size="1351,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
+		<widget source="Title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1" />
+		<eLabel position="645,91" zPosition="-1" size="590,580" backgroundColor="layer-a-background" />
+		<widget name="AboutScrollLabel" zPosition="1" split="1" dividechar=":" position="665,105" size="570,560" valign="top" font="Regular; 20" backgroundColor="layer-a-background" transparent="1" halign="left" noWrap="1" />
+		<panel name="PANEL_BUTTONBAR_OK_X" />
+	</screen>
 </skin>
