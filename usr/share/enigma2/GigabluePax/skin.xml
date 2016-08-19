@@ -1163,19 +1163,25 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="IF" render="Label" position="677,79" size="558,25" zPosition="10" font="SetrixHD; 20" halign="left" valign="center" transparent="1" backgroundColor="layer-a-background"/>
 	</screen>
 	<screen name="MemoryInfo" position="0,0" size="1280,720" title="MemoryInfo" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<eLabel text="MemoryInfo - only for Developers" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<eLabel text="pfree:" position="659,552" size="50,25" font="SetrixHD; 16" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<eLabel text="pused:" position="658,590" size="50,25" font="SetrixHD; 16" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<eLabel position="225,99" zPosition="-1" size="848,541" backgroundColor="layer-a-background"/>
-		<widget name="info" position="657,109" size="404,128" font="SetrixHD; 16" valign="top"/>
-		<widget name="rmemtext" position="658,244" size="200,300" font="SetrixHD; 16"/>
-		<widget name="lmemvalue" position="441,108" size="200,518" font="SetrixHD; 16"/>
-		<widget name="pused" position="715,590" size="100,25" font="SetrixHD; 16"/>
-		<widget name="lmemtext" position="235,109" size="200,517" font="SetrixHD; 16"/>
-		<widget name="rmemvalue" position="859,243" size="200,300" font="SetrixHD; 16"/>
-		<widget name="pfree" position="715,551" size="100,25" font="SetrixHD; 16"/>
-		<panel name="PANEL_BUTTONBAR_SOURCE_RGB_X"/>
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<widget source="Title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1" />
+		<eLabel position="225,70" zPosition="-1" size="848,570" backgroundColor="layer-a-background" />
+		<eLabel text="pfree:" position="655,573" size="50,25" font="SetrixHD; 18" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background" />
+		<eLabel text="pused:" position="655,595" size="50,25" font="SetrixHD; 18" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background" />
+		<widget name="info" position="235,75" size="823,75" font="SetrixHD; 20" valign="top" halign="center" foregroundColor="un9f1313" zPosition="10" />
+		<widget name="rmemtext" position="655,160" size="200,410" font="SetrixHD; 18" />
+		<widget name="lmemvalue" position="441,160" size="200,460" font="SetrixHD; 18" />
+		<widget name="pused" position="860,595" size="100,25" font="SetrixHD; 18" />
+		<widget name="lmemtext" position="235,160" size="200,460" font="SetrixHD; 18" />
+		<widget name="rmemvalue" position="860,160" size="200,410" font="SetrixHD; 18" />
+		<widget name="pfree" position="860,573" size="100,25" font="SetrixHD; 18" />
+		<eLabel name="progressbar-back" position="234,626" size="820,2" backgroundColor="layer-a-accent1" zPosition="2" />
+		<eLabel name="line" position="235,154" size="825,1" backgroundColor="layer-a-accent1" zPosition="2" />
+		<widget name="slide" pixmap="GigabluePax/colors/00007eff.png" backgroundColor="layer-a-progress" position="234,625" size="820,4" zPosition="7" transparent="1">
+			  <convert type="slide">Progress</convert>
+		</widget>
+		<panel name="PANEL_BUTTONBAR_RGB_X" />
+		<widget name="params" rowsincolumn="19" />
 	</screen>
 	<screen name="ExtensionsList" position="0,0" size="1280,720" title="Extensions" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="GigabluePax/construct/menu/main/plugins.png" position="187,289" size="200,200" alphatest="blend"/>
