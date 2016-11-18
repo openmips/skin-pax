@@ -394,7 +394,7 @@
 		<eLabel position="0,75" zPosition="-10" size="1280,585" backgroundColor="layer-b-background"/>
 		<eLabel position="426,58" zPosition="-1" size="835,612" backgroundColor="layer-a-background"/>
 		<eLabel text="Channel selection" position="1,1" size="1,1" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-a-background"/>
-		<widget source="Title" render="Label" position="363,3" size="870,45" font="Regular; 32" backgroundColor="layer-a-background" transparent="1" noWrap="1" />
+		<widget source="Title" render="Label" position="360,6" size="550,45" font="Regular; 26" backgroundColor="layer-a-background" transparent="1" noWrap="1" />
 		<eLabel position="87,275" size="256,1" backgroundColor="layer-a-accent1" foregroundColor="layer-a-accent1"/>
 		<widget name="list" position="435,62" size="820,604" scrollbarMode="showNever" colorServiceDescription="layer-a-accent1" colorServiceDescriptionSelected="layer-a-foreground" colorEventProgressbarBorder="selection-background" colorEventProgressbarBorderSelected="layer-a-foreground" foregroundColorServiceNotAvail="#00555555" serviceItemHeight="30" serviceNumberFont="SetrixHD;24" serviceNameFont="SetrixHD;24" serviceInfoFont="Regular;22" transparent="1" foregroundColor="layer-a-accent2" backgroundColor="layer-a-background" itemHeight="30"/>
 		<widget source="ServiceEvent" render="Label" position="20,210" size="400,50" font="SetrixHD; 30" backgroundColor="layer-b-background" transparent="1" valign="bottom" noWrap="1">
@@ -1104,7 +1104,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	<screen name="About" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP" />
 		<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
-		<ePixmap pixmap="GigabluePax/construct/menu/info/about.png" position="237,289" size="200,200" alphatest="blend" />
+		<ePixmap pixmap="GigabluePax/construct/plugins/gigablue.png" position="237,289" size="200,200" alphatest="blend" />
 		<widget source="AboutHeader" render="Label" position="369,0" size="560,46" font="SetrixHD; 32" transparent="1" valign="top" zPosition="100" backgroundColor="layer-a-background" noWrap="1" />
 		<eLabel position="645,91" zPosition="-1" size="590,580" backgroundColor="layer-a-background" />
 		<widget name="AboutScrollLabel" split="1" dividechar=":" position="665,105" size="570,560" valign="top" font="Regular; 20" backgroundColor="layer-a-background" transparent="1" halign="left" noWrap="1" />
@@ -1906,8 +1906,8 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 	<ePixmap name="menu-band" position="0,265" size="1280,242" pixmap="GigabluePax/construct/menu-band.png" alphatest="blend" zPosition="-2" />
 	<ePixmap pixmap="GigabluePax/construct/menu/info/channel.png" position="237,289" size="200,200" alphatest="blend"/>
 	<widget source="Title" render="Label" position="369,0" size="540,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="1" noWrap="1"/>
-	<eLabel position="645,91" zPosition="-1" size="590,580" backgroundColor="layer-a-background" />
-	<widget name="infolist" font="SetrixHD; 22" itemHeight="40" enableWrapAround="1" selectionDisabled="1" position="665,105" size="580,560" backgroundColor="layer-a-background" transparent="1" />
+	<eLabel position="570,91" zPosition="-1" size="665,580" backgroundColor="layer-a-background" />
+	<widget name="infolist" font="SetrixHD; 22" itemHeight="40" enableWrapAround="1" selectionDisabled="1" position="590,105" size="655,560" backgroundColor="layer-a-background" transparent="1" />
 	<panel name="PANEL_BUTTONBAR_RGYB_X"/>
 </screen>
 	<screen name="OSD3DSetupScreen" position="0, 0" flags="wfNoBorder" title="OSD 3D setup" transparent="0" backgroundColor="transparent" size="1280, 720">
