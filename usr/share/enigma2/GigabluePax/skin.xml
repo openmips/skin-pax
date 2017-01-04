@@ -423,11 +423,11 @@
 		-->
 	</screen>
 	<screen name="MoviePlayer" position="0,0" size="1283,723" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP"/>
-		<widget source="session.CurrentService" render="Label" position="493,-1" size="503,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background">
+		<panel name="PANEL_GIGABLUE_TOP" />
+		<widget source="session.CurrentService" render="Label" position="46,586" size="1214,60" font="SetrixHD; 46" transparent="0" valign="center" zPosition="0" backgroundColor="layer-a-background" noWrap="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<eLabel position="0,650" zPosition="-11" size="1280,70" backgroundColor="layer-a-background"/>
+		<eLabel position="0,585" zPosition="-11" size="1280,135" backgroundColor="layer-a-background" />
 		<widget source="session.CurrentService" render="Label" position="25,660" size="120,40" font="SetrixHD; 35" halign="center" valign="center" backgroundColor="layer-a-background" shadowColor="layer-a-background" shadowOffset="-1,-1" transparent="1">
 			<convert type="ServicePosition">Position</convert>
 		</widget>
@@ -440,10 +440,12 @@
 		<widget source="session.CurrentService" render="Label" position="1140,660" size="120,40" font="SetrixHD; 35" halign="center" valign="center" backgroundColor="layer-a-background" transparent="1">
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
-		<widget source="session.CurrentService" render="Label" position="369,-1" size="120,46" font="SetrixHD; 35" halign="left" valign="top" backgroundColor="layer-a-background" transparent="1">
+		<eLabel text="length" position="434,4" size="150,45" font="Regular; 32" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" halign="right" />
+		<widget source="session.CurrentService" render="Label" position="586,4" size="120,45" font="Regular; 32" halign="center" valign="top" backgroundColor="layer-a-background" transparent="1">
 			<convert type="ServicePosition">Length</convert>
 		</widget>
-		<eLabel position="151,686" size="980,1" backgroundColor="layer-a-accent1" zPosition="-10"/>
+		<eLabel text="min" position="709,4" size="150,45" font="Regular; 32" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background" halign="left" />
+		<eLabel position="151,686" size="980,1" backgroundColor="layer-a-accent1" zPosition="-10" />
 	</screen>
 	<screen name="MovieSelection" position="0,0" size="1280,720" title="Select a movie" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP"/>
