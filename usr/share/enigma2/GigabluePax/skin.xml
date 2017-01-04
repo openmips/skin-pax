@@ -3003,4 +3003,10 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_BUTTONBAR_OK_X" />
 		<ePixmap pixmap="GigabluePax/construct/impex.png" position="665,545" size="576,107" alphatest="blend" zPosition="2"/>
 	</screen>
+	<screen name="ServiceInfoSimple" position="0,0" size="1280, 720" title="Serviceinfo" flags="wfNoBorder" backgroundColor="transparent">
+		<widget source="Title" render="Label" position="0,0" size="1280,46" font="SetrixHD; 35" backgroundColor="layer-a-background" transparent="0" noWrap="1" halign="center" />
+		<eLabel position="46,124" zPosition="-1" size="1191,476" backgroundColor="layer-a-background" />
+		<widget name="infolist" font="SetrixHD; 22" itemHeight="30" enableWrapAround="1" selectionDisabled="1" position="54,136" size="1173,450" backgroundColor="layer-a-background" transparent="1" />
+		<panel name="PANEL_BUTTONBAR_R_X" />
+	</screen>
 </skin>
