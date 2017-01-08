@@ -3012,7 +3012,7 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<widget name="infolist" font="SetrixHD; 22" itemHeight="30" enableWrapAround="1" selectionDisabled="1" position="54,136" size="1173,450" backgroundColor="layer-a-background" transparent="1" />
 		<panel name="PANEL_BUTTONBAR_R_X" />
 	</screen>
-		<screen name="Troubleshoot" title="Troubleshoot" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="Troubleshoot" title="Troubleshoot" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
 		<panel name="PANEL_GIGABLUE_TOP" />
 		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X" />
 		<ePixmap pixmap="GigabluePax/buttons/right.png" position="525,686" size="30,29" alphatest="blend" zPosition="1" />
