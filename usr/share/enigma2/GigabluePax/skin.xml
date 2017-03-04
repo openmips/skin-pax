@@ -132,7 +132,7 @@
 		<ePixmap name="menu-top" position="0,0" size="940,53" pixmap="GigabluePax/construct/menu-top.png" alphatest="blend" zPosition="-2"/>
 		<!-- /* WEATHER WIDGET  -->
 		<widget render="OMMetrixWeatherWidget" source="global.CurrentTime" position="920,0" size="360,51" alphatest="blend" pixmap="GigabluePax/construct/general/weather-back.png" zPosition="-1"/>
-		<widget backgroundColor="layer-a-background" font="RegularLight; 40" foregroundColor="layer-a-foreground" halign="right" noWrap="1" position="957,-3" render="Label" size="60,42" source="global.CurrentTime" transparent="1" valign="top" zPosition="10">
+		<widget backgroundColor="layer-a-background" font="RegularLight; 40" foregroundColor="layer-a-foreground" halign="right" noWrap="1" position="957,-3" render="Label" size="48,42" source="global.CurrentTime" transparent="1" valign="top" zPosition="10">
 			<convert type="OMMetrixWeather">currentWeatherTemp</convert>
 		</widget>
 		<widget backgroundColor="layer-a-background" font="Regular; 17" foregroundColor="layer-a-foreground" halign="left" noWrap="1" position="1011,5" render="Label" size="30,26" source="global.CurrentTime" transparent="1" valign="center" zPosition="10">
@@ -3011,15 +3011,5 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<eLabel position="46,124" zPosition="-1" size="1191,476" backgroundColor="layer-a-background" />
 		<widget name="infolist" font="SetrixHD; 22" itemHeight="30" enableWrapAround="1" selectionDisabled="1" position="54,136" size="1173,450" backgroundColor="layer-a-background" transparent="1" />
 		<panel name="PANEL_BUTTONBAR_R_X" />
-	</screen>
-	<screen name="Troubleshoot" title="Troubleshoot" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
-		<panel name="PANEL_GIGABLUE_TOP" />
-		<panel name="PANEL_BUTTONBAR_SOURCE_RG_X" />
-		<ePixmap pixmap="GigabluePax/buttons/right.png" position="525,686" size="30,29" alphatest="blend" zPosition="1" />
-		<ePixmap pixmap="GigabluePax/buttons/left.png" position="492,686" size="30,29" alphatest="blend" zPosition="1" />
-		<widget source="title" render="Label" position="369,59" size="581,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="2" />
-		<widget name="AboutScrollLabel" font="Fixed;16" position="153,107" size="1062,510" zPosition="2" />
-		<eLabel text="Troubleshoot" position="332,3" size="580,46" font="SetrixHD; 36" transparent="1" valign="center" zPosition="0" backgroundColor="layer-a-background" halign="left" />
-		<eLabel position="140,95" zPosition="-2" size="1091,530" backgroundColor="layer-a-background" />
 	</screen>
 </skin>
