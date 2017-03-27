@@ -132,7 +132,7 @@
 		<ePixmap name="menu-top" position="0,0" size="940,53" pixmap="GigabluePax/construct/menu-top.png" alphatest="blend" zPosition="-2"/>
 		<!-- /* WEATHER WIDGET  -->
 		<widget render="OMMetrixWeatherWidget" source="global.CurrentTime" position="920,0" size="360,51" alphatest="blend" pixmap="GigabluePax/construct/general/weather-back.png" zPosition="-1"/>
-		<widget backgroundColor="layer-a-background" font="RegularLight; 40" foregroundColor="layer-a-foreground" halign="right" noWrap="1" position="957,-3" render="Label" size="48,42" source="global.CurrentTime" transparent="1" valign="top" zPosition="10">
+		<widget backgroundColor="layer-a-background" font="RegularLight; 40" foregroundColor="layer-a-foreground" halign="right" noWrap="1" position="957,-3" render="Label" size="60,42" source="global.CurrentTime" transparent="1" valign="top" zPosition="10">
 			<convert type="OMMetrixWeather">currentWeatherTemp</convert>
 		</widget>
 		<widget backgroundColor="layer-c-background" font="Meteo; 42" foregroundColor="layer-b-foreground" halign="left" noWrap="1" position="1210,2" render="Label" size="48,48" source="global.CurrentTime" transparent="1" valign="center" zPosition="15">
