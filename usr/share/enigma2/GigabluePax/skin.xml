@@ -1756,8 +1756,9 @@ MultiContentEntryText(pos = (50, 43), size = (640, 60), font = 1, flags = RT_HAL
 		<panel name="PANEL_BUTTONBAR_RG_X"/>
 		<ePixmap pixmap="GigabluePax/construct/plugins/backup.png" position="237,289" size="200,200" alphatest="blend"/>
 		<eLabel text="Image Backup" position="369,-1" size="540,46" font="SetrixHD; 35" transparent="1" valign="top" zPosition="0" backgroundColor="layer-b-background"/>
-		<widget name="info-hdd" position="615,87" zPosition="1" size="534,233" font="SetrixHD; 22" halign="left" valign="top" transparent="1" backgroundColor="layer-a-background"/>
-		<widget name="info-usb" position="615,348" zPosition="1" size="534,300" font="SetrixHD; 22" halign="left" valign="top" transparent="1" backgroundColor="layer-a-background"/>
+		<widget name="info-hdd" position="615,87" zPosition="1" size="534,150" font="SetrixHD; 22" halign="left" valign="top" transparent="1" backgroundColor="layer-a-background"/>
+		<widget name="info-multi" position="615,237" zPosition="1" size="534,150" font="SetrixHD; 22" halign="left" valign="top" transparent="1" backgroundColor="layer-a-background"/>
+		<widget name="info-usb" position="615,387" zPosition="1" size="534,250" font="SetrixHD; 22" halign="left" valign="top" transparent="1" backgroundColor="layer-a-background"/>
 	</screen>
 	<screen name="Console" position="0, 0" flags="wfNoBorder" transparent="0" title="Command execution..." backgroundColor="transparent" size="1280, 720">
 		<panel name="PANEL_GIGABLUE_TOP"/>
